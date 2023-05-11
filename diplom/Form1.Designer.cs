@@ -71,28 +71,34 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.chengeCatMCCB = new MaterialSkin.Controls.MaterialComboBox();
-            this.changeTypeMCCB = new MaterialSkin.Controls.MaterialComboBox();
+            this.CatMCCB = new MaterialSkin.Controls.MaterialComboBox();
             this.changeNameMCTB = new MaterialSkin.Controls.MaterialTextBox();
             this.nameMCTB = new MaterialSkin.Controls.MaterialTextBox();
             this.changeMCBtn = new MaterialSkin.Controls.MaterialButton();
             this.addMCBtn = new MaterialSkin.Controls.MaterialButton();
             this.typeMCCB = new MaterialSkin.Controls.MaterialComboBox();
             this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
             this.searchMCTB = new MaterialSkin.Controls.MaterialTextBox2();
             this.MCDVG = new System.Windows.Forms.DataGridView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.CatMCCB = new MaterialSkin.Controls.MaterialComboBox();
+            this.anotherTB = new MaterialSkin.Controls.MaterialTextBox();
+            this.anotherSwitch = new MaterialSkin.Controls.MaterialSwitch();
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.ChangeTypeMCTB = new MaterialSkin.Controls.MaterialTextBox();
+            this.changeCatMCCB = new MaterialSkin.Controls.MaterialComboBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.materialTextBox21 = new MaterialSkin.Controls.MaterialTextBox2();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MarksDVG)).BeginInit();
             this.tabPage5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DriversDVG)).BeginInit();
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BusDVG)).BeginInit();
+            this.tabPage1.SuspendLayout();
             this.materialTabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MCDVG)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage9
@@ -849,6 +855,8 @@
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.materialTextBox21);
+            this.tabPage1.Controls.Add(this.dataGridView1);
             this.tabPage1.ImageKey = "icons8-home-48.png";
             this.tabPage1.Location = new System.Drawing.Point(4, 31);
             this.tabPage1.Name = "tabPage1";
@@ -880,16 +888,18 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.changeCatMCCB);
+            this.tabPage3.Controls.Add(this.ChangeTypeMCTB);
+            this.tabPage3.Controls.Add(this.materialButton1);
+            this.tabPage3.Controls.Add(this.anotherSwitch);
+            this.tabPage3.Controls.Add(this.anotherTB);
             this.tabPage3.Controls.Add(this.CatMCCB);
-            this.tabPage3.Controls.Add(this.chengeCatMCCB);
-            this.tabPage3.Controls.Add(this.changeTypeMCCB);
             this.tabPage3.Controls.Add(this.changeNameMCTB);
             this.tabPage3.Controls.Add(this.nameMCTB);
             this.tabPage3.Controls.Add(this.changeMCBtn);
             this.tabPage3.Controls.Add(this.addMCBtn);
             this.tabPage3.Controls.Add(this.typeMCCB);
             this.tabPage3.Controls.Add(this.materialButton3);
-            this.tabPage3.Controls.Add(this.materialButton4);
             this.tabPage3.Controls.Add(this.searchMCTB);
             this.tabPage3.Controls.Add(this.MCDVG);
             this.tabPage3.ImageKey = "icons8-services-242.png";
@@ -900,53 +910,31 @@
             this.tabPage3.Text = "Материальные ценности";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // chengeCatMCCB
+            // CatMCCB
             // 
-            this.chengeCatMCCB.AutoResize = false;
-            this.chengeCatMCCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.chengeCatMCCB.Depth = 0;
-            this.chengeCatMCCB.DisplayMember = "Name";
-            this.chengeCatMCCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.chengeCatMCCB.DropDownHeight = 174;
-            this.chengeCatMCCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.chengeCatMCCB.DropDownWidth = 121;
-            this.chengeCatMCCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.chengeCatMCCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.chengeCatMCCB.FormattingEnabled = true;
-            this.chengeCatMCCB.IntegralHeight = false;
-            this.chengeCatMCCB.ItemHeight = 43;
-            this.chengeCatMCCB.Location = new System.Drawing.Point(332, 480);
-            this.chengeCatMCCB.MaxDropDownItems = 4;
-            this.chengeCatMCCB.MouseState = MaterialSkin.MouseState.OUT;
-            this.chengeCatMCCB.Name = "chengeCatMCCB";
-            this.chengeCatMCCB.Size = new System.Drawing.Size(200, 49);
-            this.chengeCatMCCB.StartIndex = 0;
-            this.chengeCatMCCB.TabIndex = 54;
-            this.chengeCatMCCB.ValueMember = "Id_mark";
-            // 
-            // changeTypeMCCB
-            // 
-            this.changeTypeMCCB.AutoResize = false;
-            this.changeTypeMCCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.changeTypeMCCB.Depth = 0;
-            this.changeTypeMCCB.DisplayMember = "Surname";
-            this.changeTypeMCCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.changeTypeMCCB.DropDownHeight = 174;
-            this.changeTypeMCCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.changeTypeMCCB.DropDownWidth = 121;
-            this.changeTypeMCCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.changeTypeMCCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.changeTypeMCCB.FormattingEnabled = true;
-            this.changeTypeMCCB.IntegralHeight = false;
-            this.changeTypeMCCB.ItemHeight = 43;
-            this.changeTypeMCCB.Location = new System.Drawing.Point(585, 482);
-            this.changeTypeMCCB.MaxDropDownItems = 4;
-            this.changeTypeMCCB.MouseState = MaterialSkin.MouseState.OUT;
-            this.changeTypeMCCB.Name = "changeTypeMCCB";
-            this.changeTypeMCCB.Size = new System.Drawing.Size(200, 49);
-            this.changeTypeMCCB.StartIndex = 0;
-            this.changeTypeMCCB.TabIndex = 53;
-            this.changeTypeMCCB.ValueMember = "Id_dr";
+            this.CatMCCB.AutoResize = false;
+            this.CatMCCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.CatMCCB.Depth = 0;
+            this.CatMCCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.CatMCCB.DropDownHeight = 174;
+            this.CatMCCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CatMCCB.DropDownWidth = 121;
+            this.CatMCCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.CatMCCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CatMCCB.FormattingEnabled = true;
+            this.CatMCCB.IntegralHeight = false;
+            this.CatMCCB.ItemHeight = 43;
+            this.CatMCCB.Items.AddRange(new object[] {
+            "ТЖ",
+            "Агрегат"});
+            this.CatMCCB.Location = new System.Drawing.Point(654, 189);
+            this.CatMCCB.MaxDropDownItems = 4;
+            this.CatMCCB.MouseState = MaterialSkin.MouseState.OUT;
+            this.CatMCCB.Name = "CatMCCB";
+            this.CatMCCB.Size = new System.Drawing.Size(255, 49);
+            this.CatMCCB.StartIndex = 0;
+            this.CatMCCB.TabIndex = 55;
+            this.CatMCCB.TextChanged += new System.EventHandler(this.CatMCCB_TextChanged);
             // 
             // changeNameMCTB
             // 
@@ -990,7 +978,7 @@
             this.changeMCBtn.Depth = 0;
             this.changeMCBtn.HighEmphasis = true;
             this.changeMCBtn.Icon = null;
-            this.changeMCBtn.Location = new System.Drawing.Point(829, 495);
+            this.changeMCBtn.Location = new System.Drawing.Point(823, 493);
             this.changeMCBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.changeMCBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.changeMCBtn.Name = "changeMCBtn";
@@ -1001,6 +989,7 @@
             this.changeMCBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.changeMCBtn.UseAccentColor = false;
             this.changeMCBtn.UseVisualStyleBackColor = true;
+            this.changeMCBtn.Click += new System.EventHandler(this.changeMCBtn_Click);
             // 
             // addMCBtn
             // 
@@ -1009,7 +998,7 @@
             this.addMCBtn.Depth = 0;
             this.addMCBtn.HighEmphasis = true;
             this.addMCBtn.Icon = null;
-            this.addMCBtn.Location = new System.Drawing.Point(654, 330);
+            this.addMCBtn.Location = new System.Drawing.Point(654, 364);
             this.addMCBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.addMCBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.addMCBtn.Name = "addMCBtn";
@@ -1020,6 +1009,7 @@
             this.addMCBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
             this.addMCBtn.UseAccentColor = false;
             this.addMCBtn.UseVisualStyleBackColor = true;
+            this.addMCBtn.Click += new System.EventHandler(this.addMCBtn_Click);
             // 
             // typeMCCB
             // 
@@ -1062,27 +1052,6 @@
             this.materialButton3.UseAccentColor = false;
             this.materialButton3.UseVisualStyleBackColor = true;
             // 
-            // materialButton4
-            // 
-            this.materialButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton4.Depth = 0;
-            this.materialButton4.DrawShadows = false;
-            this.materialButton4.HighEmphasis = false;
-            this.materialButton4.Icon = null;
-            this.materialButton4.Location = new System.Drawing.Point(550, 409);
-            this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton4.Name = "materialButton4";
-            this.materialButton4.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialButton4.Size = new System.Drawing.Size(64, 36);
-            this.materialButton4.TabIndex = 43;
-            this.materialButton4.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton4.UseAccentColor = false;
-            this.materialButton4.UseVisualStyleBackColor = true;
-            // 
             // searchMCTB
             // 
             this.searchMCTB.AnimateReadOnly = false;
@@ -1111,6 +1080,7 @@
             this.searchMCTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.searchMCTB.TrailingIcon = null;
             this.searchMCTB.UseSystemPasswordChar = false;
+            this.searchMCTB.TextChanged += new System.EventHandler(this.searchMCTB_TextChanged);
             // 
             // MCDVG
             // 
@@ -1122,6 +1092,7 @@
             this.MCDVG.RowHeadersWidth = 51;
             this.MCDVG.Size = new System.Drawing.Size(529, 296);
             this.MCDVG.TabIndex = 41;
+            this.MCDVG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MCDVG_CellClick);
             // 
             // imageList1
             // 
@@ -1152,32 +1123,143 @@
             this.imageList1.Images.SetKeyName(22, "transmission-oil-new-transmission-icon-with-png-and-vector-430040.png");
             this.imageList1.Images.SetKeyName(23, "unnamed (1) — копия.png");
             // 
-            // CatMCCB
+            // anotherTB
             // 
-            this.CatMCCB.AutoResize = false;
-            this.CatMCCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.CatMCCB.Depth = 0;
-            this.CatMCCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.CatMCCB.DropDownHeight = 174;
-            this.CatMCCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.CatMCCB.DropDownWidth = 121;
-            this.CatMCCB.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.CatMCCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.CatMCCB.FormattingEnabled = true;
-            this.CatMCCB.IntegralHeight = false;
-            this.CatMCCB.ItemHeight = 43;
-            this.CatMCCB.Items.AddRange(new object[] {
+            this.anotherTB.AnimateReadOnly = false;
+            this.anotherTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.anotherTB.Depth = 0;
+            this.anotherTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.anotherTB.Hint = "Другое";
+            this.anotherTB.LeadingIcon = null;
+            this.anotherTB.Location = new System.Drawing.Point(654, 260);
+            this.anotherTB.MaxLength = 50;
+            this.anotherTB.MouseState = MaterialSkin.MouseState.OUT;
+            this.anotherTB.Multiline = false;
+            this.anotherTB.Name = "anotherTB";
+            this.anotherTB.Size = new System.Drawing.Size(256, 50);
+            this.anotherTB.TabIndex = 57;
+            this.anotherTB.Text = "";
+            this.anotherTB.TrailingIcon = null;
+            this.anotherTB.Visible = false;
+            // 
+            // anotherSwitch
+            // 
+            this.anotherSwitch.AutoSize = true;
+            this.anotherSwitch.Depth = 0;
+            this.anotherSwitch.Location = new System.Drawing.Point(654, 321);
+            this.anotherSwitch.Margin = new System.Windows.Forms.Padding(0);
+            this.anotherSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.anotherSwitch.MouseState = MaterialSkin.MouseState.HOVER;
+            this.anotherSwitch.Name = "anotherSwitch";
+            this.anotherSwitch.Ripple = true;
+            this.anotherSwitch.Size = new System.Drawing.Size(111, 37);
+            this.anotherSwitch.TabIndex = 58;
+            this.anotherSwitch.Text = "Другое";
+            this.anotherSwitch.UseVisualStyleBackColor = true;
+            this.anotherSwitch.CheckedChanged += new System.EventHandler(this.anotherSwitch_CheckedChanged);
+            // 
+            // materialButton1
+            // 
+            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.DrawShadows = false;
+            this.materialButton1.HighEmphasis = false;
+            this.materialButton1.Icon = null;
+            this.materialButton1.Location = new System.Drawing.Point(552, 409);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.materialButton1.Size = new System.Drawing.Size(64, 36);
+            this.materialButton1.TabIndex = 59;
+            this.materialButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.materialButton1.UseAccentColor = false;
+            this.materialButton1.UseVisualStyleBackColor = true;
+            // 
+            // ChangeTypeMCTB
+            // 
+            this.ChangeTypeMCTB.AnimateReadOnly = false;
+            this.ChangeTypeMCTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ChangeTypeMCTB.Depth = 0;
+            this.ChangeTypeMCTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ChangeTypeMCTB.LeadingIcon = null;
+            this.ChangeTypeMCTB.Location = new System.Drawing.Point(568, 479);
+            this.ChangeTypeMCTB.MaxLength = 50;
+            this.ChangeTypeMCTB.MouseState = MaterialSkin.MouseState.OUT;
+            this.ChangeTypeMCTB.Multiline = false;
+            this.ChangeTypeMCTB.Name = "ChangeTypeMCTB";
+            this.ChangeTypeMCTB.Size = new System.Drawing.Size(186, 50);
+            this.ChangeTypeMCTB.TabIndex = 60;
+            this.ChangeTypeMCTB.Text = "";
+            this.ChangeTypeMCTB.TrailingIcon = null;
+            // 
+            // changeCatMCCB
+            // 
+            this.changeCatMCCB.AutoResize = false;
+            this.changeCatMCCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.changeCatMCCB.Depth = 0;
+            this.changeCatMCCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.changeCatMCCB.DropDownHeight = 174;
+            this.changeCatMCCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.changeCatMCCB.DropDownWidth = 121;
+            this.changeCatMCCB.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.changeCatMCCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.changeCatMCCB.FormattingEnabled = true;
+            this.changeCatMCCB.IntegralHeight = false;
+            this.changeCatMCCB.ItemHeight = 43;
+            this.changeCatMCCB.Items.AddRange(new object[] {
             "ТЖ",
             "Агрегат"});
-            this.CatMCCB.Location = new System.Drawing.Point(654, 189);
-            this.CatMCCB.MaxDropDownItems = 4;
-            this.CatMCCB.MouseState = MaterialSkin.MouseState.OUT;
-            this.CatMCCB.Name = "CatMCCB";
-            this.CatMCCB.Size = new System.Drawing.Size(255, 49);
-            this.CatMCCB.StartIndex = 0;
-            this.CatMCCB.TabIndex = 55;
-            this.CatMCCB.SelectedIndexChanged += new System.EventHandler(this.CatMCCB_SelectedIndexChanged);
-            this.CatMCCB.TextChanged += new System.EventHandler(this.CatMCCB_TextChanged);
+            this.changeCatMCCB.Location = new System.Drawing.Point(303, 482);
+            this.changeCatMCCB.MaxDropDownItems = 4;
+            this.changeCatMCCB.MouseState = MaterialSkin.MouseState.OUT;
+            this.changeCatMCCB.Name = "changeCatMCCB";
+            this.changeCatMCCB.Size = new System.Drawing.Size(238, 49);
+            this.changeCatMCCB.StartIndex = 0;
+            this.changeCatMCCB.TabIndex = 61;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.GridColor = System.Drawing.SystemColors.Highlight;
+            this.dataGridView1.Location = new System.Drawing.Point(87, 80);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.Size = new System.Drawing.Size(573, 344);
+            this.dataGridView1.TabIndex = 42;
+            // 
+            // materialTextBox21
+            // 
+            this.materialTextBox21.AnimateReadOnly = false;
+            this.materialTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.materialTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.materialTextBox21.Depth = 0;
+            this.materialTextBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialTextBox21.HideSelection = true;
+            this.materialTextBox21.Hint = "Найти";
+            this.materialTextBox21.LeadingIcon = null;
+            this.materialTextBox21.Location = new System.Drawing.Point(87, 26);
+            this.materialTextBox21.MaxLength = 32767;
+            this.materialTextBox21.MouseState = MaterialSkin.MouseState.OUT;
+            this.materialTextBox21.Name = "materialTextBox21";
+            this.materialTextBox21.PasswordChar = '\0';
+            this.materialTextBox21.PrefixSuffixText = null;
+            this.materialTextBox21.ReadOnly = false;
+            this.materialTextBox21.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.materialTextBox21.SelectedText = "";
+            this.materialTextBox21.SelectionLength = 0;
+            this.materialTextBox21.SelectionStart = 0;
+            this.materialTextBox21.ShortcutsEnabled = true;
+            this.materialTextBox21.Size = new System.Drawing.Size(573, 48);
+            this.materialTextBox21.TabIndex = 43;
+            this.materialTextBox21.TabStop = false;
+            this.materialTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.materialTextBox21.TrailingIcon = null;
+            this.materialTextBox21.UseSystemPasswordChar = false;
             // 
             // Form1
             // 
@@ -1199,10 +1281,12 @@
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BusDVG)).EndInit();
+            this.tabPage1.ResumeLayout(false);
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MCDVG)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1251,18 +1335,22 @@
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;
         private System.Windows.Forms.TabPage tabPage3;
         private System.Windows.Forms.ImageList imageList1;
-        private MaterialSkin.Controls.MaterialComboBox chengeCatMCCB;
-        private MaterialSkin.Controls.MaterialComboBox changeTypeMCCB;
         private MaterialSkin.Controls.MaterialTextBox changeNameMCTB;
         private MaterialSkin.Controls.MaterialTextBox nameMCTB;
         private MaterialSkin.Controls.MaterialButton changeMCBtn;
         private MaterialSkin.Controls.MaterialButton addMCBtn;
         private MaterialSkin.Controls.MaterialComboBox typeMCCB;
         private MaterialSkin.Controls.MaterialButton materialButton3;
-        private MaterialSkin.Controls.MaterialButton materialButton4;
         private MaterialSkin.Controls.MaterialTextBox2 searchMCTB;
         private System.Windows.Forms.DataGridView MCDVG;
         private MaterialSkin.Controls.MaterialComboBox CatMCCB;
+        private MaterialSkin.Controls.MaterialTextBox anotherTB;
+        private MaterialSkin.Controls.MaterialSwitch anotherSwitch;
+        private MaterialSkin.Controls.MaterialTextBox ChangeTypeMCTB;
+        private MaterialSkin.Controls.MaterialButton materialButton1;
+        private MaterialSkin.Controls.MaterialComboBox changeCatMCCB;
+        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox21;
+        private System.Windows.Forms.DataGridView dataGridView1;
     }
 }
 

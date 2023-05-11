@@ -96,13 +96,15 @@ namespace diplom
                 }
                 else if (materialTabControl1.SelectedIndex == 1)
                 {
-                    sqlDataAdapter = new SqlDataAdapter("select Id_m, Name as [Наименование], Type as [Тип], Categ as [Категория] from MatCen", sqlConnection);
+                    sqlDataAdapter = new SqlDataAdapter("select Id_m, Name as [Наименование],  Categ as [Категория],Type as [Тип]  from MatCen", sqlConnection);
                     sqlBuilder = new SqlCommandBuilder(sqlDataAdapter);
                     dataSet = new DataSet();
                     sqlDataAdapter.Fill(dataSet, "MatCen");
                     MCDVG.DataSource = dataSet.Tables["MatCen"];
                     MCDVG.Columns["Id_m"].Visible = false;
                     MCDVG.Columns[1].Width = 120;
+                    CatMCCB.SelectedIndex = -1;
+                    typeMCCB.SelectedIndex = -1;
                 }
 
 
@@ -433,13 +435,8 @@ namespace diplom
                 {
                     MessageBox.Show("Заполните все строки");
                 }
-        }
+            }
             catch (Exception ex) { MaterialMessageBox.Show(ex.Message, "Ошибка!"); }
-}
-
-        private void CatMCCB_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            
         }
 
         private void CatMCCB_TextChanged(object sender, EventArgs e)
@@ -457,6 +454,119 @@ namespace diplom
                 
                 typeMCCB.Items.AddRange(items1);
 
+            }
+        }
+
+        private void addMCBtn_Click(object sender, EventArgs e)
+        {
+            if (nameMCTB.Text != "" && CatMCCB.SelectedIndex != -1 && typeMCCB.SelectedIndex != -1 && anotherSwitch.Checked == false)
+            {
+                try
+                {
+                    SqlCommand command = new SqlCommand($"INSERT INTO MatCen (Name, Categ, Type) VALUES (@Name, @Categ, @Type)", sqlConnection);
+
+                    command.Parameters.AddWithValue("Name", nameMCTB.Text);
+                    command.Parameters.AddWithValue("Categ", CatMCCB.Text);
+                    command.Parameters.AddWithValue("Type", typeMCCB.Text);
+
+                    command.ExecuteNonQuery();
+
+
+                    MaterialMessageBox.Show("Добавлено!");
+                    LoadData();
+                    nameMCTB.Text = "";
+                    CatMCCB.SelectedIndex = -1;
+                    typeMCCB.SelectedIndex = -1;
+                    anotherSwitch.Checked = false;
+
+            }
+                catch (Exception ex) { MaterialMessageBox.Show("Проверьте введённые данные", "Ошибка"); }
+        }
+            else if (nameMCTB.Text != "" && CatMCCB.SelectedIndex != -1 && anotherTB.Text != "" && anotherSwitch.Checked == true)
+            {
+                try
+                {
+                    SqlCommand command = new SqlCommand($"INSERT INTO MatCen (Name, Categ, Type) VALUES (@Name, @Categ, @Type)", sqlConnection);
+
+                    command.Parameters.AddWithValue("Name", nameMCTB.Text);
+                    command.Parameters.AddWithValue("Categ", CatMCCB.Text);
+                    command.Parameters.AddWithValue("Type", anotherTB.Text);
+
+                    command.ExecuteNonQuery();
+
+
+                    MaterialMessageBox.Show("Добавлено!");
+                    LoadData();
+                    nameMCTB.Text = "";
+                    CatMCCB.SelectedIndex = -1;
+                    anotherTB.Text = "";
+                    anotherSwitch.Checked = false;
+
+                }
+                catch (Exception ex) { MaterialMessageBox.Show("Проверьте введённые данные", "Ошибка"); }
+            }
+            else { MaterialMessageBox.Show("Заполните все поля", "Ошибка"); }
+        }
+
+        private void anotherSwitch_CheckedChanged(object sender, EventArgs e)
+        {
+            if (anotherSwitch.Checked == true)
+            {
+                anotherTB.Visible = true;
+                typeMCCB.Visible = false;
+            }
+            else { anotherTB.Visible = false; typeMCCB.Visible = true; }
+        }
+
+        private void MCDVG_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            rowIndex = e.RowIndex;
+            if (rowIndex != -1)
+            {
+                changeNameMCTB.Text = MCDVG.Rows[rowIndex].Cells[1].Value.ToString();
+                changeCatMCCB.Text = MCDVG.Rows[rowIndex].Cells[2].Value.ToString();
+                ChangeTypeMCTB.Text = MCDVG.Rows[rowIndex].Cells[3].Value.ToString();
+
+            }
+        }
+
+        private void changeMCBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (changeNameMCTB.Text != "" && ChangeTypeMCTB.Text != "" && changeCatMCCB.SelectedIndex != -1)
+                {
+
+                    SqlCommand sqlCommand = new SqlCommand($"update MatCen set Name = N'{changeNameMCTB.Text}', Type = N'{ChangeTypeMCTB.Text}', Categ = N'{changeCatMCCB.Text}' WHERE Id_m = N'{MCDVG[0, MCDVG.CurrentRow.Index].Value}'", sqlConnection);
+                    sqlCommand.ExecuteNonQuery();
+                    LoadData();
+
+                    changeNameMCTB.Text = "";
+                    ChangeTypeMCTB.Text = "";
+                    changeCatMCCB.SelectedIndex = -1;
+                   
+
+                }
+                else
+                {
+                    MessageBox.Show("Заполните все строки");
+                }
+            }
+            catch (Exception ex) { MaterialMessageBox.Show(ex.Message, "Ошибка!"); }
+        }
+
+        private void searchMCTB_TextChanged(object sender, EventArgs e)
+        {
+            for (int i = 0; i < MCDVG.RowCount; i++)
+            {
+                MCDVG.Rows[i].Selected = false;
+                for (int j = 0; j < MCDVG.ColumnCount; j++)
+                    if (MCDVG.Rows[i].Cells[j].Value != null)
+                        if (MCDVG.Rows[i].Cells[j].Value.ToString().Contains(materialTextBox24.Text))
+                        {
+                            MCDVG.Rows[i].Selected = true;
+                            break;
+                        }
             }
         }
     }
