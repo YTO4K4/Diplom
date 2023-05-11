@@ -71,7 +71,6 @@
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.chengeCatMCCB = new MaterialSkin.Controls.MaterialComboBox();
             this.changeTypeMCCB = new MaterialSkin.Controls.MaterialComboBox();
             this.changeNameMCTB = new MaterialSkin.Controls.MaterialTextBox();
@@ -84,6 +83,7 @@
             this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
             this.searchMCTB = new MaterialSkin.Controls.MaterialTextBox2();
             this.MCDVG = new System.Windows.Forms.DataGridView();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MarksDVG)).BeginInit();
             this.tabPage5.SuspendLayout();
@@ -900,35 +900,6 @@
             this.tabPage3.Text = "Материальные ценности";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // imageList1
-            // 
-            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
-            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
-            this.imageList1.Images.SetKeyName(0, "contact-icon-png-6.png");
-            this.imageList1.Images.SetKeyName(1, "icons8-bus-24.png");
-            this.imageList1.Images.SetKeyName(2, "icons8-bus-48.png");
-            this.imageList1.Images.SetKeyName(3, "icons8-driver-24.png");
-            this.imageList1.Images.SetKeyName(4, "icons8-driver-48.png");
-            this.imageList1.Images.SetKeyName(5, "icons8-engine-24.png");
-            this.imageList1.Images.SetKeyName(6, "icons8-engine-48.png");
-            this.imageList1.Images.SetKeyName(7, "icons8-home-24.png");
-            this.imageList1.Images.SetKeyName(8, "icons8-home-48.png");
-            this.imageList1.Images.SetKeyName(9, "icons8-logout-rounded-left-96.png");
-            this.imageList1.Images.SetKeyName(10, "icons8-refresh-96.png");
-            this.imageList1.Images.SetKeyName(11, "icons8-services-24.png");
-            this.imageList1.Images.SetKeyName(12, "icons8-services-48.png");
-            this.imageList1.Images.SetKeyName(13, "icons8-services-242.png");
-            this.imageList1.Images.SetKeyName(14, "icons8-services-482.png");
-            this.imageList1.Images.SetKeyName(15, "icons8-settings-24.png");
-            this.imageList1.Images.SetKeyName(16, "icons8-settings-48.png");
-            this.imageList1.Images.SetKeyName(17, "icons8-snowflake-96.png");
-            this.imageList1.Images.SetKeyName(18, "icons8-trash-96.png");
-            this.imageList1.Images.SetKeyName(19, "icons8-user-24.png");
-            this.imageList1.Images.SetKeyName(20, "icons8-user-48.png");
-            this.imageList1.Images.SetKeyName(21, "pngegg.png");
-            this.imageList1.Images.SetKeyName(22, "transmission-oil-new-transmission-icon-with-png-and-vector-430040.png");
-            this.imageList1.Images.SetKeyName(23, "unnamed (1) — копия.png");
-            // 
             // chengeCatMCCB
             // 
             this.chengeCatMCCB.AutoResize = false;
@@ -982,7 +953,7 @@
             this.changeNameMCTB.AnimateReadOnly = false;
             this.changeNameMCTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.changeNameMCTB.Depth = 0;
-            this.changeNameMCTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.changeNameMCTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.changeNameMCTB.LeadingIcon = null;
             this.changeNameMCTB.Location = new System.Drawing.Point(72, 481);
             this.changeNameMCTB.MaxLength = 50;
@@ -999,7 +970,7 @@
             this.nameMCTB.AnimateReadOnly = false;
             this.nameMCTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nameMCTB.Depth = 0;
-            this.nameMCTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.nameMCTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.nameMCTB.Hint = "Наименование";
             this.nameMCTB.LeadingIcon = null;
             this.nameMCTB.Location = new System.Drawing.Point(654, 104);
@@ -1069,7 +1040,7 @@
             this.catMCCB.Items.AddRange(new object[] {
             "ТЖ",
             "Агрегат"});
-            this.catMCCB.Location = new System.Drawing.Point(654, 190);
+            this.catMCCB.Location = new System.Drawing.Point(654, 182);
             this.catMCCB.MaxDropDownItems = 4;
             this.catMCCB.MouseState = MaterialSkin.MouseState.OUT;
             this.catMCCB.Name = "catMCCB";
@@ -1077,6 +1048,7 @@
             this.catMCCB.StartIndex = 0;
             this.catMCCB.TabIndex = 50;
             this.catMCCB.ValueMember = "Id_mark";
+            this.catMCCB.SelectedIndexChanged += new System.EventHandler(this.catMCCB_SelectedIndexChanged);
             // 
             // typeMCCB
             // 
@@ -1093,6 +1065,11 @@
             this.typeMCCB.Hint = "Тип";
             this.typeMCCB.IntegralHeight = false;
             this.typeMCCB.ItemHeight = 43;
+            this.typeMCCB.Items.AddRange(new object[] {
+            "Моторное масло",
+            "Трансмиссионное масло",
+            "Антифриз",
+            "Тормнозная жидкость"});
             this.typeMCCB.Location = new System.Drawing.Point(654, 261);
             this.typeMCCB.MaxDropDownItems = 4;
             this.typeMCCB.MouseState = MaterialSkin.MouseState.OUT;
@@ -1179,6 +1156,35 @@
             this.MCDVG.RowHeadersWidth = 51;
             this.MCDVG.Size = new System.Drawing.Size(529, 296);
             this.MCDVG.TabIndex = 41;
+            // 
+            // imageList1
+            // 
+            this.imageList1.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("imageList1.ImageStream")));
+            this.imageList1.TransparentColor = System.Drawing.Color.Transparent;
+            this.imageList1.Images.SetKeyName(0, "contact-icon-png-6.png");
+            this.imageList1.Images.SetKeyName(1, "icons8-bus-24.png");
+            this.imageList1.Images.SetKeyName(2, "icons8-bus-48.png");
+            this.imageList1.Images.SetKeyName(3, "icons8-driver-24.png");
+            this.imageList1.Images.SetKeyName(4, "icons8-driver-48.png");
+            this.imageList1.Images.SetKeyName(5, "icons8-engine-24.png");
+            this.imageList1.Images.SetKeyName(6, "icons8-engine-48.png");
+            this.imageList1.Images.SetKeyName(7, "icons8-home-24.png");
+            this.imageList1.Images.SetKeyName(8, "icons8-home-48.png");
+            this.imageList1.Images.SetKeyName(9, "icons8-logout-rounded-left-96.png");
+            this.imageList1.Images.SetKeyName(10, "icons8-refresh-96.png");
+            this.imageList1.Images.SetKeyName(11, "icons8-services-24.png");
+            this.imageList1.Images.SetKeyName(12, "icons8-services-48.png");
+            this.imageList1.Images.SetKeyName(13, "icons8-services-242.png");
+            this.imageList1.Images.SetKeyName(14, "icons8-services-482.png");
+            this.imageList1.Images.SetKeyName(15, "icons8-settings-24.png");
+            this.imageList1.Images.SetKeyName(16, "icons8-settings-48.png");
+            this.imageList1.Images.SetKeyName(17, "icons8-snowflake-96.png");
+            this.imageList1.Images.SetKeyName(18, "icons8-trash-96.png");
+            this.imageList1.Images.SetKeyName(19, "icons8-user-24.png");
+            this.imageList1.Images.SetKeyName(20, "icons8-user-48.png");
+            this.imageList1.Images.SetKeyName(21, "pngegg.png");
+            this.imageList1.Images.SetKeyName(22, "transmission-oil-new-transmission-icon-with-png-and-vector-430040.png");
+            this.imageList1.Images.SetKeyName(23, "unnamed (1) — копия.png");
             // 
             // Form1
             // 

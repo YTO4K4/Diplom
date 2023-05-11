@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
+using System.Data.SqlTypes;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -435,5 +436,21 @@ namespace diplom
         }
             catch (Exception ex) { MaterialMessageBox.Show(ex.Message, "Ошибка!"); }
 }
+
+        private void catMCCB_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            //string[] items = { "Моторное масло","Трансмиссионное масло","Антифриз","Тормнозная жидкость" };
+            //string[] items1 = { "Аккумулятор", "Масленный фильтр", "Топливный фильтр", "Воздушный фильтр", "Тормозные колодки" };
+            //if (catMCCB.Text == "ТЖ")
+            //{
+            //    typeMCCB.Items.AddRange(items);
+            //}
+            //else if (catMCCB.Text == "Агрегат") { 
+                
+            //    typeMCCB.Items.AddRange(items1);
+
+            //}
+
+        }
     }
 }
