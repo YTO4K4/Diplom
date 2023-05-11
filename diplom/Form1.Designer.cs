@@ -77,13 +77,13 @@
             this.nameMCTB = new MaterialSkin.Controls.MaterialTextBox();
             this.changeMCBtn = new MaterialSkin.Controls.MaterialButton();
             this.addMCBtn = new MaterialSkin.Controls.MaterialButton();
-            this.catMCCB = new MaterialSkin.Controls.MaterialComboBox();
             this.typeMCCB = new MaterialSkin.Controls.MaterialComboBox();
             this.materialButton3 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
             this.searchMCTB = new MaterialSkin.Controls.MaterialTextBox2();
             this.MCDVG = new System.Windows.Forms.DataGridView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
+            this.CatMCCB = new MaterialSkin.Controls.MaterialComboBox();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MarksDVG)).BeginInit();
             this.tabPage5.SuspendLayout();
@@ -880,13 +880,13 @@
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.CatMCCB);
             this.tabPage3.Controls.Add(this.chengeCatMCCB);
             this.tabPage3.Controls.Add(this.changeTypeMCCB);
             this.tabPage3.Controls.Add(this.changeNameMCTB);
             this.tabPage3.Controls.Add(this.nameMCTB);
             this.tabPage3.Controls.Add(this.changeMCBtn);
             this.tabPage3.Controls.Add(this.addMCBtn);
-            this.tabPage3.Controls.Add(this.catMCCB);
             this.tabPage3.Controls.Add(this.typeMCCB);
             this.tabPage3.Controls.Add(this.materialButton3);
             this.tabPage3.Controls.Add(this.materialButton4);
@@ -1021,35 +1021,6 @@
             this.addMCBtn.UseAccentColor = false;
             this.addMCBtn.UseVisualStyleBackColor = true;
             // 
-            // catMCCB
-            // 
-            this.catMCCB.AutoResize = false;
-            this.catMCCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.catMCCB.Depth = 0;
-            this.catMCCB.DisplayMember = "Name";
-            this.catMCCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.catMCCB.DropDownHeight = 174;
-            this.catMCCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.catMCCB.DropDownWidth = 121;
-            this.catMCCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.catMCCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.catMCCB.FormattingEnabled = true;
-            this.catMCCB.Hint = "Категория";
-            this.catMCCB.IntegralHeight = false;
-            this.catMCCB.ItemHeight = 43;
-            this.catMCCB.Items.AddRange(new object[] {
-            "ТЖ",
-            "Агрегат"});
-            this.catMCCB.Location = new System.Drawing.Point(654, 182);
-            this.catMCCB.MaxDropDownItems = 4;
-            this.catMCCB.MouseState = MaterialSkin.MouseState.OUT;
-            this.catMCCB.Name = "catMCCB";
-            this.catMCCB.Size = new System.Drawing.Size(255, 49);
-            this.catMCCB.StartIndex = 0;
-            this.catMCCB.TabIndex = 50;
-            this.catMCCB.ValueMember = "Id_mark";
-            this.catMCCB.SelectedIndexChanged += new System.EventHandler(this.catMCCB_SelectedIndexChanged);
-            // 
             // typeMCCB
             // 
             this.typeMCCB.AutoResize = false;
@@ -1065,11 +1036,6 @@
             this.typeMCCB.Hint = "Тип";
             this.typeMCCB.IntegralHeight = false;
             this.typeMCCB.ItemHeight = 43;
-            this.typeMCCB.Items.AddRange(new object[] {
-            "Моторное масло",
-            "Трансмиссионное масло",
-            "Антифриз",
-            "Тормнозная жидкость"});
             this.typeMCCB.Location = new System.Drawing.Point(654, 261);
             this.typeMCCB.MaxDropDownItems = 4;
             this.typeMCCB.MouseState = MaterialSkin.MouseState.OUT;
@@ -1186,6 +1152,33 @@
             this.imageList1.Images.SetKeyName(22, "transmission-oil-new-transmission-icon-with-png-and-vector-430040.png");
             this.imageList1.Images.SetKeyName(23, "unnamed (1) — копия.png");
             // 
+            // CatMCCB
+            // 
+            this.CatMCCB.AutoResize = false;
+            this.CatMCCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.CatMCCB.Depth = 0;
+            this.CatMCCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.CatMCCB.DropDownHeight = 174;
+            this.CatMCCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.CatMCCB.DropDownWidth = 121;
+            this.CatMCCB.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.CatMCCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.CatMCCB.FormattingEnabled = true;
+            this.CatMCCB.IntegralHeight = false;
+            this.CatMCCB.ItemHeight = 43;
+            this.CatMCCB.Items.AddRange(new object[] {
+            "ТЖ",
+            "Агрегат"});
+            this.CatMCCB.Location = new System.Drawing.Point(654, 189);
+            this.CatMCCB.MaxDropDownItems = 4;
+            this.CatMCCB.MouseState = MaterialSkin.MouseState.OUT;
+            this.CatMCCB.Name = "CatMCCB";
+            this.CatMCCB.Size = new System.Drawing.Size(255, 49);
+            this.CatMCCB.StartIndex = 0;
+            this.CatMCCB.TabIndex = 55;
+            this.CatMCCB.SelectedIndexChanged += new System.EventHandler(this.CatMCCB_SelectedIndexChanged);
+            this.CatMCCB.TextChanged += new System.EventHandler(this.CatMCCB_TextChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1264,12 +1257,12 @@
         private MaterialSkin.Controls.MaterialTextBox nameMCTB;
         private MaterialSkin.Controls.MaterialButton changeMCBtn;
         private MaterialSkin.Controls.MaterialButton addMCBtn;
-        private MaterialSkin.Controls.MaterialComboBox catMCCB;
         private MaterialSkin.Controls.MaterialComboBox typeMCCB;
         private MaterialSkin.Controls.MaterialButton materialButton3;
         private MaterialSkin.Controls.MaterialButton materialButton4;
         private MaterialSkin.Controls.MaterialTextBox2 searchMCTB;
         private System.Windows.Forms.DataGridView MCDVG;
+        private MaterialSkin.Controls.MaterialComboBox CatMCCB;
     }
 }
 

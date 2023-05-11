@@ -437,20 +437,27 @@ namespace diplom
             catch (Exception ex) { MaterialMessageBox.Show(ex.Message, "Ошибка!"); }
 }
 
-        private void catMCCB_SelectedIndexChanged(object sender, EventArgs e)
+        private void CatMCCB_SelectedIndexChanged(object sender, EventArgs e)
         {
-            //string[] items = { "Моторное масло","Трансмиссионное масло","Антифриз","Тормнозная жидкость" };
-            //string[] items1 = { "Аккумулятор", "Масленный фильтр", "Топливный фильтр", "Воздушный фильтр", "Тормозные колодки" };
-            //if (catMCCB.Text == "ТЖ")
-            //{
-            //    typeMCCB.Items.AddRange(items);
-            //}
-            //else if (catMCCB.Text == "Агрегат") { 
+            
+        }
+
+        private void CatMCCB_TextChanged(object sender, EventArgs e)
+        {
+            typeMCCB.Items.Clear();
+            string[] items = { "Моторное масло", "Трансмиссионное масло", "Антифриз", "Тормнозная жидкость" };
+            string[] items1 = { "Аккумулятор", "Масленный фильтр", "Топливный фильтр", "Воздушный фильтр", "Тормозные колодки" };
+            if (CatMCCB.Text == "ТЖ")
+            {
                 
-            //    typeMCCB.Items.AddRange(items1);
+                typeMCCB.Items.AddRange(items);
+            }
+            else if (CatMCCB.Text == "Агрегат")
+            {
+                
+                typeMCCB.Items.AddRange(items1);
 
-            //}
-
+            }
         }
     }
 }
