@@ -91,12 +91,12 @@ namespace diplom
                     markBusCB.SelectedIndex = -1;
                     changeMarkBusCB.DataSource = tbl2;
                     changeMarkBusCB.DisplayMember = "Марка";// столбец для отображения
-                    changeMarkBusCB.ValueMember = "Id_mark";//столбец с id
+                    changeMarkBusCB.ValueMember = "Id_mark"; //столбец с id
                     changeMarkBusCB.SelectedIndex = -1;
                 }
                 else if (materialTabControl1.SelectedIndex == 1)
                 {
-                    sqlDataAdapter = new SqlDataAdapter("select Id_m, Name as [Наименование],  Categ as [Категория],Type as [Тип]  from MatCen", sqlConnection);
+                    sqlDataAdapter = new SqlDataAdapter("select Id_m, Name as [Наименование], Type as [Тип], Categ as [Категория]  from MatCen", sqlConnection);
                     sqlBuilder = new SqlCommandBuilder(sqlDataAdapter);
                     dataSet = new DataSet();
                     sqlDataAdapter.Fill(dataSet, "MatCen");
@@ -105,6 +105,45 @@ namespace diplom
                     MCDVG.Columns[1].Width = 120;
                     CatMCCB.SelectedIndex = -1;
                     typeMCCB.SelectedIndex = -1;
+                }
+                else if (materialTabControl1.SelectedIndex == 0)
+                {
+                    sqlDataAdapter = new SqlDataAdapter("select id_ch, concat(Bus.GosNum, '(', Marks.Name,')') as [Автобус],MatCen.Name as [Предмет замены], MatCen.Type as [Тип], MatCen.Categ as [Категория], Change.Reason, Bus.GarageNum, MatCen.Id_m\r\nfrom Change, Bus, MatCen, Marks\r\nWhere Change.GarageNum = Bus.GarageNum and Bus.Id_mark = Marks.Id_mark and Change.Id_m = MatCen.Id_m", sqlConnection);
+                    sqlBuilder = new SqlCommandBuilder(sqlDataAdapter);
+                    dataSet = new DataSet();
+                    sqlDataAdapter.Fill(dataSet, "Change");
+                    ChangeDVG.DataSource = dataSet.Tables["Change"];
+                    ChangeDVG.Columns["Id_ch"].Visible = false;
+                    ChangeDVG.Columns["GarageNum"].Visible = false;
+                    ChangeDVG.Columns["Id_m"].Visible = false;
+                    ChangeDVG.Columns[1].Width = 120;
+                    ChangeDVG.Columns[3].Width = 150;
+                    SqlCommand cmd1 = new SqlCommand("Select GarageNum, concat(Bus.GosNum, '(', Marks.Name,')') as [Автобус] from Bus, Marks where Bus.Id_mark= Marks.Id_mark", sqlConnection);
+                    DataTable tbl1 = new DataTable();
+                    SqlDataAdapter da1 = new SqlDataAdapter(cmd1);
+                    da1.Fill(tbl1);
+                    BusChangeCB.DataSource = tbl1;
+                    BusChangeCB.DisplayMember = "Автобус";// столбец для отображения
+                    BusChangeCB.ValueMember = "GarageNum";//столбец с id
+                    BusChangeCB.SelectedIndex = -1;
+                    changeBusChangeCB.DataSource = tbl1;
+                    changeBusChangeCB.DisplayMember = "Автобус";// столбец для отображения
+                    changeBusChangeCB.ValueMember = "GarageNum";//столбец с id
+                    changeBusChangeCB.SelectedIndex = -1;
+                    SqlCommand cmd2 = new SqlCommand("Select Id_m, CONCAT(MatCen.Name,'(', MatCen.Type, ')') as [МЦ] from MatCen", sqlConnection);
+                    DataTable tbl2 = new DataTable();
+                    SqlDataAdapter da2 = new SqlDataAdapter(cmd2);
+                    da2.Fill(tbl2);
+                    MCChangeCB.DataSource = tbl2;
+                    MCChangeCB.DisplayMember = "МЦ";// столбец для отображения
+                    MCChangeCB.ValueMember = "Id_m";//столбец с id
+                    MCChangeCB.SelectedIndex = -1;
+                    ChangeMCChangeCB.DataSource = tbl2;
+                    ChangeMCChangeCB.DisplayMember = "МЦ";// столбец для отображения
+                    ChangeMCChangeCB.ValueMember = "Id_m";//столбец с id
+                    ChangeMCChangeCB.SelectedIndex = -1;
+                    ReasonChangeCB.SelectedIndex = -1;
+
                 }
 
 
@@ -143,6 +182,7 @@ namespace diplom
                     MaterialMessageBox.Show("Добавлено!");
                     LoadData();
                     nameMarkTB.Text = "";
+                    AddMarkPanel.Visible = false;
                 }
                 catch (Exception ex) { MaterialMessageBox.Show("Проверьте введённые данные", "Ошибка"); }
             }
@@ -161,7 +201,7 @@ namespace diplom
                     LoadData();
 
                     changeNameMarkTB.Text = "";
-
+                    ChangeMarkPanel.Visible=false;
 
                 }
                 else
@@ -243,6 +283,7 @@ namespace diplom
                     nameDriverTB.Text = "";
                     surnameDriverTB.Text = "";
                     lastnameDriverTB.Text = "";
+                    AddDriverPanel.Visible = false;
                 }
                 catch (Exception ex) { MaterialMessageBox.Show("Проверьте введённые данные", "Ошибка"); }
             }
@@ -354,7 +395,7 @@ namespace diplom
                     garnumBusTB.Text = "";
                     driverBusCM.SelectedIndex = -1;
                     markBusCB.SelectedIndex = -1;
-
+                    AddBusPanel.Visible = false;
                 }
                 catch (Exception ex) { MaterialMessageBox.Show("Проверьте введённые данные", "Ошибка"); }
             }
@@ -429,7 +470,7 @@ namespace diplom
                     changeGosnumBusTB.Text = "";
                     changeDriverBusCB.SelectedIndex = -1;
                     changeMarkBusCB.SelectedIndex = -1;
-
+                    ChangeBusPanel.Visible = false;
                 }
                 else
                 {
@@ -478,7 +519,7 @@ namespace diplom
                     CatMCCB.SelectedIndex = -1;
                     typeMCCB.SelectedIndex = -1;
                     anotherSwitch.Checked = false;
-
+                    AddMCPanel.Visible = false;
             }
                 catch (Exception ex) { MaterialMessageBox.Show("Проверьте введённые данные", "Ошибка"); }
         }
@@ -544,7 +585,7 @@ namespace diplom
                     changeNameMCTB.Text = "";
                     ChangeTypeMCTB.Text = "";
                     changeCatMCCB.SelectedIndex = -1;
-                   
+                   ChangeMCPanel.Enabled = false;
 
                 }
                 else
@@ -568,6 +609,148 @@ namespace diplom
                             break;
                         }
             }
+        }
+
+        private void Добавить_Click(object sender, EventArgs e)
+        {
+            addChangePanel.Visible = true;
+        }
+
+        private void addChangeBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                SqlCommand command = new SqlCommand($"INSERT INTO Change (GarageNum, Id_m, Reason) VALUES (@GarageNum, @Id_m, @Reason)", sqlConnection);
+
+                command.Parameters.AddWithValue("GarageNum", BusChangeCB.SelectedValue);
+                command.Parameters.AddWithValue("Id_m", MCChangeCB.SelectedValue);
+                command.Parameters.AddWithValue("Reason", ReasonChangeCB.Text);
+
+                command.ExecuteNonQuery();
+
+
+                MaterialMessageBox.Show("Добавлено!");
+                LoadData();
+                BusChangeCB.SelectedIndex = -1;
+                MCChangeCB.SelectedIndex = -1; 
+                ReasonChangeCB.SelectedIndex = -1;
+                addChangePanel.Visible = false;
+
+            }
+            catch (Exception ex) { MaterialMessageBox.Show("Проверьте введённые данные", "Ошибка"); }
+        }
+
+        private void materialButton4_Click(object sender, EventArgs e)
+        {
+            ChangeChangePanel.Visible = true;
+        }
+
+        private void ChangeDVG_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            rowIndex = e.RowIndex;
+            if (rowIndex != -1)
+            {
+                changeBusChangeCB.SelectedValue = (ChangeDVG.Rows[rowIndex].Cells[6].Value.ToString());
+                ChangeMCChangeCB.SelectedValue = Convert.ToInt32(ChangeDVG.Rows[rowIndex].Cells[7].Value.ToString());
+                ChangeReasonChangeCB.Text = ChangeDVG.Rows[rowIndex].Cells[5].Value.ToString();
+               
+            }
+        }
+
+        private void materialButton2_Click_1(object sender, EventArgs e)
+        {
+            try
+            {
+                if (changeBusChangeCB.SelectedIndex != -1 && ChangeMCChangeCB.SelectedIndex != -1 && ChangeReasonChangeCB.SelectedIndex != -1)
+                {
+
+                    SqlCommand sqlCommand = new SqlCommand($"update Change set GarageNum = N'{changeBusChangeCB.SelectedValue}', Id_m = {ChangeMCChangeCB.SelectedValue}, Reason = N'{ChangeReasonChangeCB.Text}' WHERE Id_m = N'{ChangeDVG[0, ChangeDVG.CurrentRow.Index].Value}'", sqlConnection);
+                    sqlCommand.ExecuteNonQuery();
+                    LoadData();
+                    changeBusChangeCB.SelectedIndex = -1;
+                    ChangeMCChangeCB.SelectedIndex = -1;
+                    ChangeReasonChangeCB.SelectedIndex = -1;
+                    ChangeChangePanel.Visible = false;
+                }
+                else
+                {
+                    MessageBox.Show("Заполните все строки");
+                }
+            }
+            catch (Exception ex) { MaterialMessageBox.Show(ex.Message, "Ошибка!"); }
+        }
+
+        private void materialTextBox21_TextChanged(object sender, EventArgs e)
+        {
+            string searchText = ChangeSearchTB.Text.Trim().ToLower();
+
+            if (string.IsNullOrEmpty(searchText))
+            {
+                ChangeDVG.ClearSelection();
+                return;
+            }
+
+            foreach (DataGridViewRow row in ChangeDVG.Rows)
+            {
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(searchText))
+                    {
+                        row.Selected = true;
+                        break;
+                    }
+                }
+            }
+        }
+
+        private void ShowAddPanelBusBtn_Click(object sender, EventArgs e)
+        {
+            AddMarkPanel.Visible = true;
+        }
+
+        private void ShowChangeBusPanelBtn_Click(object sender, EventArgs e)
+        {
+            ChangeMarkPanel.Visible = true; 
+        }
+
+        private void ShowAddBusPanelBtn_Click(object sender, EventArgs e)
+        {
+            AddDriverPanel.Visible = true;
+        }
+
+        private void ShowChangeDriverPanelBtn_Click(object sender, EventArgs e)
+        {
+            ChangeDriverPanel.Visible= true;
+        }
+
+        private void ShowAddBusPanel_Click(object sender, EventArgs e)
+        {
+            AddBusPanel.Visible = true;
+        }
+
+        private void ShowChangeBusBtn_Click(object sender, EventArgs e)
+        {
+            ChangeBusPanel.Visible= true;
+        }
+
+        private void ShowAddMCPAnelBtn_Click(object sender, EventArgs e)
+        {
+            AddMCPanel.Visible = true;
+        }
+
+        private void materialButton5_Click(object sender, EventArgs e)
+        {
+            ChangeMCPanel.Visible = true;
+        }
+
+        private void materialButton5_Click_1(object sender, EventArgs e)
+        {
+            AddMCPanel.Visible = false;
+        }
+
+        private void materialButton6_Click(object sender, EventArgs e)
+        {
+            ChangeMCPanel.Visible = false;
         }
     }
 }

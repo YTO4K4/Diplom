@@ -69,8 +69,15 @@
             this.materialTextBox24 = new MaterialSkin.Controls.MaterialTextBox2();
             this.BusDVG = new System.Windows.Forms.DataGridView();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.ChangeSearchTB = new MaterialSkin.Controls.MaterialTextBox2();
+            this.ChangeDVG = new System.Windows.Forms.DataGridView();
             this.materialTabControl1 = new MaterialSkin.Controls.MaterialTabControl();
             this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.changeCatMCCB = new MaterialSkin.Controls.MaterialComboBox();
+            this.ChangeTypeMCTB = new MaterialSkin.Controls.MaterialTextBox();
+            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
+            this.anotherSwitch = new MaterialSkin.Controls.MaterialSwitch();
+            this.anotherTB = new MaterialSkin.Controls.MaterialTextBox();
             this.CatMCCB = new MaterialSkin.Controls.MaterialComboBox();
             this.changeNameMCTB = new MaterialSkin.Controls.MaterialTextBox();
             this.nameMCTB = new MaterialSkin.Controls.MaterialTextBox();
@@ -81,13 +88,46 @@
             this.searchMCTB = new MaterialSkin.Controls.MaterialTextBox2();
             this.MCDVG = new System.Windows.Forms.DataGridView();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.anotherTB = new MaterialSkin.Controls.MaterialTextBox();
-            this.anotherSwitch = new MaterialSkin.Controls.MaterialSwitch();
-            this.materialButton1 = new MaterialSkin.Controls.MaterialButton();
-            this.ChangeTypeMCTB = new MaterialSkin.Controls.MaterialTextBox();
-            this.changeCatMCCB = new MaterialSkin.Controls.MaterialComboBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.materialTextBox21 = new MaterialSkin.Controls.MaterialTextBox2();
+            this.addChangeBtn = new MaterialSkin.Controls.MaterialButton();
+            this.BusChangeCB = new MaterialSkin.Controls.MaterialComboBox();
+            this.MCChangeCB = new MaterialSkin.Controls.MaterialComboBox();
+            this.ReasonChangeCB = new MaterialSkin.Controls.MaterialComboBox();
+            this.openAddChangePanelBtn = new MaterialSkin.Controls.MaterialButton();
+            this.addChangePanel = new System.Windows.Forms.Panel();
+            this.materialLabel1 = new MaterialSkin.Controls.MaterialLabel();
+            this.ChangeChangePanel = new System.Windows.Forms.Panel();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.changeBusChangeCB = new MaterialSkin.Controls.MaterialComboBox();
+            this.ChangeReasonChangeCB = new MaterialSkin.Controls.MaterialComboBox();
+            this.ChangeMCChangeCB = new MaterialSkin.Controls.MaterialComboBox();
+            this.materialButton4 = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            this.AddMarkPanel = new System.Windows.Forms.Panel();
+            this.materialLabel3 = new MaterialSkin.Controls.MaterialLabel();
+            this.ShowAddMarkPanelBtn = new MaterialSkin.Controls.MaterialButton();
+            this.ChangeMarkPanel = new System.Windows.Forms.Panel();
+            this.materialLabel4 = new MaterialSkin.Controls.MaterialLabel();
+            this.ShowChangeMarkPanelBtn = new MaterialSkin.Controls.MaterialButton();
+            this.AddDriverPanel = new System.Windows.Forms.Panel();
+            this.materialLabel5 = new MaterialSkin.Controls.MaterialLabel();
+            this.ShowAddDriverPanelBtn = new MaterialSkin.Controls.MaterialButton();
+            this.ChangeDriverPanel = new System.Windows.Forms.Panel();
+            this.materialLabel6 = new MaterialSkin.Controls.MaterialLabel();
+            this.ShowChangeDriverPanelBtn = new MaterialSkin.Controls.MaterialButton();
+            this.AddBusPanel = new System.Windows.Forms.Panel();
+            this.ShowAddBusPanel = new MaterialSkin.Controls.MaterialButton();
+            this.ChangeBusPanel = new System.Windows.Forms.Panel();
+            this.ShowChangeBusPanelBtn = new MaterialSkin.Controls.MaterialButton();
+            this.AddMCPanel = new System.Windows.Forms.Panel();
+            this.materialLabel7 = new MaterialSkin.Controls.MaterialLabel();
+            this.ShowAddMCPAnelBtn = new MaterialSkin.Controls.MaterialButton();
+            this.ChangeMCPanel = new System.Windows.Forms.Panel();
+            this.materialLabel8 = new MaterialSkin.Controls.MaterialLabel();
+            this.ShowChangeMCPanelBtn = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton5 = new MaterialSkin.Controls.MaterialButton();
+            this.materialLabel9 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel10 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton6 = new MaterialSkin.Controls.MaterialButton();
             this.tabPage7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MarksDVG)).BeginInit();
             this.tabPage5.SuspendLayout();
@@ -95,10 +135,20 @@
             this.tabPage2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BusDVG)).BeginInit();
             this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ChangeDVG)).BeginInit();
             this.materialTabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MCDVG)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.addChangePanel.SuspendLayout();
+            this.ChangeChangePanel.SuspendLayout();
+            this.AddMarkPanel.SuspendLayout();
+            this.ChangeMarkPanel.SuspendLayout();
+            this.AddDriverPanel.SuspendLayout();
+            this.ChangeDriverPanel.SuspendLayout();
+            this.AddBusPanel.SuspendLayout();
+            this.ChangeBusPanel.SuspendLayout();
+            this.AddMCPanel.SuspendLayout();
+            this.ChangeMCPanel.SuspendLayout();
             this.SuspendLayout();
             // 
             // tabPage9
@@ -113,14 +163,13 @@
             // 
             // tabPage7
             // 
-            this.tabPage7.Controls.Add(this.changeMarkBtn);
-            this.tabPage7.Controls.Add(this.addMarkBtn);
-            this.tabPage7.Controls.Add(this.changeNameMarkTB);
-            this.tabPage7.Controls.Add(this.nameMarkTB);
+            this.tabPage7.Controls.Add(this.ShowAddMarkPanelBtn);
+            this.tabPage7.Controls.Add(this.AddMarkPanel);
             this.tabPage7.Controls.Add(this.UpdateMarksBtn);
             this.tabPage7.Controls.Add(this.deleteMarkBtn);
             this.tabPage7.Controls.Add(this.searchMatksTB);
             this.tabPage7.Controls.Add(this.MarksDVG);
+            this.tabPage7.Controls.Add(this.ShowChangeMarkPanelBtn);
             this.tabPage7.ImageKey = "pngegg.png";
             this.tabPage7.Location = new System.Drawing.Point(4, 31);
             this.tabPage7.Name = "tabPage7";
@@ -136,7 +185,7 @@
             this.changeMarkBtn.Depth = 0;
             this.changeMarkBtn.HighEmphasis = true;
             this.changeMarkBtn.Icon = null;
-            this.changeMarkBtn.Location = new System.Drawing.Point(646, 164);
+            this.changeMarkBtn.Location = new System.Drawing.Point(87, 200);
             this.changeMarkBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.changeMarkBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.changeMarkBtn.Name = "changeMarkBtn";
@@ -156,7 +205,7 @@
             this.addMarkBtn.Depth = 0;
             this.addMarkBtn.HighEmphasis = true;
             this.addMarkBtn.Icon = null;
-            this.addMarkBtn.Location = new System.Drawing.Point(410, 165);
+            this.addMarkBtn.Location = new System.Drawing.Point(93, 200);
             this.addMarkBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.addMarkBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.addMarkBtn.Name = "addMarkBtn";
@@ -176,7 +225,7 @@
             this.changeNameMarkTB.Depth = 0;
             this.changeNameMarkTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.changeNameMarkTB.LeadingIcon = null;
-            this.changeNameMarkTB.Location = new System.Drawing.Point(646, 91);
+            this.changeNameMarkTB.Location = new System.Drawing.Point(63, 82);
             this.changeNameMarkTB.MaxLength = 50;
             this.changeNameMarkTB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeNameMarkTB.Multiline = false;
@@ -194,7 +243,7 @@
             this.nameMarkTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.nameMarkTB.Hint = "Наименование";
             this.nameMarkTB.LeadingIcon = null;
-            this.nameMarkTB.Location = new System.Drawing.Point(410, 91);
+            this.nameMarkTB.Location = new System.Drawing.Point(48, 82);
             this.nameMarkTB.MaxLength = 50;
             this.nameMarkTB.MouseState = MaterialSkin.MouseState.OUT;
             this.nameMarkTB.Multiline = false;
@@ -290,18 +339,14 @@
             // 
             // tabPage5
             // 
-            this.tabPage5.Controls.Add(this.changeLastnameDriverTB);
-            this.tabPage5.Controls.Add(this.changeNameDriverTB);
-            this.tabPage5.Controls.Add(this.changeDriverBtn);
-            this.tabPage5.Controls.Add(this.changeSurnameDriverTB);
-            this.tabPage5.Controls.Add(this.lastnameDriverTB);
-            this.tabPage5.Controls.Add(this.nameDriverTB);
-            this.tabPage5.Controls.Add(this.addDriverBtn);
-            this.tabPage5.Controls.Add(this.surnameDriverTB);
+            this.tabPage5.Controls.Add(this.ChangeDriverPanel);
+            this.tabPage5.Controls.Add(this.ShowAddDriverPanelBtn);
+            this.tabPage5.Controls.Add(this.AddDriverPanel);
             this.tabPage5.Controls.Add(this.updateDriversBtn);
             this.tabPage5.Controls.Add(this.deleteDriverBtn);
             this.tabPage5.Controls.Add(this.searchDriverTB);
             this.tabPage5.Controls.Add(this.DriversDVG);
+            this.tabPage5.Controls.Add(this.ShowChangeDriverPanelBtn);
             this.tabPage5.ImageKey = "icons8-driver-48.png";
             this.tabPage5.Location = new System.Drawing.Point(4, 31);
             this.tabPage5.Name = "tabPage5";
@@ -317,7 +362,7 @@
             this.changeLastnameDriverTB.Depth = 0;
             this.changeLastnameDriverTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.changeLastnameDriverTB.LeadingIcon = null;
-            this.changeLastnameDriverTB.Location = new System.Drawing.Point(512, 448);
+            this.changeLastnameDriverTB.Location = new System.Drawing.Point(83, 233);
             this.changeLastnameDriverTB.MaxLength = 50;
             this.changeLastnameDriverTB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeLastnameDriverTB.Multiline = false;
@@ -334,7 +379,7 @@
             this.changeNameDriverTB.Depth = 0;
             this.changeNameDriverTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.changeNameDriverTB.LeadingIcon = null;
-            this.changeNameDriverTB.Location = new System.Drawing.Point(274, 448);
+            this.changeNameDriverTB.Location = new System.Drawing.Point(83, 147);
             this.changeNameDriverTB.MaxLength = 50;
             this.changeNameDriverTB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeNameDriverTB.Multiline = false;
@@ -351,7 +396,7 @@
             this.changeDriverBtn.Depth = 0;
             this.changeDriverBtn.HighEmphasis = true;
             this.changeDriverBtn.Icon = null;
-            this.changeDriverBtn.Location = new System.Drawing.Point(753, 462);
+            this.changeDriverBtn.Location = new System.Drawing.Point(115, 312);
             this.changeDriverBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.changeDriverBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.changeDriverBtn.Name = "changeDriverBtn";
@@ -371,7 +416,7 @@
             this.changeSurnameDriverTB.Depth = 0;
             this.changeSurnameDriverTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.changeSurnameDriverTB.LeadingIcon = null;
-            this.changeSurnameDriverTB.Location = new System.Drawing.Point(34, 448);
+            this.changeSurnameDriverTB.Location = new System.Drawing.Point(83, 54);
             this.changeSurnameDriverTB.MaxLength = 50;
             this.changeSurnameDriverTB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeSurnameDriverTB.Multiline = false;
@@ -389,7 +434,7 @@
             this.lastnameDriverTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.lastnameDriverTB.Hint = "Отчество";
             this.lastnameDriverTB.LeadingIcon = null;
-            this.lastnameDriverTB.Location = new System.Drawing.Point(616, 221);
+            this.lastnameDriverTB.Location = new System.Drawing.Point(44, 207);
             this.lastnameDriverTB.MaxLength = 50;
             this.lastnameDriverTB.MouseState = MaterialSkin.MouseState.OUT;
             this.lastnameDriverTB.Multiline = false;
@@ -407,7 +452,7 @@
             this.nameDriverTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.nameDriverTB.Hint = "Имя";
             this.nameDriverTB.LeadingIcon = null;
-            this.nameDriverTB.Location = new System.Drawing.Point(616, 146);
+            this.nameDriverTB.Location = new System.Drawing.Point(44, 132);
             this.nameDriverTB.MaxLength = 50;
             this.nameDriverTB.MouseState = MaterialSkin.MouseState.OUT;
             this.nameDriverTB.Multiline = false;
@@ -424,7 +469,7 @@
             this.addDriverBtn.Depth = 0;
             this.addDriverBtn.HighEmphasis = true;
             this.addDriverBtn.Icon = null;
-            this.addDriverBtn.Location = new System.Drawing.Point(616, 298);
+            this.addDriverBtn.Location = new System.Drawing.Point(105, 277);
             this.addDriverBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.addDriverBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.addDriverBtn.Name = "addDriverBtn";
@@ -445,7 +490,7 @@
             this.surnameDriverTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.surnameDriverTB.Hint = "Фамилия";
             this.surnameDriverTB.LeadingIcon = null;
-            this.surnameDriverTB.Location = new System.Drawing.Point(616, 71);
+            this.surnameDriverTB.Location = new System.Drawing.Point(44, 57);
             this.surnameDriverTB.MaxLength = 50;
             this.surnameDriverTB.MouseState = MaterialSkin.MouseState.OUT;
             this.surnameDriverTB.Multiline = false;
@@ -541,20 +586,14 @@
             // 
             // tabPage2
             // 
-            this.tabPage2.Controls.Add(this.changeMarkBusCB);
-            this.tabPage2.Controls.Add(this.changeDriverBusCB);
-            this.tabPage2.Controls.Add(this.changeGosnumBusTB);
-            this.tabPage2.Controls.Add(this.changeGarnumBusTB);
-            this.tabPage2.Controls.Add(this.gosnumBusTB);
-            this.tabPage2.Controls.Add(this.garnumBusTB);
-            this.tabPage2.Controls.Add(this.changeBusBtn);
-            this.tabPage2.Controls.Add(this.addBusBtn);
-            this.tabPage2.Controls.Add(this.markBusCB);
-            this.tabPage2.Controls.Add(this.driverBusCM);
+            this.tabPage2.Controls.Add(this.AddBusPanel);
+            this.tabPage2.Controls.Add(this.ChangeBusPanel);
+            this.tabPage2.Controls.Add(this.ShowAddBusPanel);
             this.tabPage2.Controls.Add(this.materialButton15);
             this.tabPage2.Controls.Add(this.deleteBusBtn);
             this.tabPage2.Controls.Add(this.materialTextBox24);
             this.tabPage2.Controls.Add(this.BusDVG);
+            this.tabPage2.Controls.Add(this.ShowChangeBusPanelBtn);
             this.tabPage2.ImageKey = "icons8-bus-48.png";
             this.tabPage2.Location = new System.Drawing.Point(4, 31);
             this.tabPage2.Name = "tabPage2";
@@ -579,7 +618,7 @@
             this.changeMarkBusCB.FormattingEnabled = true;
             this.changeMarkBusCB.IntegralHeight = false;
             this.changeMarkBusCB.ItemHeight = 43;
-            this.changeMarkBusCB.Location = new System.Drawing.Point(761, 453);
+            this.changeMarkBusCB.Location = new System.Drawing.Point(84, 257);
             this.changeMarkBusCB.MaxDropDownItems = 4;
             this.changeMarkBusCB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeMarkBusCB.Name = "changeMarkBusCB";
@@ -603,7 +642,7 @@
             this.changeDriverBusCB.FormattingEnabled = true;
             this.changeDriverBusCB.IntegralHeight = false;
             this.changeDriverBusCB.ItemHeight = 43;
-            this.changeDriverBusCB.Location = new System.Drawing.Point(515, 453);
+            this.changeDriverBusCB.Location = new System.Drawing.Point(84, 185);
             this.changeDriverBusCB.MaxDropDownItems = 4;
             this.changeDriverBusCB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeDriverBusCB.Name = "changeDriverBusCB";
@@ -619,7 +658,7 @@
             this.changeGosnumBusTB.Depth = 0;
             this.changeGosnumBusTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.changeGosnumBusTB.LeadingIcon = null;
-            this.changeGosnumBusTB.Location = new System.Drawing.Point(270, 452);
+            this.changeGosnumBusTB.Location = new System.Drawing.Point(84, 116);
             this.changeGosnumBusTB.MaxLength = 50;
             this.changeGosnumBusTB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeGosnumBusTB.Multiline = false;
@@ -636,7 +675,7 @@
             this.changeGarnumBusTB.Depth = 0;
             this.changeGarnumBusTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.changeGarnumBusTB.LeadingIcon = null;
-            this.changeGarnumBusTB.Location = new System.Drawing.Point(25, 452);
+            this.changeGarnumBusTB.Location = new System.Drawing.Point(84, 47);
             this.changeGarnumBusTB.MaxLength = 50;
             this.changeGarnumBusTB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeGarnumBusTB.Multiline = false;
@@ -654,7 +693,7 @@
             this.gosnumBusTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.gosnumBusTB.Hint = "Гос.Номер(АА 0000-0)";
             this.gosnumBusTB.LeadingIcon = null;
-            this.gosnumBusTB.Location = new System.Drawing.Point(609, 140);
+            this.gosnumBusTB.Location = new System.Drawing.Point(42, 116);
             this.gosnumBusTB.MaxLength = 50;
             this.gosnumBusTB.MouseState = MaterialSkin.MouseState.OUT;
             this.gosnumBusTB.Multiline = false;
@@ -672,7 +711,7 @@
             this.garnumBusTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.garnumBusTB.Hint = "Гаражный номер";
             this.garnumBusTB.LeadingIcon = null;
-            this.garnumBusTB.Location = new System.Drawing.Point(609, 75);
+            this.garnumBusTB.Location = new System.Drawing.Point(42, 47);
             this.garnumBusTB.MaxLength = 50;
             this.garnumBusTB.MouseState = MaterialSkin.MouseState.OUT;
             this.garnumBusTB.Multiline = false;
@@ -689,7 +728,7 @@
             this.changeBusBtn.Depth = 0;
             this.changeBusBtn.HighEmphasis = true;
             this.changeBusBtn.Icon = null;
-            this.changeBusBtn.Location = new System.Drawing.Point(25, 511);
+            this.changeBusBtn.Location = new System.Drawing.Point(133, 331);
             this.changeBusBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.changeBusBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.changeBusBtn.Name = "changeBusBtn";
@@ -709,7 +748,7 @@
             this.addBusBtn.Depth = 0;
             this.addBusBtn.HighEmphasis = true;
             this.addBusBtn.Icon = null;
-            this.addBusBtn.Location = new System.Drawing.Point(609, 335);
+            this.addBusBtn.Location = new System.Drawing.Point(105, 331);
             this.addBusBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.addBusBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.addBusBtn.Name = "addBusBtn";
@@ -738,7 +777,7 @@
             this.markBusCB.Hint = "Марка";
             this.markBusCB.IntegralHeight = false;
             this.markBusCB.ItemHeight = 43;
-            this.markBusCB.Location = new System.Drawing.Point(609, 270);
+            this.markBusCB.Location = new System.Drawing.Point(42, 257);
             this.markBusCB.MaxDropDownItems = 4;
             this.markBusCB.MouseState = MaterialSkin.MouseState.OUT;
             this.markBusCB.Name = "markBusCB";
@@ -762,7 +801,7 @@
             this.driverBusCM.Hint = "Водитель";
             this.driverBusCM.IntegralHeight = false;
             this.driverBusCM.ItemHeight = 43;
-            this.driverBusCM.Location = new System.Drawing.Point(609, 206);
+            this.driverBusCM.Location = new System.Drawing.Point(42, 185);
             this.driverBusCM.MaxDropDownItems = 4;
             this.driverBusCM.MouseState = MaterialSkin.MouseState.OUT;
             this.driverBusCM.Name = "driverBusCM";
@@ -855,8 +894,11 @@
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.materialTextBox21);
-            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Controls.Add(this.materialButton4);
+            this.tabPage1.Controls.Add(this.addChangePanel);
+            this.tabPage1.Controls.Add(this.ChangeSearchTB);
+            this.tabPage1.Controls.Add(this.ChangeDVG);
+            this.tabPage1.Controls.Add(this.openAddChangePanelBtn);
             this.tabPage1.ImageKey = "icons8-home-48.png";
             this.tabPage1.Location = new System.Drawing.Point(4, 31);
             this.tabPage1.Name = "tabPage1";
@@ -865,6 +907,48 @@
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Главная";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // ChangeSearchTB
+            // 
+            this.ChangeSearchTB.AnimateReadOnly = false;
+            this.ChangeSearchTB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.ChangeSearchTB.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.ChangeSearchTB.Depth = 0;
+            this.ChangeSearchTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ChangeSearchTB.HideSelection = true;
+            this.ChangeSearchTB.Hint = "Найти";
+            this.ChangeSearchTB.LeadingIcon = null;
+            this.ChangeSearchTB.Location = new System.Drawing.Point(161, 26);
+            this.ChangeSearchTB.MaxLength = 32767;
+            this.ChangeSearchTB.MouseState = MaterialSkin.MouseState.OUT;
+            this.ChangeSearchTB.Name = "ChangeSearchTB";
+            this.ChangeSearchTB.PasswordChar = '\0';
+            this.ChangeSearchTB.PrefixSuffixText = null;
+            this.ChangeSearchTB.ReadOnly = false;
+            this.ChangeSearchTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.ChangeSearchTB.SelectedText = "";
+            this.ChangeSearchTB.SelectionLength = 0;
+            this.ChangeSearchTB.SelectionStart = 0;
+            this.ChangeSearchTB.ShortcutsEnabled = true;
+            this.ChangeSearchTB.Size = new System.Drawing.Size(837, 48);
+            this.ChangeSearchTB.TabIndex = 43;
+            this.ChangeSearchTB.TabStop = false;
+            this.ChangeSearchTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ChangeSearchTB.TrailingIcon = null;
+            this.ChangeSearchTB.UseSystemPasswordChar = false;
+            this.ChangeSearchTB.TextChanged += new System.EventHandler(this.materialTextBox21_TextChanged);
+            // 
+            // ChangeDVG
+            // 
+            this.ChangeDVG.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ChangeDVG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.ChangeDVG.GridColor = System.Drawing.SystemColors.Highlight;
+            this.ChangeDVG.Location = new System.Drawing.Point(161, 80);
+            this.ChangeDVG.Name = "ChangeDVG";
+            this.ChangeDVG.RowHeadersWidth = 51;
+            this.ChangeDVG.Size = new System.Drawing.Size(837, 344);
+            this.ChangeDVG.TabIndex = 42;
+            this.ChangeDVG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ChangeDVG_CellClick);
             // 
             // materialTabControl1
             // 
@@ -888,17 +972,11 @@
             // 
             // tabPage3
             // 
-            this.tabPage3.Controls.Add(this.changeCatMCCB);
-            this.tabPage3.Controls.Add(this.ChangeTypeMCTB);
+            this.tabPage3.Controls.Add(this.ShowChangeMCPanelBtn);
+            this.tabPage3.Controls.Add(this.ChangeMCPanel);
+            this.tabPage3.Controls.Add(this.ShowAddMCPAnelBtn);
+            this.tabPage3.Controls.Add(this.AddMCPanel);
             this.tabPage3.Controls.Add(this.materialButton1);
-            this.tabPage3.Controls.Add(this.anotherSwitch);
-            this.tabPage3.Controls.Add(this.anotherTB);
-            this.tabPage3.Controls.Add(this.CatMCCB);
-            this.tabPage3.Controls.Add(this.changeNameMCTB);
-            this.tabPage3.Controls.Add(this.nameMCTB);
-            this.tabPage3.Controls.Add(this.changeMCBtn);
-            this.tabPage3.Controls.Add(this.addMCBtn);
-            this.tabPage3.Controls.Add(this.typeMCCB);
             this.tabPage3.Controls.Add(this.materialButton3);
             this.tabPage3.Controls.Add(this.searchMCTB);
             this.tabPage3.Controls.Add(this.MCDVG);
@@ -909,6 +987,104 @@
             this.tabPage3.TabIndex = 9;
             this.tabPage3.Text = "Материальные ценности";
             this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // changeCatMCCB
+            // 
+            this.changeCatMCCB.AutoResize = false;
+            this.changeCatMCCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.changeCatMCCB.Depth = 0;
+            this.changeCatMCCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.changeCatMCCB.DropDownHeight = 174;
+            this.changeCatMCCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.changeCatMCCB.DropDownWidth = 121;
+            this.changeCatMCCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.changeCatMCCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.changeCatMCCB.FormattingEnabled = true;
+            this.changeCatMCCB.IntegralHeight = false;
+            this.changeCatMCCB.ItemHeight = 43;
+            this.changeCatMCCB.Items.AddRange(new object[] {
+            "ТЖ",
+            "Агрегат"});
+            this.changeCatMCCB.Location = new System.Drawing.Point(69, 142);
+            this.changeCatMCCB.MaxDropDownItems = 4;
+            this.changeCatMCCB.MouseState = MaterialSkin.MouseState.OUT;
+            this.changeCatMCCB.Name = "changeCatMCCB";
+            this.changeCatMCCB.Size = new System.Drawing.Size(200, 49);
+            this.changeCatMCCB.StartIndex = 0;
+            this.changeCatMCCB.TabIndex = 61;
+            // 
+            // ChangeTypeMCTB
+            // 
+            this.ChangeTypeMCTB.AnimateReadOnly = false;
+            this.ChangeTypeMCTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.ChangeTypeMCTB.Depth = 0;
+            this.ChangeTypeMCTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.ChangeTypeMCTB.LeadingIcon = null;
+            this.ChangeTypeMCTB.Location = new System.Drawing.Point(69, 220);
+            this.ChangeTypeMCTB.MaxLength = 50;
+            this.ChangeTypeMCTB.MouseState = MaterialSkin.MouseState.OUT;
+            this.ChangeTypeMCTB.Multiline = false;
+            this.ChangeTypeMCTB.Name = "ChangeTypeMCTB";
+            this.ChangeTypeMCTB.Size = new System.Drawing.Size(200, 50);
+            this.ChangeTypeMCTB.TabIndex = 60;
+            this.ChangeTypeMCTB.Text = "";
+            this.ChangeTypeMCTB.TrailingIcon = null;
+            // 
+            // materialButton1
+            // 
+            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton1.Depth = 0;
+            this.materialButton1.DrawShadows = false;
+            this.materialButton1.HighEmphasis = false;
+            this.materialButton1.Icon = null;
+            this.materialButton1.Location = new System.Drawing.Point(552, 409);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton1.Name = "materialButton1";
+            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.materialButton1.Size = new System.Drawing.Size(64, 36);
+            this.materialButton1.TabIndex = 59;
+            this.materialButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.materialButton1.UseAccentColor = false;
+            this.materialButton1.UseVisualStyleBackColor = true;
+            // 
+            // anotherSwitch
+            // 
+            this.anotherSwitch.AutoSize = true;
+            this.anotherSwitch.Depth = 0;
+            this.anotherSwitch.Location = new System.Drawing.Point(106, 262);
+            this.anotherSwitch.Margin = new System.Windows.Forms.Padding(0);
+            this.anotherSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.anotherSwitch.MouseState = MaterialSkin.MouseState.HOVER;
+            this.anotherSwitch.Name = "anotherSwitch";
+            this.anotherSwitch.Ripple = true;
+            this.anotherSwitch.Size = new System.Drawing.Size(111, 37);
+            this.anotherSwitch.TabIndex = 58;
+            this.anotherSwitch.Text = "Другое";
+            this.anotherSwitch.UseVisualStyleBackColor = true;
+            this.anotherSwitch.CheckedChanged += new System.EventHandler(this.anotherSwitch_CheckedChanged);
+            // 
+            // anotherTB
+            // 
+            this.anotherTB.AnimateReadOnly = false;
+            this.anotherTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.anotherTB.Depth = 0;
+            this.anotherTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.anotherTB.Hint = "Другое";
+            this.anotherTB.LeadingIcon = null;
+            this.anotherTB.Location = new System.Drawing.Point(35, 194);
+            this.anotherTB.MaxLength = 50;
+            this.anotherTB.MouseState = MaterialSkin.MouseState.OUT;
+            this.anotherTB.Multiline = false;
+            this.anotherTB.Name = "anotherTB";
+            this.anotherTB.Size = new System.Drawing.Size(256, 50);
+            this.anotherTB.TabIndex = 57;
+            this.anotherTB.Text = "";
+            this.anotherTB.TrailingIcon = null;
+            this.anotherTB.Visible = false;
             // 
             // CatMCCB
             // 
@@ -927,7 +1103,7 @@
             this.CatMCCB.Items.AddRange(new object[] {
             "ТЖ",
             "Агрегат"});
-            this.CatMCCB.Location = new System.Drawing.Point(654, 189);
+            this.CatMCCB.Location = new System.Drawing.Point(35, 123);
             this.CatMCCB.MaxDropDownItems = 4;
             this.CatMCCB.MouseState = MaterialSkin.MouseState.OUT;
             this.CatMCCB.Name = "CatMCCB";
@@ -943,7 +1119,7 @@
             this.changeNameMCTB.Depth = 0;
             this.changeNameMCTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.changeNameMCTB.LeadingIcon = null;
-            this.changeNameMCTB.Location = new System.Drawing.Point(72, 481);
+            this.changeNameMCTB.Location = new System.Drawing.Point(69, 59);
             this.changeNameMCTB.MaxLength = 50;
             this.changeNameMCTB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeNameMCTB.Multiline = false;
@@ -961,7 +1137,7 @@
             this.nameMCTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.nameMCTB.Hint = "Наименование";
             this.nameMCTB.LeadingIcon = null;
-            this.nameMCTB.Location = new System.Drawing.Point(654, 104);
+            this.nameMCTB.Location = new System.Drawing.Point(35, 47);
             this.nameMCTB.MaxLength = 50;
             this.nameMCTB.MouseState = MaterialSkin.MouseState.OUT;
             this.nameMCTB.Multiline = false;
@@ -978,7 +1154,7 @@
             this.changeMCBtn.Depth = 0;
             this.changeMCBtn.HighEmphasis = true;
             this.changeMCBtn.Icon = null;
-            this.changeMCBtn.Location = new System.Drawing.Point(823, 493);
+            this.changeMCBtn.Location = new System.Drawing.Point(118, 298);
             this.changeMCBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.changeMCBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.changeMCBtn.Name = "changeMCBtn";
@@ -998,7 +1174,7 @@
             this.addMCBtn.Depth = 0;
             this.addMCBtn.HighEmphasis = true;
             this.addMCBtn.Icon = null;
-            this.addMCBtn.Location = new System.Drawing.Point(654, 364);
+            this.addMCBtn.Location = new System.Drawing.Point(117, 322);
             this.addMCBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
             this.addMCBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.addMCBtn.Name = "addMCBtn";
@@ -1026,7 +1202,7 @@
             this.typeMCCB.Hint = "Тип";
             this.typeMCCB.IntegralHeight = false;
             this.typeMCCB.ItemHeight = 43;
-            this.typeMCCB.Location = new System.Drawing.Point(654, 261);
+            this.typeMCCB.Location = new System.Drawing.Point(35, 195);
             this.typeMCCB.MaxDropDownItems = 4;
             this.typeMCCB.MouseState = MaterialSkin.MouseState.OUT;
             this.typeMCCB.Name = "typeMCCB";
@@ -1122,144 +1298,699 @@
             this.imageList1.Images.SetKeyName(21, "pngegg.png");
             this.imageList1.Images.SetKeyName(22, "transmission-oil-new-transmission-icon-with-png-and-vector-430040.png");
             this.imageList1.Images.SetKeyName(23, "unnamed (1) — копия.png");
+            this.imageList1.Images.SetKeyName(24, "free-icon-close-cross-64498 (2).png");
             // 
-            // anotherTB
+            // addChangeBtn
             // 
-            this.anotherTB.AnimateReadOnly = false;
-            this.anotherTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.anotherTB.Depth = 0;
-            this.anotherTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.anotherTB.Hint = "Другое";
-            this.anotherTB.LeadingIcon = null;
-            this.anotherTB.Location = new System.Drawing.Point(654, 260);
-            this.anotherTB.MaxLength = 50;
-            this.anotherTB.MouseState = MaterialSkin.MouseState.OUT;
-            this.anotherTB.Multiline = false;
-            this.anotherTB.Name = "anotherTB";
-            this.anotherTB.Size = new System.Drawing.Size(256, 50);
-            this.anotherTB.TabIndex = 57;
-            this.anotherTB.Text = "";
-            this.anotherTB.TrailingIcon = null;
-            this.anotherTB.Visible = false;
+            this.addChangeBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.addChangeBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.addChangeBtn.Depth = 0;
+            this.addChangeBtn.HighEmphasis = true;
+            this.addChangeBtn.Icon = null;
+            this.addChangeBtn.Location = new System.Drawing.Point(134, 354);
+            this.addChangeBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.addChangeBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.addChangeBtn.Name = "addChangeBtn";
+            this.addChangeBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.addChangeBtn.Size = new System.Drawing.Size(100, 36);
+            this.addChangeBtn.TabIndex = 0;
+            this.addChangeBtn.Text = "Добавить";
+            this.addChangeBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.addChangeBtn.UseAccentColor = false;
+            this.addChangeBtn.UseVisualStyleBackColor = true;
+            this.addChangeBtn.Click += new System.EventHandler(this.addChangeBtn_Click);
             // 
-            // anotherSwitch
+            // BusChangeCB
             // 
-            this.anotherSwitch.AutoSize = true;
-            this.anotherSwitch.Depth = 0;
-            this.anotherSwitch.Location = new System.Drawing.Point(654, 321);
-            this.anotherSwitch.Margin = new System.Windows.Forms.Padding(0);
-            this.anotherSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.anotherSwitch.MouseState = MaterialSkin.MouseState.HOVER;
-            this.anotherSwitch.Name = "anotherSwitch";
-            this.anotherSwitch.Ripple = true;
-            this.anotherSwitch.Size = new System.Drawing.Size(111, 37);
-            this.anotherSwitch.TabIndex = 58;
-            this.anotherSwitch.Text = "Другое";
-            this.anotherSwitch.UseVisualStyleBackColor = true;
-            this.anotherSwitch.CheckedChanged += new System.EventHandler(this.anotherSwitch_CheckedChanged);
+            this.BusChangeCB.AutoResize = false;
+            this.BusChangeCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BusChangeCB.Depth = 0;
+            this.BusChangeCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.BusChangeCB.DropDownHeight = 174;
+            this.BusChangeCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BusChangeCB.DropDownWidth = 121;
+            this.BusChangeCB.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.BusChangeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BusChangeCB.FormattingEnabled = true;
+            this.BusChangeCB.Hint = "Автобус";
+            this.BusChangeCB.IntegralHeight = false;
+            this.BusChangeCB.ItemHeight = 43;
+            this.BusChangeCB.Location = new System.Drawing.Point(74, 78);
+            this.BusChangeCB.MaxDropDownItems = 4;
+            this.BusChangeCB.MouseState = MaterialSkin.MouseState.OUT;
+            this.BusChangeCB.Name = "BusChangeCB";
+            this.BusChangeCB.Size = new System.Drawing.Size(221, 49);
+            this.BusChangeCB.StartIndex = 0;
+            this.BusChangeCB.TabIndex = 1;
             // 
-            // materialButton1
+            // MCChangeCB
             // 
-            this.materialButton1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton1.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton1.Depth = 0;
-            this.materialButton1.DrawShadows = false;
-            this.materialButton1.HighEmphasis = false;
-            this.materialButton1.Icon = null;
-            this.materialButton1.Location = new System.Drawing.Point(552, 409);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton1.Name = "materialButton1";
-            this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton1.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialButton1.Size = new System.Drawing.Size(64, 36);
-            this.materialButton1.TabIndex = 59;
-            this.materialButton1.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.materialButton1.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton1.UseAccentColor = false;
-            this.materialButton1.UseVisualStyleBackColor = true;
+            this.MCChangeCB.AutoResize = false;
+            this.MCChangeCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.MCChangeCB.Depth = 0;
+            this.MCChangeCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.MCChangeCB.DropDownHeight = 174;
+            this.MCChangeCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.MCChangeCB.DropDownWidth = 121;
+            this.MCChangeCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.MCChangeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.MCChangeCB.FormattingEnabled = true;
+            this.MCChangeCB.Hint = "Предмет замены";
+            this.MCChangeCB.IntegralHeight = false;
+            this.MCChangeCB.ItemHeight = 43;
+            this.MCChangeCB.Location = new System.Drawing.Point(74, 165);
+            this.MCChangeCB.MaxDropDownItems = 4;
+            this.MCChangeCB.MouseState = MaterialSkin.MouseState.OUT;
+            this.MCChangeCB.Name = "MCChangeCB";
+            this.MCChangeCB.Size = new System.Drawing.Size(221, 49);
+            this.MCChangeCB.StartIndex = 0;
+            this.MCChangeCB.TabIndex = 2;
             // 
-            // ChangeTypeMCTB
+            // ReasonChangeCB
             // 
-            this.ChangeTypeMCTB.AnimateReadOnly = false;
-            this.ChangeTypeMCTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.ChangeTypeMCTB.Depth = 0;
-            this.ChangeTypeMCTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.ChangeTypeMCTB.LeadingIcon = null;
-            this.ChangeTypeMCTB.Location = new System.Drawing.Point(568, 479);
-            this.ChangeTypeMCTB.MaxLength = 50;
-            this.ChangeTypeMCTB.MouseState = MaterialSkin.MouseState.OUT;
-            this.ChangeTypeMCTB.Multiline = false;
-            this.ChangeTypeMCTB.Name = "ChangeTypeMCTB";
-            this.ChangeTypeMCTB.Size = new System.Drawing.Size(186, 50);
-            this.ChangeTypeMCTB.TabIndex = 60;
-            this.ChangeTypeMCTB.Text = "";
-            this.ChangeTypeMCTB.TrailingIcon = null;
+            this.ReasonChangeCB.AutoResize = false;
+            this.ReasonChangeCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ReasonChangeCB.Depth = 0;
+            this.ReasonChangeCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.ReasonChangeCB.DropDownHeight = 174;
+            this.ReasonChangeCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ReasonChangeCB.DropDownWidth = 121;
+            this.ReasonChangeCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.ReasonChangeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ReasonChangeCB.FormattingEnabled = true;
+            this.ReasonChangeCB.Hint = "Причина";
+            this.ReasonChangeCB.IntegralHeight = false;
+            this.ReasonChangeCB.ItemHeight = 43;
+            this.ReasonChangeCB.Items.AddRange(new object[] {
+            "ТО",
+            "Поломка"});
+            this.ReasonChangeCB.Location = new System.Drawing.Point(74, 260);
+            this.ReasonChangeCB.MaxDropDownItems = 4;
+            this.ReasonChangeCB.MouseState = MaterialSkin.MouseState.OUT;
+            this.ReasonChangeCB.Name = "ReasonChangeCB";
+            this.ReasonChangeCB.Size = new System.Drawing.Size(221, 49);
+            this.ReasonChangeCB.StartIndex = 0;
+            this.ReasonChangeCB.TabIndex = 3;
             // 
-            // changeCatMCCB
+            // openAddChangePanelBtn
             // 
-            this.changeCatMCCB.AutoResize = false;
-            this.changeCatMCCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.changeCatMCCB.Depth = 0;
-            this.changeCatMCCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.changeCatMCCB.DropDownHeight = 174;
-            this.changeCatMCCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.changeCatMCCB.DropDownWidth = 121;
-            this.changeCatMCCB.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.changeCatMCCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.changeCatMCCB.FormattingEnabled = true;
-            this.changeCatMCCB.IntegralHeight = false;
-            this.changeCatMCCB.ItemHeight = 43;
-            this.changeCatMCCB.Items.AddRange(new object[] {
-            "ТЖ",
-            "Агрегат"});
-            this.changeCatMCCB.Location = new System.Drawing.Point(303, 482);
-            this.changeCatMCCB.MaxDropDownItems = 4;
-            this.changeCatMCCB.MouseState = MaterialSkin.MouseState.OUT;
-            this.changeCatMCCB.Name = "changeCatMCCB";
-            this.changeCatMCCB.Size = new System.Drawing.Size(238, 49);
-            this.changeCatMCCB.StartIndex = 0;
-            this.changeCatMCCB.TabIndex = 61;
+            this.openAddChangePanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.openAddChangePanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.openAddChangePanelBtn.Depth = 0;
+            this.openAddChangePanelBtn.HighEmphasis = true;
+            this.openAddChangePanelBtn.Icon = null;
+            this.openAddChangePanelBtn.Location = new System.Drawing.Point(183, 493);
+            this.openAddChangePanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.openAddChangePanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.openAddChangePanelBtn.Name = "openAddChangePanelBtn";
+            this.openAddChangePanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.openAddChangePanelBtn.Size = new System.Drawing.Size(100, 36);
+            this.openAddChangePanelBtn.TabIndex = 45;
+            this.openAddChangePanelBtn.Text = "Добавить";
+            this.openAddChangePanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.openAddChangePanelBtn.UseAccentColor = false;
+            this.openAddChangePanelBtn.UseVisualStyleBackColor = true;
+            this.openAddChangePanelBtn.Click += new System.EventHandler(this.Добавить_Click);
             // 
-            // dataGridView1
+            // addChangePanel
             // 
-            this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.GridColor = System.Drawing.SystemColors.Highlight;
-            this.dataGridView1.Location = new System.Drawing.Point(87, 80);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.Size = new System.Drawing.Size(573, 344);
-            this.dataGridView1.TabIndex = 42;
+            this.addChangePanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.addChangePanel.Controls.Add(this.materialLabel1);
+            this.addChangePanel.Controls.Add(this.ChangeChangePanel);
+            this.addChangePanel.Controls.Add(this.BusChangeCB);
+            this.addChangePanel.Controls.Add(this.ReasonChangeCB);
+            this.addChangePanel.Controls.Add(this.addChangeBtn);
+            this.addChangePanel.Controls.Add(this.MCChangeCB);
+            this.addChangePanel.Location = new System.Drawing.Point(449, 53);
+            this.addChangePanel.Name = "addChangePanel";
+            this.addChangePanel.Size = new System.Drawing.Size(377, 476);
+            this.addChangePanel.TabIndex = 46;
+            this.addChangePanel.Visible = false;
             // 
-            // materialTextBox21
+            // materialLabel1
             // 
-            this.materialTextBox21.AnimateReadOnly = false;
-            this.materialTextBox21.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox21.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox21.Depth = 0;
-            this.materialTextBox21.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox21.HideSelection = true;
-            this.materialTextBox21.Hint = "Найти";
-            this.materialTextBox21.LeadingIcon = null;
-            this.materialTextBox21.Location = new System.Drawing.Point(87, 26);
-            this.materialTextBox21.MaxLength = 32767;
-            this.materialTextBox21.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox21.Name = "materialTextBox21";
-            this.materialTextBox21.PasswordChar = '\0';
-            this.materialTextBox21.PrefixSuffixText = null;
-            this.materialTextBox21.ReadOnly = false;
-            this.materialTextBox21.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox21.SelectedText = "";
-            this.materialTextBox21.SelectionLength = 0;
-            this.materialTextBox21.SelectionStart = 0;
-            this.materialTextBox21.ShortcutsEnabled = true;
-            this.materialTextBox21.Size = new System.Drawing.Size(573, 48);
-            this.materialTextBox21.TabIndex = 43;
-            this.materialTextBox21.TabStop = false;
-            this.materialTextBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox21.TrailingIcon = null;
-            this.materialTextBox21.UseSystemPasswordChar = false;
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(18, 21);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(133, 19);
+            this.materialLabel1.TabIndex = 4;
+            this.materialLabel1.Text = "Добавить замену";
+            // 
+            // ChangeChangePanel
+            // 
+            this.ChangeChangePanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ChangeChangePanel.Controls.Add(this.materialButton2);
+            this.ChangeChangePanel.Controls.Add(this.materialLabel2);
+            this.ChangeChangePanel.Controls.Add(this.changeBusChangeCB);
+            this.ChangeChangePanel.Controls.Add(this.ChangeReasonChangeCB);
+            this.ChangeChangePanel.Controls.Add(this.ChangeMCChangeCB);
+            this.ChangeChangePanel.Location = new System.Drawing.Point(-2, -2);
+            this.ChangeChangePanel.Name = "ChangeChangePanel";
+            this.ChangeChangePanel.Size = new System.Drawing.Size(377, 476);
+            this.ChangeChangePanel.TabIndex = 47;
+            this.ChangeChangePanel.Visible = false;
+            // 
+            // materialLabel2
+            // 
+            this.materialLabel2.AutoSize = true;
+            this.materialLabel2.Depth = 0;
+            this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel2.Location = new System.Drawing.Point(18, 21);
+            this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel2.Name = "materialLabel2";
+            this.materialLabel2.Size = new System.Drawing.Size(133, 19);
+            this.materialLabel2.TabIndex = 4;
+            this.materialLabel2.Text = "Изменить замену";
+            // 
+            // changeBusChangeCB
+            // 
+            this.changeBusChangeCB.AutoResize = false;
+            this.changeBusChangeCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.changeBusChangeCB.Depth = 0;
+            this.changeBusChangeCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.changeBusChangeCB.DropDownHeight = 174;
+            this.changeBusChangeCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.changeBusChangeCB.DropDownWidth = 121;
+            this.changeBusChangeCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.changeBusChangeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.changeBusChangeCB.FormattingEnabled = true;
+            this.changeBusChangeCB.IntegralHeight = false;
+            this.changeBusChangeCB.ItemHeight = 43;
+            this.changeBusChangeCB.Location = new System.Drawing.Point(74, 78);
+            this.changeBusChangeCB.MaxDropDownItems = 4;
+            this.changeBusChangeCB.MouseState = MaterialSkin.MouseState.OUT;
+            this.changeBusChangeCB.Name = "changeBusChangeCB";
+            this.changeBusChangeCB.Size = new System.Drawing.Size(221, 49);
+            this.changeBusChangeCB.StartIndex = 0;
+            this.changeBusChangeCB.TabIndex = 1;
+            // 
+            // ChangeReasonChangeCB
+            // 
+            this.ChangeReasonChangeCB.AutoCompleteCustomSource.AddRange(new string[] {
+            "ТО",
+            "Поломка"});
+            this.ChangeReasonChangeCB.AutoResize = false;
+            this.ChangeReasonChangeCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ChangeReasonChangeCB.Depth = 0;
+            this.ChangeReasonChangeCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.ChangeReasonChangeCB.DropDownHeight = 174;
+            this.ChangeReasonChangeCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ChangeReasonChangeCB.DropDownWidth = 121;
+            this.ChangeReasonChangeCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.ChangeReasonChangeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ChangeReasonChangeCB.FormattingEnabled = true;
+            this.ChangeReasonChangeCB.IntegralHeight = false;
+            this.ChangeReasonChangeCB.ItemHeight = 43;
+            this.ChangeReasonChangeCB.Items.AddRange(new object[] {
+            "ТО",
+            "Поломка"});
+            this.ChangeReasonChangeCB.Location = new System.Drawing.Point(74, 260);
+            this.ChangeReasonChangeCB.MaxDropDownItems = 4;
+            this.ChangeReasonChangeCB.MouseState = MaterialSkin.MouseState.OUT;
+            this.ChangeReasonChangeCB.Name = "ChangeReasonChangeCB";
+            this.ChangeReasonChangeCB.Size = new System.Drawing.Size(221, 49);
+            this.ChangeReasonChangeCB.StartIndex = 0;
+            this.ChangeReasonChangeCB.TabIndex = 3;
+            // 
+            // ChangeMCChangeCB
+            // 
+            this.ChangeMCChangeCB.AutoResize = false;
+            this.ChangeMCChangeCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ChangeMCChangeCB.Depth = 0;
+            this.ChangeMCChangeCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.ChangeMCChangeCB.DropDownHeight = 174;
+            this.ChangeMCChangeCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ChangeMCChangeCB.DropDownWidth = 121;
+            this.ChangeMCChangeCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.ChangeMCChangeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ChangeMCChangeCB.FormattingEnabled = true;
+            this.ChangeMCChangeCB.IntegralHeight = false;
+            this.ChangeMCChangeCB.ItemHeight = 43;
+            this.ChangeMCChangeCB.Location = new System.Drawing.Point(74, 165);
+            this.ChangeMCChangeCB.MaxDropDownItems = 4;
+            this.ChangeMCChangeCB.MouseState = MaterialSkin.MouseState.OUT;
+            this.ChangeMCChangeCB.Name = "ChangeMCChangeCB";
+            this.ChangeMCChangeCB.Size = new System.Drawing.Size(221, 49);
+            this.ChangeMCChangeCB.StartIndex = 0;
+            this.ChangeMCChangeCB.TabIndex = 2;
+            // 
+            // materialButton4
+            // 
+            this.materialButton4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton4.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton4.Depth = 0;
+            this.materialButton4.HighEmphasis = true;
+            this.materialButton4.Icon = null;
+            this.materialButton4.Location = new System.Drawing.Point(328, 493);
+            this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton4.Name = "materialButton4";
+            this.materialButton4.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton4.Size = new System.Drawing.Size(101, 36);
+            this.materialButton4.TabIndex = 5;
+            this.materialButton4.Text = "Изменить";
+            this.materialButton4.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton4.UseAccentColor = false;
+            this.materialButton4.UseVisualStyleBackColor = true;
+            this.materialButton4.Click += new System.EventHandler(this.materialButton4_Click);
+            // 
+            // materialButton2
+            // 
+            this.materialButton2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton2.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton2.Depth = 0;
+            this.materialButton2.HighEmphasis = true;
+            this.materialButton2.Icon = null;
+            this.materialButton2.Location = new System.Drawing.Point(105, 354);
+            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton2.Name = "materialButton2";
+            this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton2.Size = new System.Drawing.Size(101, 36);
+            this.materialButton2.TabIndex = 5;
+            this.materialButton2.Text = "Изменить";
+            this.materialButton2.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton2.UseAccentColor = false;
+            this.materialButton2.UseVisualStyleBackColor = true;
+            this.materialButton2.Click += new System.EventHandler(this.materialButton2_Click_1);
+            // 
+            // AddMarkPanel
+            // 
+            this.AddMarkPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.AddMarkPanel.Controls.Add(this.ChangeMarkPanel);
+            this.AddMarkPanel.Controls.Add(this.materialLabel3);
+            this.AddMarkPanel.Controls.Add(this.nameMarkTB);
+            this.AddMarkPanel.Controls.Add(this.addMarkBtn);
+            this.AddMarkPanel.Location = new System.Drawing.Point(483, 136);
+            this.AddMarkPanel.Name = "AddMarkPanel";
+            this.AddMarkPanel.Size = new System.Drawing.Size(302, 371);
+            this.AddMarkPanel.TabIndex = 16;
+            this.AddMarkPanel.Visible = false;
+            // 
+            // materialLabel3
+            // 
+            this.materialLabel3.AutoSize = true;
+            this.materialLabel3.Depth = 0;
+            this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel3.Location = new System.Drawing.Point(15, 22);
+            this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel3.Name = "materialLabel3";
+            this.materialLabel3.Size = new System.Drawing.Size(126, 19);
+            this.materialLabel3.TabIndex = 15;
+            this.materialLabel3.Text = "Добавить марку";
+            // 
+            // ShowAddMarkPanelBtn
+            // 
+            this.ShowAddMarkPanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ShowAddMarkPanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.ShowAddMarkPanelBtn.Depth = 0;
+            this.ShowAddMarkPanelBtn.HighEmphasis = true;
+            this.ShowAddMarkPanelBtn.Icon = null;
+            this.ShowAddMarkPanelBtn.Location = new System.Drawing.Point(433, 91);
+            this.ShowAddMarkPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowAddMarkPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ShowAddMarkPanelBtn.Name = "ShowAddMarkPanelBtn";
+            this.ShowAddMarkPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.ShowAddMarkPanelBtn.Size = new System.Drawing.Size(100, 36);
+            this.ShowAddMarkPanelBtn.TabIndex = 16;
+            this.ShowAddMarkPanelBtn.Text = "Добавить";
+            this.ShowAddMarkPanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.ShowAddMarkPanelBtn.UseAccentColor = false;
+            this.ShowAddMarkPanelBtn.UseVisualStyleBackColor = true;
+            this.ShowAddMarkPanelBtn.Click += new System.EventHandler(this.ShowAddPanelBusBtn_Click);
+            // 
+            // ChangeMarkPanel
+            // 
+            this.ChangeMarkPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ChangeMarkPanel.Controls.Add(this.materialLabel4);
+            this.ChangeMarkPanel.Controls.Add(this.changeNameMarkTB);
+            this.ChangeMarkPanel.Controls.Add(this.changeMarkBtn);
+            this.ChangeMarkPanel.Location = new System.Drawing.Point(3, -2);
+            this.ChangeMarkPanel.Name = "ChangeMarkPanel";
+            this.ChangeMarkPanel.Size = new System.Drawing.Size(302, 371);
+            this.ChangeMarkPanel.TabIndex = 17;
+            this.ChangeMarkPanel.Visible = false;
+            // 
+            // materialLabel4
+            // 
+            this.materialLabel4.AutoSize = true;
+            this.materialLabel4.Depth = 0;
+            this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel4.Location = new System.Drawing.Point(15, 22);
+            this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel4.Name = "materialLabel4";
+            this.materialLabel4.Size = new System.Drawing.Size(126, 19);
+            this.materialLabel4.TabIndex = 15;
+            this.materialLabel4.Text = "Изменить марку";
+            // 
+            // ShowChangeMarkPanelBtn
+            // 
+            this.ShowChangeMarkPanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ShowChangeMarkPanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.ShowChangeMarkPanelBtn.Depth = 0;
+            this.ShowChangeMarkPanelBtn.HighEmphasis = true;
+            this.ShowChangeMarkPanelBtn.Icon = null;
+            this.ShowChangeMarkPanelBtn.Location = new System.Drawing.Point(433, 158);
+            this.ShowChangeMarkPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowChangeMarkPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ShowChangeMarkPanelBtn.Name = "ShowChangeMarkPanelBtn";
+            this.ShowChangeMarkPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.ShowChangeMarkPanelBtn.Size = new System.Drawing.Size(101, 36);
+            this.ShowChangeMarkPanelBtn.TabIndex = 17;
+            this.ShowChangeMarkPanelBtn.Text = "Изменить";
+            this.ShowChangeMarkPanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.ShowChangeMarkPanelBtn.UseAccentColor = false;
+            this.ShowChangeMarkPanelBtn.UseVisualStyleBackColor = true;
+            this.ShowChangeMarkPanelBtn.Click += new System.EventHandler(this.ShowChangeBusPanelBtn_Click);
+            // 
+            // AddDriverPanel
+            // 
+            this.AddDriverPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.AddDriverPanel.Controls.Add(this.materialLabel5);
+            this.AddDriverPanel.Controls.Add(this.lastnameDriverTB);
+            this.AddDriverPanel.Controls.Add(this.nameDriverTB);
+            this.AddDriverPanel.Controls.Add(this.addDriverBtn);
+            this.AddDriverPanel.Controls.Add(this.surnameDriverTB);
+            this.AddDriverPanel.Location = new System.Drawing.Point(530, 105);
+            this.AddDriverPanel.Name = "AddDriverPanel";
+            this.AddDriverPanel.Size = new System.Drawing.Size(352, 374);
+            this.AddDriverPanel.TabIndex = 23;
+            this.AddDriverPanel.Visible = false;
+            // 
+            // materialLabel5
+            // 
+            this.materialLabel5.AutoSize = true;
+            this.materialLabel5.Depth = 0;
+            this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel5.Location = new System.Drawing.Point(16, 15);
+            this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel5.Name = "materialLabel5";
+            this.materialLabel5.Size = new System.Drawing.Size(150, 19);
+            this.materialLabel5.TabIndex = 19;
+            this.materialLabel5.Text = "Добавить водителя";
+            // 
+            // ShowAddDriverPanelBtn
+            // 
+            this.ShowAddDriverPanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ShowAddDriverPanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.ShowAddDriverPanelBtn.Depth = 0;
+            this.ShowAddDriverPanelBtn.HighEmphasis = true;
+            this.ShowAddDriverPanelBtn.Icon = null;
+            this.ShowAddDriverPanelBtn.Location = new System.Drawing.Point(594, 71);
+            this.ShowAddDriverPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowAddDriverPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ShowAddDriverPanelBtn.Name = "ShowAddDriverPanelBtn";
+            this.ShowAddDriverPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.ShowAddDriverPanelBtn.Size = new System.Drawing.Size(100, 36);
+            this.ShowAddDriverPanelBtn.TabIndex = 24;
+            this.ShowAddDriverPanelBtn.Text = "Добавить";
+            this.ShowAddDriverPanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.ShowAddDriverPanelBtn.UseAccentColor = false;
+            this.ShowAddDriverPanelBtn.UseVisualStyleBackColor = true;
+            this.ShowAddDriverPanelBtn.Click += new System.EventHandler(this.ShowAddBusPanelBtn_Click);
+            // 
+            // ChangeDriverPanel
+            // 
+            this.ChangeDriverPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ChangeDriverPanel.Controls.Add(this.materialLabel6);
+            this.ChangeDriverPanel.Controls.Add(this.changeSurnameDriverTB);
+            this.ChangeDriverPanel.Controls.Add(this.changeNameDriverTB);
+            this.ChangeDriverPanel.Controls.Add(this.changeDriverBtn);
+            this.ChangeDriverPanel.Controls.Add(this.changeLastnameDriverTB);
+            this.ChangeDriverPanel.Location = new System.Drawing.Point(525, 105);
+            this.ChangeDriverPanel.Name = "ChangeDriverPanel";
+            this.ChangeDriverPanel.Size = new System.Drawing.Size(352, 374);
+            this.ChangeDriverPanel.TabIndex = 24;
+            this.ChangeDriverPanel.Visible = false;
+            // 
+            // materialLabel6
+            // 
+            this.materialLabel6.AutoSize = true;
+            this.materialLabel6.Depth = 0;
+            this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel6.Location = new System.Drawing.Point(16, 15);
+            this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel6.Name = "materialLabel6";
+            this.materialLabel6.Size = new System.Drawing.Size(150, 19);
+            this.materialLabel6.TabIndex = 19;
+            this.materialLabel6.Text = "Изменить водителя";
+            // 
+            // ShowChangeDriverPanelBtn
+            // 
+            this.ShowChangeDriverPanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ShowChangeDriverPanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.ShowChangeDriverPanelBtn.Depth = 0;
+            this.ShowChangeDriverPanelBtn.HighEmphasis = true;
+            this.ShowChangeDriverPanelBtn.Icon = null;
+            this.ShowChangeDriverPanelBtn.Location = new System.Drawing.Point(594, 143);
+            this.ShowChangeDriverPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowChangeDriverPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ShowChangeDriverPanelBtn.Name = "ShowChangeDriverPanelBtn";
+            this.ShowChangeDriverPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.ShowChangeDriverPanelBtn.Size = new System.Drawing.Size(101, 36);
+            this.ShowChangeDriverPanelBtn.TabIndex = 25;
+            this.ShowChangeDriverPanelBtn.Text = "Изменить";
+            this.ShowChangeDriverPanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.ShowChangeDriverPanelBtn.UseAccentColor = false;
+            this.ShowChangeDriverPanelBtn.UseVisualStyleBackColor = true;
+            this.ShowChangeDriverPanelBtn.Click += new System.EventHandler(this.ShowChangeDriverPanelBtn_Click);
+            // 
+            // AddBusPanel
+            // 
+            this.AddBusPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.AddBusPanel.Controls.Add(this.materialLabel9);
+            this.AddBusPanel.Controls.Add(this.gosnumBusTB);
+            this.AddBusPanel.Controls.Add(this.garnumBusTB);
+            this.AddBusPanel.Controls.Add(this.addBusBtn);
+            this.AddBusPanel.Controls.Add(this.markBusCB);
+            this.AddBusPanel.Controls.Add(this.driverBusCM);
+            this.AddBusPanel.Location = new System.Drawing.Point(772, 104);
+            this.AddBusPanel.Name = "AddBusPanel";
+            this.AddBusPanel.Size = new System.Drawing.Size(364, 396);
+            this.AddBusPanel.TabIndex = 41;
+            this.AddBusPanel.Visible = false;
+            // 
+            // ShowAddBusPanel
+            // 
+            this.ShowAddBusPanel.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ShowAddBusPanel.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.ShowAddBusPanel.Depth = 0;
+            this.ShowAddBusPanel.HighEmphasis = true;
+            this.ShowAddBusPanel.Icon = null;
+            this.ShowAddBusPanel.Location = new System.Drawing.Point(601, 75);
+            this.ShowAddBusPanel.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowAddBusPanel.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ShowAddBusPanel.Name = "ShowAddBusPanel";
+            this.ShowAddBusPanel.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.ShowAddBusPanel.Size = new System.Drawing.Size(100, 36);
+            this.ShowAddBusPanel.TabIndex = 38;
+            this.ShowAddBusPanel.Text = "Добавить";
+            this.ShowAddBusPanel.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.ShowAddBusPanel.UseAccentColor = false;
+            this.ShowAddBusPanel.UseVisualStyleBackColor = true;
+            this.ShowAddBusPanel.Click += new System.EventHandler(this.ShowAddBusPanel_Click);
+            // 
+            // ChangeBusPanel
+            // 
+            this.ChangeBusPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ChangeBusPanel.Controls.Add(this.materialLabel10);
+            this.ChangeBusPanel.Controls.Add(this.changeGarnumBusTB);
+            this.ChangeBusPanel.Controls.Add(this.changeGosnumBusTB);
+            this.ChangeBusPanel.Controls.Add(this.changeBusBtn);
+            this.ChangeBusPanel.Controls.Add(this.changeMarkBusCB);
+            this.ChangeBusPanel.Controls.Add(this.changeDriverBusCB);
+            this.ChangeBusPanel.Location = new System.Drawing.Point(216, 201);
+            this.ChangeBusPanel.Name = "ChangeBusPanel";
+            this.ChangeBusPanel.Size = new System.Drawing.Size(364, 396);
+            this.ChangeBusPanel.TabIndex = 42;
+            this.ChangeBusPanel.Visible = false;
+            // 
+            // ShowChangeBusPanelBtn
+            // 
+            this.ShowChangeBusPanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ShowChangeBusPanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.ShowChangeBusPanelBtn.Depth = 0;
+            this.ShowChangeBusPanelBtn.HighEmphasis = true;
+            this.ShowChangeBusPanelBtn.Icon = null;
+            this.ShowChangeBusPanelBtn.Location = new System.Drawing.Point(601, 142);
+            this.ShowChangeBusPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowChangeBusPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ShowChangeBusPanelBtn.Name = "ShowChangeBusPanelBtn";
+            this.ShowChangeBusPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.ShowChangeBusPanelBtn.Size = new System.Drawing.Size(110, 36);
+            this.ShowChangeBusPanelBtn.TabIndex = 41;
+            this.ShowChangeBusPanelBtn.Text = "Изментить";
+            this.ShowChangeBusPanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.ShowChangeBusPanelBtn.UseAccentColor = false;
+            this.ShowChangeBusPanelBtn.UseVisualStyleBackColor = true;
+            this.ShowChangeBusPanelBtn.Click += new System.EventHandler(this.ShowChangeBusBtn_Click);
+            // 
+            // AddMCPanel
+            // 
+            this.AddMCPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.AddMCPanel.Controls.Add(this.materialButton5);
+            this.AddMCPanel.Controls.Add(this.materialLabel7);
+            this.AddMCPanel.Controls.Add(this.anotherSwitch);
+            this.AddMCPanel.Controls.Add(this.anotherTB);
+            this.AddMCPanel.Controls.Add(this.CatMCCB);
+            this.AddMCPanel.Controls.Add(this.nameMCTB);
+            this.AddMCPanel.Controls.Add(this.addMCBtn);
+            this.AddMCPanel.Controls.Add(this.typeMCCB);
+            this.AddMCPanel.Location = new System.Drawing.Point(807, 64);
+            this.AddMCPanel.Name = "AddMCPanel";
+            this.AddMCPanel.Size = new System.Drawing.Size(336, 381);
+            this.AddMCPanel.TabIndex = 62;
+            this.AddMCPanel.Visible = false;
+            // 
+            // materialLabel7
+            // 
+            this.materialLabel7.AutoSize = true;
+            this.materialLabel7.Depth = 0;
+            this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel7.Location = new System.Drawing.Point(13, 10);
+            this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel7.Name = "materialLabel7";
+            this.materialLabel7.Size = new System.Drawing.Size(266, 19);
+            this.materialLabel7.TabIndex = 59;
+            this.materialLabel7.Text = "Добавить Материальную ценность";
+            // 
+            // ShowAddMCPAnelBtn
+            // 
+            this.ShowAddMCPAnelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ShowAddMCPAnelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.ShowAddMCPAnelBtn.Depth = 0;
+            this.ShowAddMCPAnelBtn.HighEmphasis = true;
+            this.ShowAddMCPAnelBtn.Icon = null;
+            this.ShowAddMCPAnelBtn.Location = new System.Drawing.Point(636, 104);
+            this.ShowAddMCPAnelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowAddMCPAnelBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ShowAddMCPAnelBtn.Name = "ShowAddMCPAnelBtn";
+            this.ShowAddMCPAnelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.ShowAddMCPAnelBtn.Size = new System.Drawing.Size(100, 36);
+            this.ShowAddMCPAnelBtn.TabIndex = 60;
+            this.ShowAddMCPAnelBtn.Text = "Добавить";
+            this.ShowAddMCPAnelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.ShowAddMCPAnelBtn.UseAccentColor = false;
+            this.ShowAddMCPAnelBtn.UseVisualStyleBackColor = true;
+            this.ShowAddMCPAnelBtn.Click += new System.EventHandler(this.ShowAddMCPAnelBtn_Click);
+            // 
+            // ChangeMCPanel
+            // 
+            this.ChangeMCPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ChangeMCPanel.Controls.Add(this.materialButton6);
+            this.ChangeMCPanel.Controls.Add(this.materialLabel8);
+            this.ChangeMCPanel.Controls.Add(this.changeNameMCTB);
+            this.ChangeMCPanel.Controls.Add(this.changeCatMCCB);
+            this.ChangeMCPanel.Controls.Add(this.ChangeTypeMCTB);
+            this.ChangeMCPanel.Controls.Add(this.changeMCBtn);
+            this.ChangeMCPanel.Location = new System.Drawing.Point(235, 205);
+            this.ChangeMCPanel.Name = "ChangeMCPanel";
+            this.ChangeMCPanel.Size = new System.Drawing.Size(336, 381);
+            this.ChangeMCPanel.TabIndex = 63;
+            this.ChangeMCPanel.Visible = false;
+            // 
+            // materialLabel8
+            // 
+            this.materialLabel8.AutoSize = true;
+            this.materialLabel8.Depth = 0;
+            this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel8.Location = new System.Drawing.Point(13, 10);
+            this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel8.Name = "materialLabel8";
+            this.materialLabel8.Size = new System.Drawing.Size(266, 19);
+            this.materialLabel8.TabIndex = 59;
+            this.materialLabel8.Text = "Изменить Материальную ценность";
+            // 
+            // ShowChangeMCPanelBtn
+            // 
+            this.ShowChangeMCPanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ShowChangeMCPanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.ShowChangeMCPanelBtn.Depth = 0;
+            this.ShowChangeMCPanelBtn.HighEmphasis = true;
+            this.ShowChangeMCPanelBtn.Icon = null;
+            this.ShowChangeMCPanelBtn.Location = new System.Drawing.Point(636, 170);
+            this.ShowChangeMCPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowChangeMCPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ShowChangeMCPanelBtn.Name = "ShowChangeMCPanelBtn";
+            this.ShowChangeMCPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.ShowChangeMCPanelBtn.Size = new System.Drawing.Size(110, 36);
+            this.ShowChangeMCPanelBtn.TabIndex = 62;
+            this.ShowChangeMCPanelBtn.Text = "Изментить";
+            this.ShowChangeMCPanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.ShowChangeMCPanelBtn.UseAccentColor = false;
+            this.ShowChangeMCPanelBtn.UseVisualStyleBackColor = true;
+            this.ShowChangeMCPanelBtn.Click += new System.EventHandler(this.materialButton5_Click);
+            // 
+            // materialButton5
+            // 
+            this.materialButton5.AutoSize = false;
+            this.materialButton5.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton5.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
+            this.materialButton5.Depth = 0;
+            this.materialButton5.HighEmphasis = true;
+            this.materialButton5.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton5.Icon")));
+            this.materialButton5.ImageIndex = 24;
+            this.materialButton5.Location = new System.Drawing.Point(289, 2);
+            this.materialButton5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton5.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton5.Name = "materialButton5";
+            this.materialButton5.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton5.Size = new System.Drawing.Size(39, 32);
+            this.materialButton5.TabIndex = 64;
+            this.materialButton5.Text = "CloseMCPanelBtn";
+            this.materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.materialButton5.UseAccentColor = false;
+            this.materialButton5.UseVisualStyleBackColor = true;
+            this.materialButton5.Click += new System.EventHandler(this.materialButton5_Click_1);
+            // 
+            // materialLabel9
+            // 
+            this.materialLabel9.AutoSize = true;
+            this.materialLabel9.Depth = 0;
+            this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel9.Location = new System.Drawing.Point(13, 12);
+            this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel9.Name = "materialLabel9";
+            this.materialLabel9.Size = new System.Drawing.Size(139, 19);
+            this.materialLabel9.TabIndex = 37;
+            this.materialLabel9.Text = "Добавить автобус";
+            // 
+            // materialLabel10
+            // 
+            this.materialLabel10.AutoSize = true;
+            this.materialLabel10.Depth = 0;
+            this.materialLabel10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel10.Location = new System.Drawing.Point(14, 9);
+            this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel10.Name = "materialLabel10";
+            this.materialLabel10.Size = new System.Drawing.Size(139, 19);
+            this.materialLabel10.TabIndex = 38;
+            this.materialLabel10.Text = "Изменить автобус";
+            // 
+            // materialButton6
+            // 
+            this.materialButton6.AutoSize = false;
+            this.materialButton6.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton6.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
+            this.materialButton6.Depth = 0;
+            this.materialButton6.HighEmphasis = true;
+            this.materialButton6.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton6.Icon")));
+            this.materialButton6.ImageIndex = 24;
+            this.materialButton6.Location = new System.Drawing.Point(289, 6);
+            this.materialButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton6.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton6.Name = "materialButton6";
+            this.materialButton6.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton6.Size = new System.Drawing.Size(39, 32);
+            this.materialButton6.TabIndex = 65;
+            this.materialButton6.Text = "CloseChangeMCPanelBtn";
+            this.materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.materialButton6.UseAccentColor = false;
+            this.materialButton6.UseVisualStyleBackColor = true;
+            this.materialButton6.Click += new System.EventHandler(this.materialButton6_Click);
             // 
             // Form1
             // 
@@ -1282,11 +2013,32 @@
             this.tabPage2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BusDVG)).EndInit();
             this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ChangeDVG)).EndInit();
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
             this.tabPage3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MCDVG)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.addChangePanel.ResumeLayout(false);
+            this.addChangePanel.PerformLayout();
+            this.ChangeChangePanel.ResumeLayout(false);
+            this.ChangeChangePanel.PerformLayout();
+            this.AddMarkPanel.ResumeLayout(false);
+            this.AddMarkPanel.PerformLayout();
+            this.ChangeMarkPanel.ResumeLayout(false);
+            this.ChangeMarkPanel.PerformLayout();
+            this.AddDriverPanel.ResumeLayout(false);
+            this.AddDriverPanel.PerformLayout();
+            this.ChangeDriverPanel.ResumeLayout(false);
+            this.ChangeDriverPanel.PerformLayout();
+            this.AddBusPanel.ResumeLayout(false);
+            this.AddBusPanel.PerformLayout();
+            this.ChangeBusPanel.ResumeLayout(false);
+            this.ChangeBusPanel.PerformLayout();
+            this.AddMCPanel.ResumeLayout(false);
+            this.AddMCPanel.PerformLayout();
+            this.ChangeMCPanel.ResumeLayout(false);
+            this.ChangeMCPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1349,8 +2101,48 @@
         private MaterialSkin.Controls.MaterialTextBox ChangeTypeMCTB;
         private MaterialSkin.Controls.MaterialButton materialButton1;
         private MaterialSkin.Controls.MaterialComboBox changeCatMCCB;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox21;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private MaterialSkin.Controls.MaterialTextBox2 ChangeSearchTB;
+        private System.Windows.Forms.DataGridView ChangeDVG;
+        private MaterialSkin.Controls.MaterialButton addChangeBtn;
+        private MaterialSkin.Controls.MaterialComboBox ReasonChangeCB;
+        private MaterialSkin.Controls.MaterialComboBox MCChangeCB;
+        private MaterialSkin.Controls.MaterialComboBox BusChangeCB;
+        private MaterialSkin.Controls.MaterialButton openAddChangePanelBtn;
+        private System.Windows.Forms.Panel addChangePanel;
+        private MaterialSkin.Controls.MaterialLabel materialLabel1;
+        private System.Windows.Forms.Panel ChangeChangePanel;
+        private MaterialSkin.Controls.MaterialLabel materialLabel2;
+        private MaterialSkin.Controls.MaterialComboBox changeBusChangeCB;
+        private MaterialSkin.Controls.MaterialComboBox ChangeReasonChangeCB;
+        private MaterialSkin.Controls.MaterialComboBox ChangeMCChangeCB;
+        private MaterialSkin.Controls.MaterialButton materialButton4;
+        private MaterialSkin.Controls.MaterialButton materialButton2;
+        private MaterialSkin.Controls.MaterialButton ShowAddMarkPanelBtn;
+        private System.Windows.Forms.Panel AddMarkPanel;
+        private MaterialSkin.Controls.MaterialLabel materialLabel3;
+        private System.Windows.Forms.Panel ChangeMarkPanel;
+        private MaterialSkin.Controls.MaterialLabel materialLabel4;
+        private MaterialSkin.Controls.MaterialButton ShowChangeMarkPanelBtn;
+        private MaterialSkin.Controls.MaterialButton ShowAddDriverPanelBtn;
+        private System.Windows.Forms.Panel AddDriverPanel;
+        private MaterialSkin.Controls.MaterialLabel materialLabel5;
+        private System.Windows.Forms.Panel ChangeDriverPanel;
+        private MaterialSkin.Controls.MaterialLabel materialLabel6;
+        private MaterialSkin.Controls.MaterialButton ShowChangeDriverPanelBtn;
+        private MaterialSkin.Controls.MaterialButton ShowAddBusPanel;
+        private System.Windows.Forms.Panel AddBusPanel;
+        private MaterialSkin.Controls.MaterialButton ShowChangeBusPanelBtn;
+        private System.Windows.Forms.Panel ChangeBusPanel;
+        private MaterialSkin.Controls.MaterialButton ShowAddMCPAnelBtn;
+        private System.Windows.Forms.Panel AddMCPanel;
+        private MaterialSkin.Controls.MaterialLabel materialLabel7;
+        private MaterialSkin.Controls.MaterialButton ShowChangeMCPanelBtn;
+        private System.Windows.Forms.Panel ChangeMCPanel;
+        private MaterialSkin.Controls.MaterialLabel materialLabel8;
+        private MaterialSkin.Controls.MaterialButton materialButton5;
+        private MaterialSkin.Controls.MaterialLabel materialLabel9;
+        private MaterialSkin.Controls.MaterialLabel materialLabel10;
+        private MaterialSkin.Controls.MaterialButton materialButton6;
     }
 }
 
