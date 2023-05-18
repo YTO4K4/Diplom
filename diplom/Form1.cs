@@ -108,7 +108,7 @@ namespace diplom
                 }
                 else if (materialTabControl1.SelectedIndex == 0)
                 {
-                    sqlDataAdapter = new SqlDataAdapter("select id_ch, concat(Bus.GosNum, '(', Marks.Name,')') as [Автобус],MatCen.Name as [Предмет замены], MatCen.Type as [Тип], MatCen.Categ as [Категория], Change.Reason, Bus.GarageNum, MatCen.Id_m\r\nfrom Change, Bus, MatCen, Marks\r\nWhere Change.GarageNum = Bus.GarageNum and Bus.Id_mark = Marks.Id_mark and Change.Id_m = MatCen.Id_m", sqlConnection);
+                    sqlDataAdapter = new SqlDataAdapter("select id_ch, concat(Bus.GosNum, '(', Marks.Name,')') as [Автобус],MatCen.Name as [Предмет замены], MatCen.Type as [Тип], MatCen.Categ as [Категория],format(Change.Date_ch,'dd.MM.yyyy') as [Дата замены], Change.Reason, Bus.GarageNum, MatCen.Id_m\r\nfrom Change, Bus, MatCen, Marks\r\nWhere Change.GarageNum = Bus.GarageNum and Bus.Id_mark = Marks.Id_mark and Change.Id_m = MatCen.Id_m", sqlConnection);
                     sqlBuilder = new SqlCommandBuilder(sqlDataAdapter);
                     dataSet = new DataSet();
                     sqlDataAdapter.Fill(dataSet, "Change");
@@ -620,11 +620,12 @@ namespace diplom
         {
             try
             {
-                SqlCommand command = new SqlCommand($"INSERT INTO Change (GarageNum, Id_m, Reason) VALUES (@GarageNum, @Id_m, @Reason)", sqlConnection);
+                SqlCommand command = new SqlCommand($"INSERT INTO Change (GarageNum, Id_m, Reason, Date) VALUES (@GarageNum, @Id_m, @Reason,@Date)", sqlConnection);
 
                 command.Parameters.AddWithValue("GarageNum", BusChangeCB.SelectedValue);
                 command.Parameters.AddWithValue("Id_m", MCChangeCB.SelectedValue);
                 command.Parameters.AddWithValue("Reason", ReasonChangeCB.Text);
+                command.Parameters.AddWithValue("Date", addChangeDateDtp.Value.Date.ToString("yyyyMMdd"));
 
                 command.ExecuteNonQuery();
 
@@ -640,45 +641,22 @@ namespace diplom
             catch (Exception ex) { MaterialMessageBox.Show("Проверьте введённые данные", "Ошибка"); }
         }
 
-        private void materialButton4_Click(object sender, EventArgs e)
-        {
-            ChangeChangePanel.Visible = true;
-        }
+       
 
         private void ChangeDVG_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             rowIndex = e.RowIndex;
             if (rowIndex != -1)
             {
-                changeBusChangeCB.SelectedValue = (ChangeDVG.Rows[rowIndex].Cells[6].Value.ToString());
-                ChangeMCChangeCB.SelectedValue = Convert.ToInt32(ChangeDVG.Rows[rowIndex].Cells[7].Value.ToString());
-                ChangeReasonChangeCB.Text = ChangeDVG.Rows[rowIndex].Cells[5].Value.ToString();
-               
+                changeBusChangeCB.SelectedValue = (ChangeDVG.Rows[rowIndex].Cells[7].Value.ToString());
+                ChangeMCChangeCB.SelectedValue = Convert.ToInt32(ChangeDVG.Rows[rowIndex].Cells[8].Value.ToString());
+                ChangeReasonChangeCB.Text = ChangeDVG.Rows[rowIndex].Cells[6].Value.ToString();
+                ChangeChangeDateDtp.Value = Convert.ToDateTime( ChangeDVG.Rows[rowIndex].Cells[5].Value);
+
             }
         }
 
-        private void materialButton2_Click_1(object sender, EventArgs e)
-        {
-            try
-            {
-                if (changeBusChangeCB.SelectedIndex != -1 && ChangeMCChangeCB.SelectedIndex != -1 && ChangeReasonChangeCB.SelectedIndex != -1)
-                {
-
-                    SqlCommand sqlCommand = new SqlCommand($"update Change set GarageNum = N'{changeBusChangeCB.SelectedValue}', Id_m = {ChangeMCChangeCB.SelectedValue}, Reason = N'{ChangeReasonChangeCB.Text}' WHERE Id_m = N'{ChangeDVG[0, ChangeDVG.CurrentRow.Index].Value}'", sqlConnection);
-                    sqlCommand.ExecuteNonQuery();
-                    LoadData();
-                    changeBusChangeCB.SelectedIndex = -1;
-                    ChangeMCChangeCB.SelectedIndex = -1;
-                    ChangeReasonChangeCB.SelectedIndex = -1;
-                    ChangeChangePanel.Visible = false;
-                }
-                else
-                {
-                    MessageBox.Show("Заполните все строки");
-                }
-            }
-            catch (Exception ex) { MaterialMessageBox.Show(ex.Message, "Ошибка!"); }
-        }
+     
 
         private void materialTextBox21_TextChanged(object sender, EventArgs e)
         {
@@ -752,5 +730,96 @@ namespace diplom
         {
             ChangeMCPanel.Visible = false;
         }
+
+        private void materialButton7_Click(object sender, EventArgs e)
+        {
+            ChangeBusPanel.Visible = false;
+        }
+
+        private void materialButton8_Click(object sender, EventArgs e)
+        {
+            AddBusPanel.Visible = false;
+        }
+
+        private void materialButton10_Click(object sender, EventArgs e)
+        {
+            AddDriverPanel.Visible = false;
+        }
+
+        private void materialButton9_Click(object sender, EventArgs e)
+        {
+            ChangeDriverPanel.Visible = false;
+        }
+
+        private void materialButton11_Click(object sender, EventArgs e)
+        {
+            AddMarkPanel.Visible = false;
+        }
+
+        private void materialButton12_Click(object sender, EventArgs e)
+        {
+            ChangeMarkPanel.Visible = false;
+        }
+
+        private void materialButton13_Click(object sender, EventArgs e)
+        {
+            addChangePanel.Visible = false;
+        }
+
+        private void materialButton14_Click(object sender, EventArgs e)
+        {
+            ChangeChangePanel.Visible = false;
+        }
+
+        private void materialButton4_Click(object sender, EventArgs e)
+        {
+            ChangeChangePanel.Visible = true;
+        }
+
+        private void ChangeChangeBtn_Click(object sender, EventArgs e)
+        {
+            //try
+            //{
+                if (changeBusChangeCB.SelectedIndex != -1 && ChangeMCChangeCB.SelectedIndex != -1 && ChangeReasonChangeCB.SelectedIndex != -1)
+                {
+
+                    SqlCommand sqlCommand = new SqlCommand($"update Change set GarageNum = N'{changeBusChangeCB.SelectedValue}', Id_m = {ChangeMCChangeCB.SelectedValue}, Reason = N'{ChangeReasonChangeCB.Text}',Date_ch = '{ChangeChangeDateDtp.Value.Date.ToString("yyyyMMdd")}' WHERE Id_ch = N'{ChangeDVG[0, ChangeDVG.CurrentRow.Index].Value}'", sqlConnection);
+                    sqlCommand.ExecuteNonQuery();
+                    LoadData();
+                    changeBusChangeCB.SelectedIndex = -1;
+                    ChangeMCChangeCB.SelectedIndex = -1;
+                    ChangeReasonChangeCB.SelectedIndex = -1;
+                    ChangeChangePanel.Visible = false;
+
+                }
+                else
+                {
+                    MessageBox.Show("Заполните все строки");
+                }
+            //}
+            //catch (Exception ex) { MaterialMessageBox.Show(ex.Message, "Ошибка!"); }
+        }
+
+        private void materialButton2_Click(object sender, EventArgs e)
+        {
+            if (MaterialMessageBox.Show("Вы точно хотите удалить выбранную запись!", "Внимание!", MessageBoxButtons.YesNo, UseRichTextBox: true) == DialogResult.Yes)
+            {
+                SqlCommand command = new SqlCommand("DELETE FROM Change WHERE Id_ch = @Id", sqlConnection);
+                int id = int.Parse(ChangeDVG.CurrentRow.Cells[0].Value.ToString());
+                command.Parameters.AddWithValue("@Id", id);
+
+                try
+                {
+                    command.ExecuteNonQuery();
+                    MaterialMessageBox.Show("Запись удалена!", "Успешно!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch
+                {
+                    MaterialMessageBox.Show("Не удалось удалить запись!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            LoadData();
+        }
+
     }
 }
