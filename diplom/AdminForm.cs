@@ -25,6 +25,7 @@ namespace diplom
         private SqlCommandBuilder sqlBuilder = null;
         public SqlCommand sqlCommand = null;
         int rowIndex = 0;
+        DateTime dateTime = DateTime.Now;
         public AdminForm()
         {
             InitializeComponent();
@@ -147,7 +148,16 @@ namespace diplom
                     ReasonChangeCB.SelectedIndex = -1;
 
                 }
-
+                else if (materialTabControl1.SelectedIndex == 5)
+                {
+                    sqlDataAdapter = new SqlDataAdapter("select id, Username as [Логин], Password as [Пароль], IsAdmin as [Админ] from Users", sqlConnection);
+                    sqlBuilder = new SqlCommandBuilder(sqlDataAdapter);
+                    dataSet = new DataSet();
+                    sqlDataAdapter.Fill(dataSet, "Users");
+                    UsersDVG.DataSource = dataSet.Tables["Users"];
+                    UsersDVG.Columns["Id"].Visible = false;
+                    UsersDVG.Columns[3].Width = 70;
+                }
 
             }
             catch (Exception ex)
@@ -157,7 +167,7 @@ namespace diplom
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            materialLabel12.Text = "Дата замены: " + dateTime.ToString("dd.MM.yyyy");
             sqlConnection = new SqlConnection(scon);
             sqlConnection.Open();
             LoadData();
@@ -165,6 +175,7 @@ namespace diplom
 
         private void materialTabControl1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            this.Text = materialTabControl1.SelectedTab.Text;
             LoadData();
         }
 
@@ -676,6 +687,8 @@ namespace diplom
 
         private void addChangeBtn_Click(object sender, EventArgs e)
         {
+            
+            
             try
             {
                 SqlCommand command = new SqlCommand($"INSERT INTO Change (GarageNum, Id_m, Reason, Date_ch) VALUES (@GarageNum, @Id_m, @Reason,@Date)", sqlConnection);
@@ -683,7 +696,7 @@ namespace diplom
                 command.Parameters.AddWithValue("GarageNum", BusChangeCB.SelectedValue);
                 command.Parameters.AddWithValue("Id_m", MCChangeCB.SelectedValue);
                 command.Parameters.AddWithValue("Reason", ReasonChangeCB.Text);
-                command.Parameters.AddWithValue("Date", addChangeDateDtp.Value.Date.ToString("yyyyMMdd"));
+                command.Parameters.AddWithValue("Date", dateTime);
 
                 command.ExecuteNonQuery();
 
@@ -1035,8 +1048,9 @@ namespace diplom
         }
 
         private void materialButton17_Click(object sender, EventArgs e)
-        { 
-            if (ChangeDVG.CurrentRow.Cells[6].Value.ToString() == "Поломка" && ChangeDVG.CurrentRow.Cells[4].Value.ToString() == "Агрегат") {
+        {
+            if (ChangeDVG.CurrentRow.Cells[6].Value.ToString() == "Поломка" && ChangeDVG.CurrentRow.Cells[4].Value.ToString() == "Агрегат")
+            {
                 BreakeAgrForm form = new BreakeAgrForm();
                 form.Show();
             }
@@ -1045,6 +1059,120 @@ namespace diplom
                 BreakeLiquidForm form = new BreakeLiquidForm();
                 form.Show();
             }
+            else if (ChangeDVG.CurrentRow.Cells[6].Value.ToString() == "ТО")
+            { 
+                 TOForm form = new TOForm();
+                form.Show();
+            }
+
+        }
+
+        private void ShowAddUserPanelBtn_Click(object sender, EventArgs e)
+        {
+            addUserPanel.Visible = true;
+        }
+
+        private void materialButton34_Click(object sender, EventArgs e)
+        {
+            addUserPanel.Visible = false;
+        }
+
+        private void showChangeUserPanelBtn_Click(object sender, EventArgs e)
+        {
+            ChangeUserPanel.Visible = true;
+        }
+
+        private void materialButton36_Click(object sender, EventArgs e)
+        {
+            ChangeUserPanel.Visible = false;
+        }
+
+        private void addUserBtn_Click(object sender, EventArgs e)
+        {
+            if (addUserLoginTB.Text != "" && addUserPasswordTB.Text != "")
+            {
+                try
+                {
+                    SqlCommand command = new SqlCommand($"INSERT INTO Users (Username,Password, IsAdmin) VALUES (@UserName,@Password, @IsAdmin)", sqlConnection);
+
+                    command.Parameters.AddWithValue("UserName", addUserLoginTB.Text);
+                    command.Parameters.AddWithValue("Password", addUserPasswordTB.Text);
+                    command.Parameters.AddWithValue("IsAdmin", addUserRoleSwitch.Checked);
+                    command.ExecuteNonQuery();
+
+
+                    MaterialMessageBox.Show("Добавлено!");
+                    LoadData();
+                    addUserLoginTB.Text = "";
+                    addUserPasswordTB.Text = "";
+
+                    addUserRoleSwitch.Checked = false;
+                    addUserPanel.Visible = false;
+                }
+                catch (Exception ex) { MaterialMessageBox.Show("Проверьте введённые данные", "Ошибка"); }
+            }
+            else { MaterialMessageBox.Show("Заполните все поля", "Ошибка"); }
+        }
+
+        private void changeUserBtn_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (changeUserLoginTB.Text != "" && changeUserPasswordTB.Text != "")
+                {
+
+                    SqlCommand sqlCommand = new SqlCommand($"update Users set Username = N'{changeUserLoginTB.Text}',Password=N'{changeUserPasswordTB.Text}',IsAdmin = '{changeUserRoleSwitch.Checked}' WHERE Id = {dataGridView1[0, dataGridView1.CurrentRow.Index].Value}", sqlConnection);
+                    sqlCommand.ExecuteNonQuery();
+                    LoadData();
+
+                    changeUserLoginTB.Text = "";
+                    changeUserPasswordTB.Text = "";
+                    changeUserRoleSwitch.Checked = false;
+
+                }
+                else
+                {
+                    MessageBox.Show("Заполните все строки");
+                }
+            }
+            catch (Exception ex) { MaterialMessageBox.Show(ex.Message, "Ошибка!"); }
+        }
+
+        private void UsersDVG_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            rowIndex = e.RowIndex;
+            if (rowIndex != -1)
+            {
+                changeUserLoginTB.Text = UsersDVG.Rows[rowIndex].Cells[1].Value.ToString();
+                changeUserPasswordTB.Text = UsersDVG.Rows[rowIndex].Cells[2].Value.ToString();
+                changeUserRoleSwitch.Checked = (bool)UsersDVG.Rows[rowIndex].Cells[3].Value;
+            }
+        }
+
+        private void deleteUserBtn_Click(object sender, EventArgs e)
+        {
+            if (MaterialMessageBox.Show("Вы точно хотите удалить выбранную запись!", "Внимание!", MessageBoxButtons.YesNo, UseRichTextBox: true) == DialogResult.Yes)
+            {
+                SqlCommand command = new SqlCommand("DELETE FROM Users WHERE Id = @Id", sqlConnection);
+                int id = int.Parse(UsersDVG.CurrentRow.Cells[0].Value.ToString());
+                command.Parameters.AddWithValue("@Id", id);
+
+                try
+                {
+                    command.ExecuteNonQuery();
+                    MaterialMessageBox.Show("Запись удалена!", "Успешно!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                catch
+                {
+                    MaterialMessageBox.Show("Не удалось удалить запись!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+            }
+            LoadData();
+        }
+
+        private void reloadUsersBtn_Click(object sender, EventArgs e)
+        {
+            LoadData();
         }
     }
 }
