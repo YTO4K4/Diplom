@@ -94,40 +94,11 @@
             this.changeDriverBusCB = new MaterialSkin.Controls.MaterialComboBox();
             this.ShowAddBusPanel = new MaterialSkin.Controls.MaterialButton();
             this.materialButton15 = new MaterialSkin.Controls.MaterialButton();
-            this.materialTextBox24 = new MaterialSkin.Controls.MaterialTextBox2();
+            this.searchBusTB = new MaterialSkin.Controls.MaterialTextBox2();
             this.BusDVG = new System.Windows.Forms.DataGridView();
             this.ShowChangeBusPanelBtn = new MaterialSkin.Controls.MaterialButton();
             this.deleteBusBtn = new MaterialSkin.Controls.MaterialButton();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.filterCatPanel = new System.Windows.Forms.Panel();
-            this.filterCatBtn = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton37 = new MaterialSkin.Controls.MaterialButton();
-            this.filterReasonPanel = new System.Windows.Forms.Panel();
-            this.filterReasonBtn = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton35 = new MaterialSkin.Controls.MaterialButton();
-            this.filterDatePanel = new System.Windows.Forms.Panel();
-            this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
-            this.filterDateBtn = new MaterialSkin.Controls.MaterialButton();
-            this.filterDateEndDtp = new System.Windows.Forms.DateTimePicker();
-            this.filterDateSDtp = new System.Windows.Forms.DateTimePicker();
-            this.materialButton32 = new MaterialSkin.Controls.MaterialButton();
-            this.filterPanel = new System.Windows.Forms.Panel();
-            this.materialButton31 = new MaterialSkin.Controls.MaterialButton();
-            this.showFilterCatPanelBtn = new MaterialSkin.Controls.MaterialButton();
-            this.showFilterReasonPanelBtn = new MaterialSkin.Controls.MaterialButton();
-            this.showFilterDatePanelBtn = new MaterialSkin.Controls.MaterialButton();
-            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
-            this.ChangeChangePanel = new System.Windows.Forms.Panel();
-            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
-            this.ChangeChangeBtn = new MaterialSkin.Controls.MaterialButton();
-            this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
-            this.ChangeChangeDateDtp = new System.Windows.Forms.DateTimePicker();
-            this.materialButton14 = new MaterialSkin.Controls.MaterialButton();
-            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
-            this.changeBusChangeCB = new MaterialSkin.Controls.MaterialComboBox();
-            this.ChangeReasonChangeCB = new MaterialSkin.Controls.MaterialComboBox();
-            this.ChangeMCChangeCB = new MaterialSkin.Controls.MaterialComboBox();
             this.addChangePanel = new System.Windows.Forms.Panel();
             this.materialButton19 = new MaterialSkin.Controls.MaterialButton();
             this.materialLabel12 = new MaterialSkin.Controls.MaterialLabel();
@@ -138,6 +109,37 @@
             this.ReasonChangeCB = new MaterialSkin.Controls.MaterialComboBox();
             this.addChangeBtn = new MaterialSkin.Controls.MaterialButton();
             this.MCChangeCB = new MaterialSkin.Controls.MaterialComboBox();
+            this.ChangeChangePanel = new System.Windows.Forms.Panel();
+            this.materialButton2 = new MaterialSkin.Controls.MaterialButton();
+            this.ChangeChangeBtn = new MaterialSkin.Controls.MaterialButton();
+            this.materialLabel11 = new MaterialSkin.Controls.MaterialLabel();
+            this.ChangeChangeDateDtp = new System.Windows.Forms.DateTimePicker();
+            this.materialButton14 = new MaterialSkin.Controls.MaterialButton();
+            this.materialLabel2 = new MaterialSkin.Controls.MaterialLabel();
+            this.changeBusChangeCB = new MaterialSkin.Controls.MaterialComboBox();
+            this.ChangeReasonChangeCB = new MaterialSkin.Controls.MaterialComboBox();
+            this.ChangeMCChangeCB = new MaterialSkin.Controls.MaterialComboBox();
+            this.filterReasonPanel = new System.Windows.Forms.Panel();
+            this.filterReasonCB = new MaterialSkin.Controls.MaterialComboBox();
+            this.filterReasonBtn = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton35 = new MaterialSkin.Controls.MaterialButton();
+            this.filterDatePanel = new System.Windows.Forms.Panel();
+            this.materialLabel17 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialLabel14 = new MaterialSkin.Controls.MaterialLabel();
+            this.filterDateBtn = new MaterialSkin.Controls.MaterialButton();
+            this.filterDateEndDtp = new System.Windows.Forms.DateTimePicker();
+            this.filterDateSDtp = new System.Windows.Forms.DateTimePicker();
+            this.materialButton32 = new MaterialSkin.Controls.MaterialButton();
+            this.filterCatPanel = new System.Windows.Forms.Panel();
+            this.filterCatCB = new MaterialSkin.Controls.MaterialComboBox();
+            this.filterCatBtn = new MaterialSkin.Controls.MaterialButton();
+            this.materialButton37 = new MaterialSkin.Controls.MaterialButton();
+            this.filterPanel = new System.Windows.Forms.Panel();
+            this.materialButton31 = new MaterialSkin.Controls.MaterialButton();
+            this.showFilterCatPanelBtn = new MaterialSkin.Controls.MaterialButton();
+            this.showFilterReasonPanelBtn = new MaterialSkin.Controls.MaterialButton();
+            this.showFilterDatePanelBtn = new MaterialSkin.Controls.MaterialButton();
+            this.materialLabel13 = new MaterialSkin.Controls.MaterialLabel();
             this.materialButton18 = new MaterialSkin.Controls.MaterialButton();
             this.materialButton17 = new MaterialSkin.Controls.MaterialButton();
             this.ShowFilterChangeBtn = new MaterialSkin.Controls.MaterialButton();
@@ -174,8 +176,6 @@
             this.MCDVG = new System.Windows.Forms.DataGridView();
             this.ShowChangeMCPanelBtn = new MaterialSkin.Controls.MaterialButton();
             this.imageList1 = new System.Windows.Forms.ImageList(this.components);
-            this.filterReasonCB = new MaterialSkin.Controls.MaterialComboBox();
-            this.filterCatCB = new MaterialSkin.Controls.MaterialComboBox();
             this.tabPage7.SuspendLayout();
             this.ChangeMarkPanel.SuspendLayout();
             this.AddMarkPanel.SuspendLayout();
@@ -189,12 +189,12 @@
             this.ChangeBusPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.BusDVG)).BeginInit();
             this.tabPage1.SuspendLayout();
-            this.filterCatPanel.SuspendLayout();
+            this.addChangePanel.SuspendLayout();
+            this.ChangeChangePanel.SuspendLayout();
             this.filterReasonPanel.SuspendLayout();
             this.filterDatePanel.SuspendLayout();
+            this.filterCatPanel.SuspendLayout();
             this.filterPanel.SuspendLayout();
-            this.ChangeChangePanel.SuspendLayout();
-            this.addChangePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChangeDVG)).BeginInit();
             this.materialTabControl1.SuspendLayout();
             this.tabPage3.SuspendLayout();
@@ -996,7 +996,7 @@
             this.tabPage2.Controls.Add(this.ChangeBusPanel);
             this.tabPage2.Controls.Add(this.ShowAddBusPanel);
             this.tabPage2.Controls.Add(this.materialButton15);
-            this.tabPage2.Controls.Add(this.materialTextBox24);
+            this.tabPage2.Controls.Add(this.searchBusTB);
             this.tabPage2.Controls.Add(this.BusDVG);
             this.tabPage2.Controls.Add(this.ShowChangeBusPanelBtn);
             this.tabPage2.Controls.Add(this.deleteBusBtn);
@@ -1394,35 +1394,35 @@
             this.materialButton15.UseVisualStyleBackColor = true;
             this.materialButton15.Click += new System.EventHandler(this.materialButton15_Click);
             // 
-            // materialTextBox24
+            // searchBusTB
             // 
-            this.materialTextBox24.AnimateReadOnly = false;
-            this.materialTextBox24.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.materialTextBox24.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.materialTextBox24.Depth = 0;
-            this.materialTextBox24.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialTextBox24.HideSelection = true;
-            this.materialTextBox24.Hint = "Найти";
-            this.materialTextBox24.LeadingIcon = null;
-            this.materialTextBox24.Location = new System.Drawing.Point(27, 16);
-            this.materialTextBox24.MaxLength = 32767;
-            this.materialTextBox24.MouseState = MaterialSkin.MouseState.OUT;
-            this.materialTextBox24.Name = "materialTextBox24";
-            this.materialTextBox24.PasswordChar = '\0';
-            this.materialTextBox24.PrefixSuffixText = null;
-            this.materialTextBox24.ReadOnly = false;
-            this.materialTextBox24.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.materialTextBox24.SelectedText = "";
-            this.materialTextBox24.SelectionLength = 0;
-            this.materialTextBox24.SelectionStart = 0;
-            this.materialTextBox24.ShortcutsEnabled = true;
-            this.materialTextBox24.Size = new System.Drawing.Size(529, 48);
-            this.materialTextBox24.TabIndex = 24;
-            this.materialTextBox24.TabStop = false;
-            this.materialTextBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.materialTextBox24.TrailingIcon = null;
-            this.materialTextBox24.UseSystemPasswordChar = false;
-            this.materialTextBox24.TextChanged += new System.EventHandler(this.materialTextBox24_TextChanged);
+            this.searchBusTB.AnimateReadOnly = false;
+            this.searchBusTB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.searchBusTB.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.searchBusTB.Depth = 0;
+            this.searchBusTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.searchBusTB.HideSelection = true;
+            this.searchBusTB.Hint = "Найти";
+            this.searchBusTB.LeadingIcon = null;
+            this.searchBusTB.Location = new System.Drawing.Point(27, 16);
+            this.searchBusTB.MaxLength = 32767;
+            this.searchBusTB.MouseState = MaterialSkin.MouseState.OUT;
+            this.searchBusTB.Name = "searchBusTB";
+            this.searchBusTB.PasswordChar = '\0';
+            this.searchBusTB.PrefixSuffixText = null;
+            this.searchBusTB.ReadOnly = false;
+            this.searchBusTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.searchBusTB.SelectedText = "";
+            this.searchBusTB.SelectionLength = 0;
+            this.searchBusTB.SelectionStart = 0;
+            this.searchBusTB.ShortcutsEnabled = true;
+            this.searchBusTB.Size = new System.Drawing.Size(529, 48);
+            this.searchBusTB.TabIndex = 24;
+            this.searchBusTB.TabStop = false;
+            this.searchBusTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.searchBusTB.TrailingIcon = null;
+            this.searchBusTB.UseSystemPasswordChar = false;
+            this.searchBusTB.TextChanged += new System.EventHandler(this.materialTextBox24_TextChanged);
             // 
             // BusDVG
             // 
@@ -1504,312 +1504,187 @@
             this.tabPage1.Text = "Главная";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // filterCatPanel
+            // addChangePanel
             // 
-            this.filterCatPanel.Controls.Add(this.filterCatCB);
-            this.filterCatPanel.Controls.Add(this.filterCatBtn);
-            this.filterCatPanel.Controls.Add(this.materialButton37);
-            this.filterCatPanel.Location = new System.Drawing.Point(404, 138);
-            this.filterCatPanel.Name = "filterCatPanel";
-            this.filterCatPanel.Size = new System.Drawing.Size(317, 256);
-            this.filterCatPanel.TabIndex = 69;
-            this.filterCatPanel.Visible = false;
+            this.addChangePanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.addChangePanel.Controls.Add(this.materialButton19);
+            this.addChangePanel.Controls.Add(this.materialLabel12);
+            this.addChangePanel.Controls.Add(this.addChangeDateDtp);
+            this.addChangePanel.Controls.Add(this.materialButton13);
+            this.addChangePanel.Controls.Add(this.materialLabel1);
+            this.addChangePanel.Controls.Add(this.BusChangeCB);
+            this.addChangePanel.Controls.Add(this.ReasonChangeCB);
+            this.addChangePanel.Controls.Add(this.addChangeBtn);
+            this.addChangePanel.Controls.Add(this.MCChangeCB);
+            this.addChangePanel.Location = new System.Drawing.Point(276, 53);
+            this.addChangePanel.Name = "addChangePanel";
+            this.addChangePanel.Size = new System.Drawing.Size(377, 476);
+            this.addChangePanel.TabIndex = 46;
+            this.addChangePanel.Visible = false;
             // 
-            // filterCatBtn
+            // materialButton19
             // 
-            this.filterCatBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.filterCatBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.filterCatBtn.Depth = 0;
-            this.filterCatBtn.HighEmphasis = true;
-            this.filterCatBtn.Icon = null;
-            this.filterCatBtn.Location = new System.Drawing.Point(91, 188);
-            this.filterCatBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.filterCatBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.filterCatBtn.Name = "filterCatBtn";
-            this.filterCatBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.filterCatBtn.Size = new System.Drawing.Size(129, 36);
-            this.filterCatBtn.TabIndex = 66;
-            this.filterCatBtn.Text = "Фильтровать";
-            this.filterCatBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.filterCatBtn.UseAccentColor = false;
-            this.filterCatBtn.UseVisualStyleBackColor = true;
-            this.filterCatBtn.Click += new System.EventHandler(this.filterCatBtn_Click);
+            this.materialButton19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton19.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.materialButton19.Depth = 0;
+            this.materialButton19.HighEmphasis = true;
+            this.materialButton19.Icon = null;
+            this.materialButton19.Location = new System.Drawing.Point(235, 402);
+            this.materialButton19.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton19.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton19.Name = "materialButton19";
+            this.materialButton19.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton19.Size = new System.Drawing.Size(99, 36);
+            this.materialButton19.TabIndex = 74;
+            this.materialButton19.Text = "Очистить";
+            this.materialButton19.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.materialButton19.UseAccentColor = false;
+            this.materialButton19.UseVisualStyleBackColor = true;
             // 
-            // materialButton37
+            // materialLabel12
             // 
-            this.materialButton37.AutoSize = false;
-            this.materialButton37.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton37.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
-            this.materialButton37.Depth = 0;
-            this.materialButton37.HighEmphasis = true;
-            this.materialButton37.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton37.Icon")));
-            this.materialButton37.ImageIndex = 24;
-            this.materialButton37.Location = new System.Drawing.Point(265, 10);
-            this.materialButton37.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton37.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton37.Name = "materialButton37";
-            this.materialButton37.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton37.Size = new System.Drawing.Size(39, 32);
-            this.materialButton37.TabIndex = 65;
-            this.materialButton37.Text = "CloseMCPanelBtn";
-            this.materialButton37.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton37.UseAccentColor = false;
-            this.materialButton37.UseVisualStyleBackColor = true;
-            this.materialButton37.Click += new System.EventHandler(this.materialButton37_Click);
+            this.materialLabel12.AutoSize = true;
+            this.materialLabel12.Depth = 0;
+            this.materialLabel12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel12.Location = new System.Drawing.Point(71, 322);
+            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel12.Name = "materialLabel12";
+            this.materialLabel12.Size = new System.Drawing.Size(101, 19);
+            this.materialLabel12.TabIndex = 72;
+            this.materialLabel12.Text = "Дата замены";
             // 
-            // filterReasonPanel
+            // addChangeDateDtp
             // 
-            this.filterReasonPanel.Controls.Add(this.filterReasonCB);
-            this.filterReasonPanel.Controls.Add(this.filterReasonBtn);
-            this.filterReasonPanel.Controls.Add(this.materialButton35);
-            this.filterReasonPanel.Location = new System.Drawing.Point(359, 105);
-            this.filterReasonPanel.Name = "filterReasonPanel";
-            this.filterReasonPanel.Size = new System.Drawing.Size(317, 256);
-            this.filterReasonPanel.TabIndex = 69;
-            this.filterReasonPanel.Visible = false;
+            this.addChangeDateDtp.Location = new System.Drawing.Point(74, 347);
+            this.addChangeDateDtp.Name = "addChangeDateDtp";
+            this.addChangeDateDtp.Size = new System.Drawing.Size(221, 22);
+            this.addChangeDateDtp.TabIndex = 71;
             // 
-            // filterReasonBtn
+            // materialButton13
             // 
-            this.filterReasonBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.filterReasonBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.filterReasonBtn.Depth = 0;
-            this.filterReasonBtn.HighEmphasis = true;
-            this.filterReasonBtn.Icon = null;
-            this.filterReasonBtn.Location = new System.Drawing.Point(91, 188);
-            this.filterReasonBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.filterReasonBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.filterReasonBtn.Name = "filterReasonBtn";
-            this.filterReasonBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.filterReasonBtn.Size = new System.Drawing.Size(129, 36);
-            this.filterReasonBtn.TabIndex = 66;
-            this.filterReasonBtn.Text = "Фильтровать";
-            this.filterReasonBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.filterReasonBtn.UseAccentColor = false;
-            this.filterReasonBtn.UseVisualStyleBackColor = true;
-            this.filterReasonBtn.Click += new System.EventHandler(this.filterReasonBtn_Click);
+            this.materialButton13.AutoSize = false;
+            this.materialButton13.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton13.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
+            this.materialButton13.Depth = 0;
+            this.materialButton13.HighEmphasis = true;
+            this.materialButton13.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton13.Icon")));
+            this.materialButton13.ImageIndex = 24;
+            this.materialButton13.Location = new System.Drawing.Point(330, 6);
+            this.materialButton13.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton13.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton13.Name = "materialButton13";
+            this.materialButton13.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton13.Size = new System.Drawing.Size(39, 32);
+            this.materialButton13.TabIndex = 68;
+            this.materialButton13.Text = "CloseChangeMCPanelBtn";
+            this.materialButton13.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.materialButton13.UseAccentColor = false;
+            this.materialButton13.UseVisualStyleBackColor = true;
+            this.materialButton13.Click += new System.EventHandler(this.materialButton13_Click);
             // 
-            // materialButton35
+            // materialLabel1
             // 
-            this.materialButton35.AutoSize = false;
-            this.materialButton35.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton35.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
-            this.materialButton35.Depth = 0;
-            this.materialButton35.HighEmphasis = true;
-            this.materialButton35.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton35.Icon")));
-            this.materialButton35.ImageIndex = 24;
-            this.materialButton35.Location = new System.Drawing.Point(265, 10);
-            this.materialButton35.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton35.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton35.Name = "materialButton35";
-            this.materialButton35.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton35.Size = new System.Drawing.Size(39, 32);
-            this.materialButton35.TabIndex = 65;
-            this.materialButton35.Text = "CloseMCPanelBtn";
-            this.materialButton35.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton35.UseAccentColor = false;
-            this.materialButton35.UseVisualStyleBackColor = true;
-            this.materialButton35.Click += new System.EventHandler(this.materialButton35_Click);
+            this.materialLabel1.AutoSize = true;
+            this.materialLabel1.Depth = 0;
+            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel1.Location = new System.Drawing.Point(18, 21);
+            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel1.Name = "materialLabel1";
+            this.materialLabel1.Size = new System.Drawing.Size(133, 19);
+            this.materialLabel1.TabIndex = 4;
+            this.materialLabel1.Text = "Добавить замену";
             // 
-            // filterDatePanel
+            // BusChangeCB
             // 
-            this.filterDatePanel.Controls.Add(this.materialLabel17);
-            this.filterDatePanel.Controls.Add(this.materialLabel14);
-            this.filterDatePanel.Controls.Add(this.filterDateBtn);
-            this.filterDatePanel.Controls.Add(this.filterDateEndDtp);
-            this.filterDatePanel.Controls.Add(this.filterDateSDtp);
-            this.filterDatePanel.Controls.Add(this.materialButton32);
-            this.filterDatePanel.Location = new System.Drawing.Point(372, 124);
-            this.filterDatePanel.Name = "filterDatePanel";
-            this.filterDatePanel.Size = new System.Drawing.Size(317, 256);
-            this.filterDatePanel.TabIndex = 66;
-            this.filterDatePanel.Visible = false;
+            this.BusChangeCB.AutoResize = false;
+            this.BusChangeCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.BusChangeCB.Depth = 0;
+            this.BusChangeCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.BusChangeCB.DropDownHeight = 174;
+            this.BusChangeCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.BusChangeCB.DropDownWidth = 121;
+            this.BusChangeCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.BusChangeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.BusChangeCB.FormattingEnabled = true;
+            this.BusChangeCB.Hint = "Автобус";
+            this.BusChangeCB.IntegralHeight = false;
+            this.BusChangeCB.ItemHeight = 43;
+            this.BusChangeCB.Location = new System.Drawing.Point(74, 78);
+            this.BusChangeCB.MaxDropDownItems = 4;
+            this.BusChangeCB.MouseState = MaterialSkin.MouseState.OUT;
+            this.BusChangeCB.Name = "BusChangeCB";
+            this.BusChangeCB.Size = new System.Drawing.Size(221, 49);
+            this.BusChangeCB.StartIndex = 0;
+            this.BusChangeCB.TabIndex = 1;
             // 
-            // materialLabel17
+            // ReasonChangeCB
             // 
-            this.materialLabel17.AutoSize = true;
-            this.materialLabel17.Depth = 0;
-            this.materialLabel17.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel17.Location = new System.Drawing.Point(48, 98);
-            this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel17.Name = "materialLabel17";
-            this.materialLabel17.Size = new System.Drawing.Size(21, 19);
-            this.materialLabel17.TabIndex = 68;
-            this.materialLabel17.Text = "По";
+            this.ReasonChangeCB.AutoResize = false;
+            this.ReasonChangeCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.ReasonChangeCB.Depth = 0;
+            this.ReasonChangeCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.ReasonChangeCB.DropDownHeight = 174;
+            this.ReasonChangeCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ReasonChangeCB.DropDownWidth = 121;
+            this.ReasonChangeCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.ReasonChangeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.ReasonChangeCB.FormattingEnabled = true;
+            this.ReasonChangeCB.Hint = "Причина";
+            this.ReasonChangeCB.IntegralHeight = false;
+            this.ReasonChangeCB.ItemHeight = 43;
+            this.ReasonChangeCB.Items.AddRange(new object[] {
+            "ТО",
+            "Поломка"});
+            this.ReasonChangeCB.Location = new System.Drawing.Point(74, 260);
+            this.ReasonChangeCB.MaxDropDownItems = 4;
+            this.ReasonChangeCB.MouseState = MaterialSkin.MouseState.OUT;
+            this.ReasonChangeCB.Name = "ReasonChangeCB";
+            this.ReasonChangeCB.Size = new System.Drawing.Size(221, 49);
+            this.ReasonChangeCB.StartIndex = 0;
+            this.ReasonChangeCB.TabIndex = 3;
             // 
-            // materialLabel14
+            // addChangeBtn
             // 
-            this.materialLabel14.AutoSize = true;
-            this.materialLabel14.Depth = 0;
-            this.materialLabel14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel14.Location = new System.Drawing.Point(48, 36);
-            this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel14.Name = "materialLabel14";
-            this.materialLabel14.Size = new System.Drawing.Size(11, 19);
-            this.materialLabel14.TabIndex = 66;
-            this.materialLabel14.Text = "C";
+            this.addChangeBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.addChangeBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.addChangeBtn.Depth = 0;
+            this.addChangeBtn.HighEmphasis = true;
+            this.addChangeBtn.Icon = null;
+            this.addChangeBtn.Location = new System.Drawing.Point(51, 399);
+            this.addChangeBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.addChangeBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.addChangeBtn.Name = "addChangeBtn";
+            this.addChangeBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.addChangeBtn.Size = new System.Drawing.Size(100, 36);
+            this.addChangeBtn.TabIndex = 0;
+            this.addChangeBtn.Text = "Добавить";
+            this.addChangeBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.addChangeBtn.UseAccentColor = false;
+            this.addChangeBtn.UseVisualStyleBackColor = true;
+            this.addChangeBtn.Click += new System.EventHandler(this.addChangeBtn_Click);
             // 
-            // filterDateBtn
+            // MCChangeCB
             // 
-            this.filterDateBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.filterDateBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.filterDateBtn.Depth = 0;
-            this.filterDateBtn.HighEmphasis = true;
-            this.filterDateBtn.Icon = null;
-            this.filterDateBtn.Location = new System.Drawing.Point(91, 188);
-            this.filterDateBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.filterDateBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.filterDateBtn.Name = "filterDateBtn";
-            this.filterDateBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.filterDateBtn.Size = new System.Drawing.Size(129, 36);
-            this.filterDateBtn.TabIndex = 66;
-            this.filterDateBtn.Text = "Фильтровать";
-            this.filterDateBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.filterDateBtn.UseAccentColor = false;
-            this.filterDateBtn.UseVisualStyleBackColor = true;
-            this.filterDateBtn.Click += new System.EventHandler(this.filterDateBtn_Click);
-            // 
-            // filterDateEndDtp
-            // 
-            this.filterDateEndDtp.Location = new System.Drawing.Point(51, 120);
-            this.filterDateEndDtp.Name = "filterDateEndDtp";
-            this.filterDateEndDtp.Size = new System.Drawing.Size(200, 22);
-            this.filterDateEndDtp.TabIndex = 67;
-            // 
-            // filterDateSDtp
-            // 
-            this.filterDateSDtp.Location = new System.Drawing.Point(51, 59);
-            this.filterDateSDtp.Name = "filterDateSDtp";
-            this.filterDateSDtp.Size = new System.Drawing.Size(200, 22);
-            this.filterDateSDtp.TabIndex = 66;
-            // 
-            // materialButton32
-            // 
-            this.materialButton32.AutoSize = false;
-            this.materialButton32.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton32.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
-            this.materialButton32.Depth = 0;
-            this.materialButton32.HighEmphasis = true;
-            this.materialButton32.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton32.Icon")));
-            this.materialButton32.ImageIndex = 24;
-            this.materialButton32.Location = new System.Drawing.Point(265, 10);
-            this.materialButton32.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton32.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton32.Name = "materialButton32";
-            this.materialButton32.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton32.Size = new System.Drawing.Size(39, 32);
-            this.materialButton32.TabIndex = 65;
-            this.materialButton32.Text = "CloseMCPanelBtn";
-            this.materialButton32.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton32.UseAccentColor = false;
-            this.materialButton32.UseVisualStyleBackColor = true;
-            this.materialButton32.Click += new System.EventHandler(this.materialButton32_Click);
-            // 
-            // filterPanel
-            // 
-            this.filterPanel.Controls.Add(this.materialButton31);
-            this.filterPanel.Controls.Add(this.showFilterCatPanelBtn);
-            this.filterPanel.Controls.Add(this.showFilterReasonPanelBtn);
-            this.filterPanel.Controls.Add(this.showFilterDatePanelBtn);
-            this.filterPanel.Controls.Add(this.materialLabel13);
-            this.filterPanel.Location = new System.Drawing.Point(431, 156);
-            this.filterPanel.Name = "filterPanel";
-            this.filterPanel.Size = new System.Drawing.Size(317, 256);
-            this.filterPanel.TabIndex = 53;
-            this.filterPanel.Visible = false;
-            // 
-            // materialButton31
-            // 
-            this.materialButton31.AutoSize = false;
-            this.materialButton31.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton31.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
-            this.materialButton31.Depth = 0;
-            this.materialButton31.HighEmphasis = true;
-            this.materialButton31.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton31.Icon")));
-            this.materialButton31.ImageIndex = 24;
-            this.materialButton31.Location = new System.Drawing.Point(265, 10);
-            this.materialButton31.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton31.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton31.Name = "materialButton31";
-            this.materialButton31.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton31.Size = new System.Drawing.Size(39, 32);
-            this.materialButton31.TabIndex = 65;
-            this.materialButton31.Text = "CloseMCPanelBtn";
-            this.materialButton31.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton31.UseAccentColor = false;
-            this.materialButton31.UseVisualStyleBackColor = true;
-            this.materialButton31.Click += new System.EventHandler(this.materialButton31_Click);
-            // 
-            // showFilterCatPanelBtn
-            // 
-            this.showFilterCatPanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.showFilterCatPanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.showFilterCatPanelBtn.Depth = 0;
-            this.showFilterCatPanelBtn.HighEmphasis = true;
-            this.showFilterCatPanelBtn.Icon = null;
-            this.showFilterCatPanelBtn.Location = new System.Drawing.Point(108, 169);
-            this.showFilterCatPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.showFilterCatPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.showFilterCatPanelBtn.Name = "showFilterCatPanelBtn";
-            this.showFilterCatPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.showFilterCatPanelBtn.Size = new System.Drawing.Size(106, 36);
-            this.showFilterCatPanelBtn.TabIndex = 3;
-            this.showFilterCatPanelBtn.Text = "Категория";
-            this.showFilterCatPanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.showFilterCatPanelBtn.UseAccentColor = false;
-            this.showFilterCatPanelBtn.UseVisualStyleBackColor = true;
-            this.showFilterCatPanelBtn.Click += new System.EventHandler(this.showFilterCatPanelBtn_Click);
-            // 
-            // showFilterReasonPanelBtn
-            // 
-            this.showFilterReasonPanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.showFilterReasonPanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.showFilterReasonPanelBtn.Depth = 0;
-            this.showFilterReasonPanelBtn.HighEmphasis = true;
-            this.showFilterReasonPanelBtn.Icon = null;
-            this.showFilterReasonPanelBtn.Location = new System.Drawing.Point(113, 111);
-            this.showFilterReasonPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.showFilterReasonPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.showFilterReasonPanelBtn.Name = "showFilterReasonPanelBtn";
-            this.showFilterReasonPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.showFilterReasonPanelBtn.Size = new System.Drawing.Size(93, 36);
-            this.showFilterReasonPanelBtn.TabIndex = 2;
-            this.showFilterReasonPanelBtn.Text = "Причина";
-            this.showFilterReasonPanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.showFilterReasonPanelBtn.UseAccentColor = false;
-            this.showFilterReasonPanelBtn.UseVisualStyleBackColor = true;
-            this.showFilterReasonPanelBtn.Click += new System.EventHandler(this.showFilterReasonPanelBtn_Click);
-            // 
-            // showFilterDatePanelBtn
-            // 
-            this.showFilterDatePanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.showFilterDatePanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.showFilterDatePanelBtn.Depth = 0;
-            this.showFilterDatePanelBtn.HighEmphasis = true;
-            this.showFilterDatePanelBtn.Icon = null;
-            this.showFilterDatePanelBtn.Location = new System.Drawing.Point(91, 50);
-            this.showFilterDatePanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.showFilterDatePanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.showFilterDatePanelBtn.Name = "showFilterDatePanelBtn";
-            this.showFilterDatePanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.showFilterDatePanelBtn.Size = new System.Drawing.Size(136, 36);
-            this.showFilterDatePanelBtn.TabIndex = 1;
-            this.showFilterDatePanelBtn.Text = "Диапозон дат";
-            this.showFilterDatePanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.showFilterDatePanelBtn.UseAccentColor = false;
-            this.showFilterDatePanelBtn.UseVisualStyleBackColor = true;
-            this.showFilterDatePanelBtn.Click += new System.EventHandler(this.showFilterDatePanelBtn_Click);
-            // 
-            // materialLabel13
-            // 
-            this.materialLabel13.AutoSize = true;
-            this.materialLabel13.Depth = 0;
-            this.materialLabel13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel13.Location = new System.Drawing.Point(4, 4);
-            this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel13.Name = "materialLabel13";
-            this.materialLabel13.Size = new System.Drawing.Size(93, 19);
-            this.materialLabel13.TabIndex = 0;
-            this.materialLabel13.Text = "Фильтрация";
+            this.MCChangeCB.AutoResize = false;
+            this.MCChangeCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.MCChangeCB.Depth = 0;
+            this.MCChangeCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.MCChangeCB.DropDownHeight = 174;
+            this.MCChangeCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.MCChangeCB.DropDownWidth = 121;
+            this.MCChangeCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.MCChangeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.MCChangeCB.FormattingEnabled = true;
+            this.MCChangeCB.Hint = "Предмет замены";
+            this.MCChangeCB.IntegralHeight = false;
+            this.MCChangeCB.ItemHeight = 43;
+            this.MCChangeCB.Location = new System.Drawing.Point(74, 165);
+            this.MCChangeCB.MaxDropDownItems = 4;
+            this.MCChangeCB.MouseState = MaterialSkin.MouseState.OUT;
+            this.MCChangeCB.Name = "MCChangeCB";
+            this.MCChangeCB.Size = new System.Drawing.Size(221, 49);
+            this.MCChangeCB.StartIndex = 0;
+            this.MCChangeCB.TabIndex = 2;
             // 
             // ChangeChangePanel
             // 
@@ -1993,187 +1868,362 @@
             this.ChangeMCChangeCB.StartIndex = 0;
             this.ChangeMCChangeCB.TabIndex = 2;
             // 
-            // addChangePanel
+            // filterReasonPanel
             // 
-            this.addChangePanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.addChangePanel.Controls.Add(this.materialButton19);
-            this.addChangePanel.Controls.Add(this.materialLabel12);
-            this.addChangePanel.Controls.Add(this.addChangeDateDtp);
-            this.addChangePanel.Controls.Add(this.materialButton13);
-            this.addChangePanel.Controls.Add(this.materialLabel1);
-            this.addChangePanel.Controls.Add(this.BusChangeCB);
-            this.addChangePanel.Controls.Add(this.ReasonChangeCB);
-            this.addChangePanel.Controls.Add(this.addChangeBtn);
-            this.addChangePanel.Controls.Add(this.MCChangeCB);
-            this.addChangePanel.Location = new System.Drawing.Point(276, 53);
-            this.addChangePanel.Name = "addChangePanel";
-            this.addChangePanel.Size = new System.Drawing.Size(377, 476);
-            this.addChangePanel.TabIndex = 46;
-            this.addChangePanel.Visible = false;
+            this.filterReasonPanel.Controls.Add(this.filterReasonCB);
+            this.filterReasonPanel.Controls.Add(this.filterReasonBtn);
+            this.filterReasonPanel.Controls.Add(this.materialButton35);
+            this.filterReasonPanel.Location = new System.Drawing.Point(359, 105);
+            this.filterReasonPanel.Name = "filterReasonPanel";
+            this.filterReasonPanel.Size = new System.Drawing.Size(317, 256);
+            this.filterReasonPanel.TabIndex = 69;
+            this.filterReasonPanel.Visible = false;
             // 
-            // materialButton19
+            // filterReasonCB
             // 
-            this.materialButton19.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton19.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.materialButton19.Depth = 0;
-            this.materialButton19.HighEmphasis = true;
-            this.materialButton19.Icon = null;
-            this.materialButton19.Location = new System.Drawing.Point(235, 402);
-            this.materialButton19.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton19.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton19.Name = "materialButton19";
-            this.materialButton19.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton19.Size = new System.Drawing.Size(99, 36);
-            this.materialButton19.TabIndex = 74;
-            this.materialButton19.Text = "Очистить";
-            this.materialButton19.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.materialButton19.UseAccentColor = false;
-            this.materialButton19.UseVisualStyleBackColor = true;
-            // 
-            // materialLabel12
-            // 
-            this.materialLabel12.AutoSize = true;
-            this.materialLabel12.Depth = 0;
-            this.materialLabel12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel12.Location = new System.Drawing.Point(71, 322);
-            this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel12.Name = "materialLabel12";
-            this.materialLabel12.Size = new System.Drawing.Size(101, 19);
-            this.materialLabel12.TabIndex = 72;
-            this.materialLabel12.Text = "Дата замены";
-            // 
-            // addChangeDateDtp
-            // 
-            this.addChangeDateDtp.Location = new System.Drawing.Point(74, 347);
-            this.addChangeDateDtp.Name = "addChangeDateDtp";
-            this.addChangeDateDtp.Size = new System.Drawing.Size(221, 22);
-            this.addChangeDateDtp.TabIndex = 71;
-            // 
-            // materialButton13
-            // 
-            this.materialButton13.AutoSize = false;
-            this.materialButton13.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton13.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
-            this.materialButton13.Depth = 0;
-            this.materialButton13.HighEmphasis = true;
-            this.materialButton13.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton13.Icon")));
-            this.materialButton13.ImageIndex = 24;
-            this.materialButton13.Location = new System.Drawing.Point(330, 6);
-            this.materialButton13.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton13.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton13.Name = "materialButton13";
-            this.materialButton13.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton13.Size = new System.Drawing.Size(39, 32);
-            this.materialButton13.TabIndex = 68;
-            this.materialButton13.Text = "CloseChangeMCPanelBtn";
-            this.materialButton13.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton13.UseAccentColor = false;
-            this.materialButton13.UseVisualStyleBackColor = true;
-            this.materialButton13.Click += new System.EventHandler(this.materialButton13_Click);
-            // 
-            // materialLabel1
-            // 
-            this.materialLabel1.AutoSize = true;
-            this.materialLabel1.Depth = 0;
-            this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(18, 21);
-            this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel1.Name = "materialLabel1";
-            this.materialLabel1.Size = new System.Drawing.Size(133, 19);
-            this.materialLabel1.TabIndex = 4;
-            this.materialLabel1.Text = "Добавить замену";
-            // 
-            // BusChangeCB
-            // 
-            this.BusChangeCB.AutoResize = false;
-            this.BusChangeCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.BusChangeCB.Depth = 0;
-            this.BusChangeCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.BusChangeCB.DropDownHeight = 174;
-            this.BusChangeCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.BusChangeCB.DropDownWidth = 121;
-            this.BusChangeCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.BusChangeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.BusChangeCB.FormattingEnabled = true;
-            this.BusChangeCB.Hint = "Автобус";
-            this.BusChangeCB.IntegralHeight = false;
-            this.BusChangeCB.ItemHeight = 43;
-            this.BusChangeCB.Location = new System.Drawing.Point(74, 78);
-            this.BusChangeCB.MaxDropDownItems = 4;
-            this.BusChangeCB.MouseState = MaterialSkin.MouseState.OUT;
-            this.BusChangeCB.Name = "BusChangeCB";
-            this.BusChangeCB.Size = new System.Drawing.Size(221, 49);
-            this.BusChangeCB.StartIndex = 0;
-            this.BusChangeCB.TabIndex = 1;
-            // 
-            // ReasonChangeCB
-            // 
-            this.ReasonChangeCB.AutoResize = false;
-            this.ReasonChangeCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.ReasonChangeCB.Depth = 0;
-            this.ReasonChangeCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.ReasonChangeCB.DropDownHeight = 174;
-            this.ReasonChangeCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.ReasonChangeCB.DropDownWidth = 121;
-            this.ReasonChangeCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.ReasonChangeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.ReasonChangeCB.FormattingEnabled = true;
-            this.ReasonChangeCB.Hint = "Причина";
-            this.ReasonChangeCB.IntegralHeight = false;
-            this.ReasonChangeCB.ItemHeight = 43;
-            this.ReasonChangeCB.Items.AddRange(new object[] {
+            this.filterReasonCB.AutoResize = false;
+            this.filterReasonCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.filterReasonCB.Depth = 0;
+            this.filterReasonCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.filterReasonCB.DropDownHeight = 174;
+            this.filterReasonCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.filterReasonCB.DropDownWidth = 121;
+            this.filterReasonCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.filterReasonCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.filterReasonCB.FormattingEnabled = true;
+            this.filterReasonCB.IntegralHeight = false;
+            this.filterReasonCB.ItemHeight = 43;
+            this.filterReasonCB.Items.AddRange(new object[] {
             "ТО",
             "Поломка"});
-            this.ReasonChangeCB.Location = new System.Drawing.Point(74, 260);
-            this.ReasonChangeCB.MaxDropDownItems = 4;
-            this.ReasonChangeCB.MouseState = MaterialSkin.MouseState.OUT;
-            this.ReasonChangeCB.Name = "ReasonChangeCB";
-            this.ReasonChangeCB.Size = new System.Drawing.Size(221, 49);
-            this.ReasonChangeCB.StartIndex = 0;
-            this.ReasonChangeCB.TabIndex = 3;
+            this.filterReasonCB.Location = new System.Drawing.Point(69, 68);
+            this.filterReasonCB.MaxDropDownItems = 4;
+            this.filterReasonCB.MouseState = MaterialSkin.MouseState.OUT;
+            this.filterReasonCB.Name = "filterReasonCB";
+            this.filterReasonCB.Size = new System.Drawing.Size(173, 49);
+            this.filterReasonCB.StartIndex = 0;
+            this.filterReasonCB.TabIndex = 67;
             // 
-            // addChangeBtn
+            // filterReasonBtn
             // 
-            this.addChangeBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.addChangeBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.addChangeBtn.Depth = 0;
-            this.addChangeBtn.HighEmphasis = true;
-            this.addChangeBtn.Icon = null;
-            this.addChangeBtn.Location = new System.Drawing.Point(51, 399);
-            this.addChangeBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.addChangeBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.addChangeBtn.Name = "addChangeBtn";
-            this.addChangeBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.addChangeBtn.Size = new System.Drawing.Size(100, 36);
-            this.addChangeBtn.TabIndex = 0;
-            this.addChangeBtn.Text = "Добавить";
-            this.addChangeBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.addChangeBtn.UseAccentColor = false;
-            this.addChangeBtn.UseVisualStyleBackColor = true;
-            this.addChangeBtn.Click += new System.EventHandler(this.addChangeBtn_Click);
+            this.filterReasonBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.filterReasonBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.filterReasonBtn.Depth = 0;
+            this.filterReasonBtn.HighEmphasis = true;
+            this.filterReasonBtn.Icon = null;
+            this.filterReasonBtn.Location = new System.Drawing.Point(91, 188);
+            this.filterReasonBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.filterReasonBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.filterReasonBtn.Name = "filterReasonBtn";
+            this.filterReasonBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.filterReasonBtn.Size = new System.Drawing.Size(129, 36);
+            this.filterReasonBtn.TabIndex = 66;
+            this.filterReasonBtn.Text = "Фильтровать";
+            this.filterReasonBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.filterReasonBtn.UseAccentColor = false;
+            this.filterReasonBtn.UseVisualStyleBackColor = true;
+            this.filterReasonBtn.Click += new System.EventHandler(this.filterReasonBtn_Click);
             // 
-            // MCChangeCB
+            // materialButton35
             // 
-            this.MCChangeCB.AutoResize = false;
-            this.MCChangeCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.MCChangeCB.Depth = 0;
-            this.MCChangeCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.MCChangeCB.DropDownHeight = 174;
-            this.MCChangeCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.MCChangeCB.DropDownWidth = 121;
-            this.MCChangeCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.MCChangeCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.MCChangeCB.FormattingEnabled = true;
-            this.MCChangeCB.Hint = "Предмет замены";
-            this.MCChangeCB.IntegralHeight = false;
-            this.MCChangeCB.ItemHeight = 43;
-            this.MCChangeCB.Location = new System.Drawing.Point(74, 165);
-            this.MCChangeCB.MaxDropDownItems = 4;
-            this.MCChangeCB.MouseState = MaterialSkin.MouseState.OUT;
-            this.MCChangeCB.Name = "MCChangeCB";
-            this.MCChangeCB.Size = new System.Drawing.Size(221, 49);
-            this.MCChangeCB.StartIndex = 0;
-            this.MCChangeCB.TabIndex = 2;
+            this.materialButton35.AutoSize = false;
+            this.materialButton35.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton35.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
+            this.materialButton35.Depth = 0;
+            this.materialButton35.HighEmphasis = true;
+            this.materialButton35.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton35.Icon")));
+            this.materialButton35.ImageIndex = 24;
+            this.materialButton35.Location = new System.Drawing.Point(265, 10);
+            this.materialButton35.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton35.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton35.Name = "materialButton35";
+            this.materialButton35.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton35.Size = new System.Drawing.Size(39, 32);
+            this.materialButton35.TabIndex = 65;
+            this.materialButton35.Text = "CloseMCPanelBtn";
+            this.materialButton35.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.materialButton35.UseAccentColor = false;
+            this.materialButton35.UseVisualStyleBackColor = true;
+            this.materialButton35.Click += new System.EventHandler(this.materialButton35_Click);
+            // 
+            // filterDatePanel
+            // 
+            this.filterDatePanel.Controls.Add(this.materialLabel17);
+            this.filterDatePanel.Controls.Add(this.materialLabel14);
+            this.filterDatePanel.Controls.Add(this.filterDateBtn);
+            this.filterDatePanel.Controls.Add(this.filterDateEndDtp);
+            this.filterDatePanel.Controls.Add(this.filterDateSDtp);
+            this.filterDatePanel.Controls.Add(this.materialButton32);
+            this.filterDatePanel.Location = new System.Drawing.Point(372, 124);
+            this.filterDatePanel.Name = "filterDatePanel";
+            this.filterDatePanel.Size = new System.Drawing.Size(317, 256);
+            this.filterDatePanel.TabIndex = 66;
+            this.filterDatePanel.Visible = false;
+            // 
+            // materialLabel17
+            // 
+            this.materialLabel17.AutoSize = true;
+            this.materialLabel17.Depth = 0;
+            this.materialLabel17.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel17.Location = new System.Drawing.Point(48, 98);
+            this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel17.Name = "materialLabel17";
+            this.materialLabel17.Size = new System.Drawing.Size(21, 19);
+            this.materialLabel17.TabIndex = 68;
+            this.materialLabel17.Text = "По";
+            // 
+            // materialLabel14
+            // 
+            this.materialLabel14.AutoSize = true;
+            this.materialLabel14.Depth = 0;
+            this.materialLabel14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel14.Location = new System.Drawing.Point(48, 36);
+            this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel14.Name = "materialLabel14";
+            this.materialLabel14.Size = new System.Drawing.Size(11, 19);
+            this.materialLabel14.TabIndex = 66;
+            this.materialLabel14.Text = "C";
+            // 
+            // filterDateBtn
+            // 
+            this.filterDateBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.filterDateBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.filterDateBtn.Depth = 0;
+            this.filterDateBtn.HighEmphasis = true;
+            this.filterDateBtn.Icon = null;
+            this.filterDateBtn.Location = new System.Drawing.Point(91, 188);
+            this.filterDateBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.filterDateBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.filterDateBtn.Name = "filterDateBtn";
+            this.filterDateBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.filterDateBtn.Size = new System.Drawing.Size(129, 36);
+            this.filterDateBtn.TabIndex = 66;
+            this.filterDateBtn.Text = "Фильтровать";
+            this.filterDateBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.filterDateBtn.UseAccentColor = false;
+            this.filterDateBtn.UseVisualStyleBackColor = true;
+            this.filterDateBtn.Click += new System.EventHandler(this.filterDateBtn_Click);
+            // 
+            // filterDateEndDtp
+            // 
+            this.filterDateEndDtp.Location = new System.Drawing.Point(51, 120);
+            this.filterDateEndDtp.Name = "filterDateEndDtp";
+            this.filterDateEndDtp.Size = new System.Drawing.Size(200, 22);
+            this.filterDateEndDtp.TabIndex = 67;
+            // 
+            // filterDateSDtp
+            // 
+            this.filterDateSDtp.Location = new System.Drawing.Point(51, 59);
+            this.filterDateSDtp.Name = "filterDateSDtp";
+            this.filterDateSDtp.Size = new System.Drawing.Size(200, 22);
+            this.filterDateSDtp.TabIndex = 66;
+            // 
+            // materialButton32
+            // 
+            this.materialButton32.AutoSize = false;
+            this.materialButton32.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton32.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
+            this.materialButton32.Depth = 0;
+            this.materialButton32.HighEmphasis = true;
+            this.materialButton32.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton32.Icon")));
+            this.materialButton32.ImageIndex = 24;
+            this.materialButton32.Location = new System.Drawing.Point(265, 10);
+            this.materialButton32.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton32.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton32.Name = "materialButton32";
+            this.materialButton32.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton32.Size = new System.Drawing.Size(39, 32);
+            this.materialButton32.TabIndex = 65;
+            this.materialButton32.Text = "CloseMCPanelBtn";
+            this.materialButton32.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.materialButton32.UseAccentColor = false;
+            this.materialButton32.UseVisualStyleBackColor = true;
+            this.materialButton32.Click += new System.EventHandler(this.materialButton32_Click);
+            // 
+            // filterCatPanel
+            // 
+            this.filterCatPanel.Controls.Add(this.filterCatCB);
+            this.filterCatPanel.Controls.Add(this.filterCatBtn);
+            this.filterCatPanel.Controls.Add(this.materialButton37);
+            this.filterCatPanel.Location = new System.Drawing.Point(404, 138);
+            this.filterCatPanel.Name = "filterCatPanel";
+            this.filterCatPanel.Size = new System.Drawing.Size(317, 256);
+            this.filterCatPanel.TabIndex = 69;
+            this.filterCatPanel.Visible = false;
+            // 
+            // filterCatCB
+            // 
+            this.filterCatCB.AutoResize = false;
+            this.filterCatCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.filterCatCB.Depth = 0;
+            this.filterCatCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.filterCatCB.DropDownHeight = 174;
+            this.filterCatCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.filterCatCB.DropDownWidth = 121;
+            this.filterCatCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
+            this.filterCatCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.filterCatCB.FormattingEnabled = true;
+            this.filterCatCB.IntegralHeight = false;
+            this.filterCatCB.ItemHeight = 43;
+            this.filterCatCB.Items.AddRange(new object[] {
+            "ТЖ",
+            "Агрегат"});
+            this.filterCatCB.Location = new System.Drawing.Point(63, 77);
+            this.filterCatCB.MaxDropDownItems = 4;
+            this.filterCatCB.MouseState = MaterialSkin.MouseState.OUT;
+            this.filterCatCB.Name = "filterCatCB";
+            this.filterCatCB.Size = new System.Drawing.Size(173, 49);
+            this.filterCatCB.StartIndex = 0;
+            this.filterCatCB.TabIndex = 68;
+            // 
+            // filterCatBtn
+            // 
+            this.filterCatBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.filterCatBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.filterCatBtn.Depth = 0;
+            this.filterCatBtn.HighEmphasis = true;
+            this.filterCatBtn.Icon = null;
+            this.filterCatBtn.Location = new System.Drawing.Point(91, 188);
+            this.filterCatBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.filterCatBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.filterCatBtn.Name = "filterCatBtn";
+            this.filterCatBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.filterCatBtn.Size = new System.Drawing.Size(129, 36);
+            this.filterCatBtn.TabIndex = 66;
+            this.filterCatBtn.Text = "Фильтровать";
+            this.filterCatBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.filterCatBtn.UseAccentColor = false;
+            this.filterCatBtn.UseVisualStyleBackColor = true;
+            this.filterCatBtn.Click += new System.EventHandler(this.filterCatBtn_Click);
+            // 
+            // materialButton37
+            // 
+            this.materialButton37.AutoSize = false;
+            this.materialButton37.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton37.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
+            this.materialButton37.Depth = 0;
+            this.materialButton37.HighEmphasis = true;
+            this.materialButton37.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton37.Icon")));
+            this.materialButton37.ImageIndex = 24;
+            this.materialButton37.Location = new System.Drawing.Point(265, 10);
+            this.materialButton37.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton37.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton37.Name = "materialButton37";
+            this.materialButton37.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton37.Size = new System.Drawing.Size(39, 32);
+            this.materialButton37.TabIndex = 65;
+            this.materialButton37.Text = "CloseMCPanelBtn";
+            this.materialButton37.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.materialButton37.UseAccentColor = false;
+            this.materialButton37.UseVisualStyleBackColor = true;
+            this.materialButton37.Click += new System.EventHandler(this.materialButton37_Click);
+            // 
+            // filterPanel
+            // 
+            this.filterPanel.Controls.Add(this.materialButton31);
+            this.filterPanel.Controls.Add(this.showFilterCatPanelBtn);
+            this.filterPanel.Controls.Add(this.showFilterReasonPanelBtn);
+            this.filterPanel.Controls.Add(this.showFilterDatePanelBtn);
+            this.filterPanel.Controls.Add(this.materialLabel13);
+            this.filterPanel.Location = new System.Drawing.Point(431, 156);
+            this.filterPanel.Name = "filterPanel";
+            this.filterPanel.Size = new System.Drawing.Size(317, 256);
+            this.filterPanel.TabIndex = 53;
+            this.filterPanel.Visible = false;
+            // 
+            // materialButton31
+            // 
+            this.materialButton31.AutoSize = false;
+            this.materialButton31.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton31.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
+            this.materialButton31.Depth = 0;
+            this.materialButton31.HighEmphasis = true;
+            this.materialButton31.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton31.Icon")));
+            this.materialButton31.ImageIndex = 24;
+            this.materialButton31.Location = new System.Drawing.Point(265, 10);
+            this.materialButton31.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton31.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton31.Name = "materialButton31";
+            this.materialButton31.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton31.Size = new System.Drawing.Size(39, 32);
+            this.materialButton31.TabIndex = 65;
+            this.materialButton31.Text = "CloseMCPanelBtn";
+            this.materialButton31.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.materialButton31.UseAccentColor = false;
+            this.materialButton31.UseVisualStyleBackColor = true;
+            this.materialButton31.Click += new System.EventHandler(this.materialButton31_Click);
+            // 
+            // showFilterCatPanelBtn
+            // 
+            this.showFilterCatPanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.showFilterCatPanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.showFilterCatPanelBtn.Depth = 0;
+            this.showFilterCatPanelBtn.HighEmphasis = true;
+            this.showFilterCatPanelBtn.Icon = null;
+            this.showFilterCatPanelBtn.Location = new System.Drawing.Point(108, 169);
+            this.showFilterCatPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.showFilterCatPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.showFilterCatPanelBtn.Name = "showFilterCatPanelBtn";
+            this.showFilterCatPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.showFilterCatPanelBtn.Size = new System.Drawing.Size(106, 36);
+            this.showFilterCatPanelBtn.TabIndex = 3;
+            this.showFilterCatPanelBtn.Text = "Категория";
+            this.showFilterCatPanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.showFilterCatPanelBtn.UseAccentColor = false;
+            this.showFilterCatPanelBtn.UseVisualStyleBackColor = true;
+            this.showFilterCatPanelBtn.Click += new System.EventHandler(this.showFilterCatPanelBtn_Click);
+            // 
+            // showFilterReasonPanelBtn
+            // 
+            this.showFilterReasonPanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.showFilterReasonPanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.showFilterReasonPanelBtn.Depth = 0;
+            this.showFilterReasonPanelBtn.HighEmphasis = true;
+            this.showFilterReasonPanelBtn.Icon = null;
+            this.showFilterReasonPanelBtn.Location = new System.Drawing.Point(113, 111);
+            this.showFilterReasonPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.showFilterReasonPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.showFilterReasonPanelBtn.Name = "showFilterReasonPanelBtn";
+            this.showFilterReasonPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.showFilterReasonPanelBtn.Size = new System.Drawing.Size(93, 36);
+            this.showFilterReasonPanelBtn.TabIndex = 2;
+            this.showFilterReasonPanelBtn.Text = "Причина";
+            this.showFilterReasonPanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.showFilterReasonPanelBtn.UseAccentColor = false;
+            this.showFilterReasonPanelBtn.UseVisualStyleBackColor = true;
+            this.showFilterReasonPanelBtn.Click += new System.EventHandler(this.showFilterReasonPanelBtn_Click);
+            // 
+            // showFilterDatePanelBtn
+            // 
+            this.showFilterDatePanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.showFilterDatePanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.showFilterDatePanelBtn.Depth = 0;
+            this.showFilterDatePanelBtn.HighEmphasis = true;
+            this.showFilterDatePanelBtn.Icon = null;
+            this.showFilterDatePanelBtn.Location = new System.Drawing.Point(91, 50);
+            this.showFilterDatePanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.showFilterDatePanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.showFilterDatePanelBtn.Name = "showFilterDatePanelBtn";
+            this.showFilterDatePanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.showFilterDatePanelBtn.Size = new System.Drawing.Size(136, 36);
+            this.showFilterDatePanelBtn.TabIndex = 1;
+            this.showFilterDatePanelBtn.Text = "Диапозон дат";
+            this.showFilterDatePanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.showFilterDatePanelBtn.UseAccentColor = false;
+            this.showFilterDatePanelBtn.UseVisualStyleBackColor = true;
+            this.showFilterDatePanelBtn.Click += new System.EventHandler(this.showFilterDatePanelBtn_Click);
+            // 
+            // materialLabel13
+            // 
+            this.materialLabel13.AutoSize = true;
+            this.materialLabel13.Depth = 0;
+            this.materialLabel13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel13.Location = new System.Drawing.Point(4, 4);
+            this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel13.Name = "materialLabel13";
+            this.materialLabel13.Size = new System.Drawing.Size(93, 19);
+            this.materialLabel13.TabIndex = 0;
+            this.materialLabel13.Text = "Фильтрация";
             // 
             // materialButton18
             // 
@@ -2887,57 +2937,7 @@
             this.imageList1.Images.SetKeyName(23, "unnamed (1) — копия.png");
             this.imageList1.Images.SetKeyName(24, "free-icon-close-cross-64498 (2).png");
             // 
-            // filterReasonCB
-            // 
-            this.filterReasonCB.AutoResize = false;
-            this.filterReasonCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.filterReasonCB.Depth = 0;
-            this.filterReasonCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.filterReasonCB.DropDownHeight = 174;
-            this.filterReasonCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.filterReasonCB.DropDownWidth = 121;
-            this.filterReasonCB.Font = new System.Drawing.Font("Roboto Medium", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.filterReasonCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.filterReasonCB.FormattingEnabled = true;
-            this.filterReasonCB.IntegralHeight = false;
-            this.filterReasonCB.ItemHeight = 43;
-            this.filterReasonCB.Items.AddRange(new object[] {
-            "ТО",
-            "Поломка"});
-            this.filterReasonCB.Location = new System.Drawing.Point(69, 68);
-            this.filterReasonCB.MaxDropDownItems = 4;
-            this.filterReasonCB.MouseState = MaterialSkin.MouseState.OUT;
-            this.filterReasonCB.Name = "filterReasonCB";
-            this.filterReasonCB.Size = new System.Drawing.Size(173, 49);
-            this.filterReasonCB.StartIndex = 0;
-            this.filterReasonCB.TabIndex = 67;
-            // 
-            // filterCatCB
-            // 
-            this.filterCatCB.AutoResize = false;
-            this.filterCatCB.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.filterCatCB.Depth = 0;
-            this.filterCatCB.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
-            this.filterCatCB.DropDownHeight = 174;
-            this.filterCatCB.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.filterCatCB.DropDownWidth = 121;
-            this.filterCatCB.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Pixel);
-            this.filterCatCB.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.filterCatCB.FormattingEnabled = true;
-            this.filterCatCB.IntegralHeight = false;
-            this.filterCatCB.ItemHeight = 43;
-            this.filterCatCB.Items.AddRange(new object[] {
-            "ТЖ",
-            "Агрегат"});
-            this.filterCatCB.Location = new System.Drawing.Point(63, 77);
-            this.filterCatCB.MaxDropDownItems = 4;
-            this.filterCatCB.MouseState = MaterialSkin.MouseState.OUT;
-            this.filterCatCB.Name = "filterCatCB";
-            this.filterCatCB.Size = new System.Drawing.Size(173, 49);
-            this.filterCatCB.StartIndex = 0;
-            this.filterCatCB.TabIndex = 68;
-            // 
-            // Form1
+            // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -2945,7 +2945,7 @@
             this.Controls.Add(this.materialTabControl1);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.materialTabControl1;
-            this.Name = "Form1";
+            this.Name = "AdminForm";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabPage7.ResumeLayout(false);
@@ -2971,18 +2971,18 @@
             ((System.ComponentModel.ISupportInitialize)(this.BusDVG)).EndInit();
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
-            this.filterCatPanel.ResumeLayout(false);
-            this.filterCatPanel.PerformLayout();
+            this.addChangePanel.ResumeLayout(false);
+            this.addChangePanel.PerformLayout();
+            this.ChangeChangePanel.ResumeLayout(false);
+            this.ChangeChangePanel.PerformLayout();
             this.filterReasonPanel.ResumeLayout(false);
             this.filterReasonPanel.PerformLayout();
             this.filterDatePanel.ResumeLayout(false);
             this.filterDatePanel.PerformLayout();
+            this.filterCatPanel.ResumeLayout(false);
+            this.filterCatPanel.PerformLayout();
             this.filterPanel.ResumeLayout(false);
             this.filterPanel.PerformLayout();
-            this.ChangeChangePanel.ResumeLayout(false);
-            this.ChangeChangePanel.PerformLayout();
-            this.addChangePanel.ResumeLayout(false);
-            this.addChangePanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ChangeDVG)).EndInit();
             this.materialTabControl1.ResumeLayout(false);
             this.tabPage3.ResumeLayout(false);
@@ -3034,7 +3034,7 @@
         private MaterialSkin.Controls.MaterialComboBox driverBusCM;
         private MaterialSkin.Controls.MaterialButton materialButton15;
         private MaterialSkin.Controls.MaterialButton deleteBusBtn;
-        private MaterialSkin.Controls.MaterialTextBox2 materialTextBox24;
+        private MaterialSkin.Controls.MaterialTextBox2 searchBusTB;
         private System.Windows.Forms.DataGridView BusDVG;
         private System.Windows.Forms.TabPage tabPage1;
         private MaterialSkin.Controls.MaterialTabControl materialTabControl1;

@@ -40,7 +40,7 @@ namespace diplom
         {
             try
             {
-                
+
                 if (materialTabControl1.SelectedIndex == 4)
                 {
                     sqlDataAdapter = new SqlDataAdapter("select Id_mark, Name AS [Наименование]  from Marks", sqlConnection);
@@ -157,7 +157,7 @@ namespace diplom
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
             sqlConnection = new SqlConnection(scon);
             sqlConnection.Open();
             LoadData();
@@ -203,7 +203,7 @@ namespace diplom
                     LoadData();
 
                     changeNameMarkTB.Text = "";
-                    ChangeMarkPanel.Visible=false;
+                    ChangeMarkPanel.Visible = false;
 
                 }
                 else
@@ -226,7 +226,7 @@ namespace diplom
 
         private void deleteMarkBtn_Click(object sender, EventArgs e)
         {
-            
+
             if (MaterialMessageBox.Show("Вы точно хотите удалить выбранную запись!", "Внимание!", MessageBoxButtons.YesNo, UseRichTextBox: true) == DialogResult.Yes)
             {
                 SqlCommand command = new SqlCommand("DELETE FROM Marks WHERE Id_mark = @Id", sqlConnection);
@@ -253,16 +253,30 @@ namespace diplom
 
         private void searchMatksTB_TextChanged(object sender, EventArgs e)
         {
-            for (int i = 0; i < MarksDVG.RowCount; i++)
+            string searchText = searchMatksTB.Text.Trim();
+
+            // Clear row selection and reset the match count
+            MarksDVG.ClearSelection();
+            int matchCount = 0;
+
+            // If the search text is empty, exit the method
+            if (string.IsNullOrEmpty(searchText))
             {
-                MarksDVG.Rows[rowIndex].Selected = false;
-                for (int j = 0; j < MarksDVG.ColumnCount; j++)
-                    if (MarksDVG.Rows[i].Cells[j].Value != null)
-                        if (MarksDVG.Rows[i].Cells[j].Value.ToString().Contains(searchMatksTB.Text))
-                        {
-                            MarksDVG.Rows[i].Selected = true;
-                            break;
-                        }
+                return;
+            }
+
+            // Perform case-insensitive search, highlight matching rows, and count the matches
+            foreach (DataGridViewRow row in MarksDVG.Rows)
+            {
+                bool isMatch = false;
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        isMatch = true;
+                        break;
+                    }
+                }
             }
         }
 
@@ -358,16 +372,30 @@ namespace diplom
 
         private void searchDriverTB_TextChanged(object sender, EventArgs e)
         {
-            for (int i = 0; i < DriversDVG.RowCount; i++)
+            string searchText = searchDriverTB.Text.Trim();
+
+            // Clear row selection and reset the match count
+            DriversDVG.ClearSelection();
+            int matchCount = 0;
+
+            // If the search text is empty, exit the method
+            if (string.IsNullOrEmpty(searchText))
             {
-                DriversDVG.Rows[rowIndex].Selected = false;
-                for (int j = 0; j < DriversDVG.ColumnCount; j++)
-                    if (DriversDVG.Rows[i].Cells[j].Value != null)
-                        if (DriversDVG.Rows[i].Cells[j].Value.ToString().Contains(searchDriverTB.Text))
-                        {
-                            DriversDVG.Rows[i].Selected = true;
-                            break;
-                        }
+                return;
+            }
+
+            // Perform case-insensitive search, highlight matching rows, and count the matches
+            foreach (DataGridViewRow row in DriversDVG.Rows)
+            {
+                bool isMatch = false;
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        isMatch = true;
+                        break;
+                    }
+                }
             }
         }
 
@@ -445,16 +473,30 @@ namespace diplom
 
         private void materialTextBox24_TextChanged(object sender, EventArgs e)
         {
-            for (int i = 0; i < BusDVG.RowCount; i++)
+            string searchText = searchBusTB.Text.Trim();
+
+            // Clear row selection and reset the match count
+            BusDVG.ClearSelection();
+            int matchCount = 0;
+
+            // If the search text is empty, exit the method
+            if (string.IsNullOrEmpty(searchText))
             {
-                BusDVG.Rows[i].Selected = false;
-                for (int j = 0; j < BusDVG.ColumnCount; j++)
-                    if (BusDVG.Rows[i].Cells[j].Value != null)
-                        if (BusDVG.Rows[i].Cells[j].Value.ToString().Contains(materialTextBox24.Text))
-                        {
-                            BusDVG.Rows[i].Selected = true;
-                            break;
-                        }
+                return;
+            }
+
+            // Perform case-insensitive search, highlight matching rows, and count the matches
+            foreach (DataGridViewRow row in BusDVG.Rows)
+            {
+                bool isMatch = false;
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        isMatch = true;
+                        break;
+                    }
+                }
             }
         }
 
@@ -490,12 +532,12 @@ namespace diplom
             string[] items1 = { "Аккумулятор", "Масленный фильтр", "Топливный фильтр", "Воздушный фильтр", "Тормозные колодки" };
             if (CatMCCB.Text == "ТЖ")
             {
-                
+
                 typeMCCB.Items.AddRange(items);
             }
             else if (CatMCCB.Text == "Агрегат")
             {
-                
+
                 typeMCCB.Items.AddRange(items1);
 
             }
@@ -523,9 +565,9 @@ namespace diplom
                     typeMCCB.SelectedIndex = -1;
                     anotherSwitch.Checked = false;
                     AddMCPanel.Visible = false;
-            }
+                }
                 catch (Exception ex) { MaterialMessageBox.Show("Проверьте введённые данные", "Ошибка"); }
-        }
+            }
             else if (nameMCTB.Text != "" && CatMCCB.SelectedIndex != -1 && anotherTB.Text != "" && anotherSwitch.Checked == true)
             {
                 try
@@ -588,7 +630,7 @@ namespace diplom
                     changeNameMCTB.Text = "";
                     ChangeTypeMCTB.Text = "";
                     changeCatMCCB.SelectedIndex = -1;
-                   ChangeMCPanel.Enabled = false;
+                    ChangeMCPanel.Enabled = false;
 
                 }
                 else
@@ -601,19 +643,32 @@ namespace diplom
 
         private void searchMCTB_TextChanged(object sender, EventArgs e)
         {
-            for (int i = 0; i < MCDVG.RowCount; i++)
-            {
-                MCDVG.Rows[i].Selected = false;
-                for (int j = 0; j < MCDVG.ColumnCount; j++)
-                    if (MCDVG.Rows[i].Cells[j].Value != null)
-                        if (MCDVG.Rows[i].Cells[j].Value.ToString().Contains(materialTextBox24.Text))
-                        {
-                            MCDVG.Rows[i].Selected = true;
-                            break;
-                        }
-            }
-        }
+            string searchText = searchMCTB.Text.Trim();
 
+            // Clear row selection and reset the match count
+            MCDVG.ClearSelection();
+            int matchCount = 0;
+
+            // If the search text is empty, exit the method
+            if (string.IsNullOrEmpty(searchText))
+            {
+                return;
+            }
+
+            // Perform case-insensitive search, highlight matching rows, and count the matches
+            foreach (DataGridViewRow row in MCDVG.Rows)
+            {
+                bool isMatch = false;
+                foreach (DataGridViewCell cell in row.Cells)
+                {
+                    if (cell.Value != null && cell.Value.ToString().IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0)
+                    {
+                        isMatch = true;
+                        break;
+                    }
+                }
+            }
+        } 
         private void Добавить_Click(object sender, EventArgs e)
         {
             addChangePanel.Visible = true;
@@ -659,31 +714,37 @@ namespace diplom
             }
         }
 
-     
+
 
         private void materialTextBox21_TextChanged(object sender, EventArgs e)
         {
-            string searchText = ChangeSearchTB.Text.Trim().ToLower();
+            string searchText = ChangeSearchTB.Text.Trim();
 
+            // Clear row selection and reset the match count
+            ChangeDVG.ClearSelection();
+            int matchCount = 0;
+
+            // If the search text is empty, exit the method
             if (string.IsNullOrEmpty(searchText))
             {
-                ChangeDVG.ClearSelection();
                 return;
             }
 
+            // Perform case-insensitive search, highlight matching rows, and count the matches
             foreach (DataGridViewRow row in ChangeDVG.Rows)
             {
+                bool isMatch = false;
                 foreach (DataGridViewCell cell in row.Cells)
                 {
-                    if (cell.Value != null && cell.Value.ToString().ToLower().Contains(searchText))
+                    if (cell.Value != null && cell.Value.ToString().IndexOf(searchText, StringComparison.OrdinalIgnoreCase) >= 0)
                     {
-                        row.Selected = true;
+                        isMatch = true;
                         break;
                     }
                 }
+
             }
         }
-
         private void ShowAddPanelBusBtn_Click(object sender, EventArgs e)
         {
             AddMarkPanel.Visible = true;
