@@ -16,7 +16,7 @@ namespace diplom
     public partial class LoginForm : MaterialForm
     {
         public SqlConnection sqlConnection = null;
-        string scon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\YTO4KA\OneDrive\Рабочий стол\дилпом\diplom\diplom\DiplomDB.mdf"";Integrated Security=True";
+        string scon = @"";
         public static bool IsAdmin;
         public LoginForm()
         {
@@ -44,7 +44,8 @@ namespace diplom
 
                 SqlCommand sqlCommand = new SqlCommand($"select distinct IsAdmin from Users where UserName ='{loginUser}' and Password = '{PasswordTB.Text}'", sqlConnection);
 
-                if (sqlCommand.ExecuteScalar() == null)
+                if (sqlCommand.ExecuteScalar() == null)//System.Data.SqlClient.SqlException: "Неправильный синтаксис около конструкции " and Password = ".
+                    //Незакрытые кавычки в конце символьной строки ""."
                 {
                     MaterialMessageBox.Show("Введите правильный логин!", "Оишбка!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 }

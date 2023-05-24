@@ -19,7 +19,7 @@ namespace diplom
     public partial class AdminForm : MaterialForm
     {
         public SqlConnection sqlConnection = null;
-        string scon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\YTO4KA\OneDrive\Рабочий стол\дилпом\diplom\diplom\DiplomDB.mdf"";Integrated Security=True";
+        string scon = @"";
         private DataSet dataSet = null;
         private SqlDataAdapter sqlDataAdapter = null;
         private SqlCommandBuilder sqlBuilder = null;
@@ -461,7 +461,8 @@ namespace diplom
             if (MaterialMessageBox.Show("Вы точно хотите удалить выбранную запись!", "Внимание!", MessageBoxButtons.YesNo, UseRichTextBox: true) == DialogResult.Yes)
             {
                 SqlCommand command = new SqlCommand("DELETE FROM Bus WHERE GarageNum = @Id", sqlConnection);
-                int id = int.Parse(BusDVG.CurrentRow.Cells[0].Value.ToString());
+                int id = int.Parse(BusDVG.CurrentRow.Cells[0].Value.ToString()); ///System.FormatException: "Входная строка имела неверный формат."
+
                 command.Parameters.AddWithValue("@Id", id);
 
                 try
@@ -1049,7 +1050,8 @@ namespace diplom
 
         private void materialButton17_Click(object sender, EventArgs e)
         {
-            if (ChangeDVG.CurrentRow.Cells[6].Value.ToString() == "Поломка" && ChangeDVG.CurrentRow.Cells[4].Value.ToString() == "Агрегат")
+            if (ChangeDVG.CurrentRow.Cells[6].Value.ToString() == "Поломка" && ChangeDVG.CurrentRow.Cells[4].Value.ToString() == "Агрегат") //System.NullReferenceException: "Ссылка на объект не указывает на экземпляр объекта."
+
             {
                 BreakeAgrForm form = new BreakeAgrForm();
                 form.Show();
@@ -1116,26 +1118,26 @@ namespace diplom
 
         private void changeUserBtn_Click(object sender, EventArgs e)
         {
-            try
-            {
-                if (changeUserLoginTB.Text != "" && changeUserPasswordTB.Text != "")
-                {
+            //try
+            //{
+            //    if (changeUserLoginTB.Text != "" && changeUserPasswordTB.Text != "")
+            //    {
 
-                    SqlCommand sqlCommand = new SqlCommand($"update Users set Username = N'{changeUserLoginTB.Text}',Password=N'{changeUserPasswordTB.Text}',IsAdmin = '{changeUserRoleSwitch.Checked}' WHERE Id = {dataGridView1[0, dataGridView1.CurrentRow.Index].Value}", sqlConnection);
-                    sqlCommand.ExecuteNonQuery();
-                    LoadData();
+            //        SqlCommand sqlCommand = new SqlCommand($"update Users set Username = N'{changeUserLoginTB.Text}',Password=N'{changeUserPasswordTB.Text}',IsAdmin = '{changeUserRoleSwitch.Checked}' WHERE Id = {dataGridView1[0, dataGridView1.CurrentRow.Index].Value}", sqlConnection);
+            //        sqlCommand.ExecuteNonQuery();
+            //        LoadData();
 
-                    changeUserLoginTB.Text = "";
-                    changeUserPasswordTB.Text = "";
-                    changeUserRoleSwitch.Checked = false;
+            //        changeUserLoginTB.Text = "";
+            //        changeUserPasswordTB.Text = "";
+            //        changeUserRoleSwitch.Checked = false;
 
-                }
-                else
-                {
-                    MessageBox.Show("Заполните все строки");
-                }
-            }
-            catch (Exception ex) { MaterialMessageBox.Show(ex.Message, "Ошибка!"); }
+            //    }
+            //    else
+            //    {
+            //        MessageBox.Show("Заполните все строки");
+            //    }
+            //}
+            //catch (Exception ex) { MaterialMessageBox.Show(ex.Message, "Ошибка!"); }
         }
 
         private void UsersDVG_CellClick(object sender, DataGridViewCellEventArgs e)

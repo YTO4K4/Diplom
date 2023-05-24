@@ -174,28 +174,28 @@
             this.searchMCTB = new MaterialSkin.Controls.MaterialTextBox2();
             this.MCDVG = new System.Windows.Forms.DataGridView();
             this.ShowChangeMCPanelBtn = new MaterialSkin.Controls.MaterialButton();
-            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.changeUserRoleSwitch = new MaterialSkin.Controls.MaterialSwitch();
+            this.addUserPanel = new System.Windows.Forms.Panel();
+            this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton34 = new MaterialSkin.Controls.MaterialButton();
             this.addUserRoleSwitch = new MaterialSkin.Controls.MaterialSwitch();
-            this.changeUserLoginTB = new MaterialSkin.Controls.MaterialTextBox();
-            this.changeUserBtn = new MaterialSkin.Controls.MaterialButton();
-            this.changeUserPasswordTB = new MaterialSkin.Controls.MaterialTextBox();
             this.addUserPasswordTB = new MaterialSkin.Controls.MaterialTextBox();
             this.addUserBtn = new MaterialSkin.Controls.MaterialButton();
             this.addUserLoginTB = new MaterialSkin.Controls.MaterialTextBox();
+            this.showChangeUserPanelBtn = new MaterialSkin.Controls.MaterialButton();
+            this.ShowAddUserPanelBtn = new MaterialSkin.Controls.MaterialButton();
+            this.ChangeUserPanel = new System.Windows.Forms.Panel();
+            this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
+            this.materialButton36 = new MaterialSkin.Controls.MaterialButton();
+            this.changeUserRoleSwitch = new MaterialSkin.Controls.MaterialSwitch();
+            this.changeUserLoginTB = new MaterialSkin.Controls.MaterialTextBox();
+            this.changeUserBtn = new MaterialSkin.Controls.MaterialButton();
+            this.changeUserPasswordTB = new MaterialSkin.Controls.MaterialTextBox();
             this.reloadUsersBtn = new MaterialSkin.Controls.MaterialButton();
             this.deleteUserBtn = new MaterialSkin.Controls.MaterialButton();
             this.searchUsersTB = new MaterialSkin.Controls.MaterialTextBox2();
             this.UsersDVG = new System.Windows.Forms.DataGridView();
-            this.addUserPanel = new System.Windows.Forms.Panel();
-            this.ChangeUserPanel = new System.Windows.Forms.Panel();
-            this.materialButton34 = new MaterialSkin.Controls.MaterialButton();
-            this.materialButton36 = new MaterialSkin.Controls.MaterialButton();
-            this.materialLabel15 = new MaterialSkin.Controls.MaterialLabel();
-            this.materialLabel16 = new MaterialSkin.Controls.MaterialLabel();
-            this.ShowAddUserPanelBtn = new MaterialSkin.Controls.MaterialButton();
-            this.showChangeUserPanelBtn = new MaterialSkin.Controls.MaterialButton();
+            this.imageList1 = new System.Windows.Forms.ImageList(this.components);
             this.tabPage7.SuspendLayout();
             this.ChangeMarkPanel.SuspendLayout();
             this.AddMarkPanel.SuspendLayout();
@@ -222,17 +222,18 @@
             this.ChangeMCPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MCDVG)).BeginInit();
             this.tabPage4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UsersDVG)).BeginInit();
             this.addUserPanel.SuspendLayout();
             this.ChangeUserPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UsersDVG)).BeginInit();
             this.SuspendLayout();
             // 
             // tabPage9
             // 
             this.tabPage9.ImageKey = "icons8-logout-rounded-left-96.png";
             this.tabPage9.Location = new System.Drawing.Point(4, 31);
+            this.tabPage9.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage9.Name = "tabPage9";
-            this.tabPage9.Size = new System.Drawing.Size(1205, 659);
+            this.tabPage9.Size = new System.Drawing.Size(1373, 773);
             this.tabPage9.TabIndex = 8;
             this.tabPage9.Text = "Выйти";
             this.tabPage9.UseVisualStyleBackColor = true;
@@ -249,8 +250,9 @@
             this.tabPage7.Controls.Add(this.ShowAddMarkPanelBtn);
             this.tabPage7.ImageKey = "pngegg.png";
             this.tabPage7.Location = new System.Drawing.Point(4, 31);
+            this.tabPage7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(1205, 659);
+            this.tabPage7.Size = new System.Drawing.Size(1373, 773);
             this.tabPage7.TabIndex = 6;
             this.tabPage7.Text = "Марки";
             this.tabPage7.UseVisualStyleBackColor = true;
@@ -263,9 +265,10 @@
             this.ChangeMarkPanel.Controls.Add(this.materialLabel4);
             this.ChangeMarkPanel.Controls.Add(this.changeNameMarkTB);
             this.ChangeMarkPanel.Controls.Add(this.changeMarkBtn);
-            this.ChangeMarkPanel.Location = new System.Drawing.Point(31, 91);
+            this.ChangeMarkPanel.Location = new System.Drawing.Point(23, 74);
+            this.ChangeMarkPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ChangeMarkPanel.Name = "ChangeMarkPanel";
-            this.ChangeMarkPanel.Size = new System.Drawing.Size(302, 371);
+            this.ChangeMarkPanel.Size = new System.Drawing.Size(228, 302);
             this.ChangeMarkPanel.TabIndex = 17;
             this.ChangeMarkPanel.Visible = false;
             // 
@@ -276,8 +279,8 @@
             this.materialButton26.Depth = 0;
             this.materialButton26.HighEmphasis = true;
             this.materialButton26.Icon = null;
-            this.materialButton26.Location = new System.Drawing.Point(190, 200);
-            this.materialButton26.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton26.Location = new System.Drawing.Point(142, 162);
+            this.materialButton26.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton26.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton26.Name = "materialButton26";
             this.materialButton26.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -297,12 +300,12 @@
             this.materialButton12.HighEmphasis = true;
             this.materialButton12.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton12.Icon")));
             this.materialButton12.ImageIndex = 24;
-            this.materialButton12.Location = new System.Drawing.Point(255, 6);
-            this.materialButton12.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton12.Location = new System.Drawing.Point(191, 5);
+            this.materialButton12.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton12.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton12.Name = "materialButton12";
             this.materialButton12.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton12.Size = new System.Drawing.Size(39, 32);
+            this.materialButton12.Size = new System.Drawing.Size(29, 26);
             this.materialButton12.TabIndex = 68;
             this.materialButton12.Text = "CloseChangeMCPanelBtn";
             this.materialButton12.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
@@ -315,7 +318,8 @@
             this.materialLabel4.AutoSize = true;
             this.materialLabel4.Depth = 0;
             this.materialLabel4.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel4.Location = new System.Drawing.Point(15, 22);
+            this.materialLabel4.Location = new System.Drawing.Point(11, 18);
+            this.materialLabel4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel4.Name = "materialLabel4";
             this.materialLabel4.Size = new System.Drawing.Size(126, 19);
@@ -329,12 +333,13 @@
             this.changeNameMarkTB.Depth = 0;
             this.changeNameMarkTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.changeNameMarkTB.LeadingIcon = null;
-            this.changeNameMarkTB.Location = new System.Drawing.Point(63, 82);
+            this.changeNameMarkTB.Location = new System.Drawing.Point(47, 67);
+            this.changeNameMarkTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.changeNameMarkTB.MaxLength = 50;
             this.changeNameMarkTB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeNameMarkTB.Multiline = false;
             this.changeNameMarkTB.Name = "changeNameMarkTB";
-            this.changeNameMarkTB.Size = new System.Drawing.Size(198, 50);
+            this.changeNameMarkTB.Size = new System.Drawing.Size(148, 50);
             this.changeNameMarkTB.TabIndex = 13;
             this.changeNameMarkTB.Text = "";
             this.changeNameMarkTB.TrailingIcon = null;
@@ -346,8 +351,8 @@
             this.changeMarkBtn.Depth = 0;
             this.changeMarkBtn.HighEmphasis = true;
             this.changeMarkBtn.Icon = null;
-            this.changeMarkBtn.Location = new System.Drawing.Point(42, 200);
-            this.changeMarkBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.changeMarkBtn.Location = new System.Drawing.Point(32, 162);
+            this.changeMarkBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.changeMarkBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.changeMarkBtn.Name = "changeMarkBtn";
             this.changeMarkBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -367,9 +372,10 @@
             this.AddMarkPanel.Controls.Add(this.materialLabel3);
             this.AddMarkPanel.Controls.Add(this.nameMarkTB);
             this.AddMarkPanel.Controls.Add(this.addMarkBtn);
-            this.AddMarkPanel.Location = new System.Drawing.Point(488, 91);
+            this.AddMarkPanel.Location = new System.Drawing.Point(366, 74);
+            this.AddMarkPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AddMarkPanel.Name = "AddMarkPanel";
-            this.AddMarkPanel.Size = new System.Drawing.Size(302, 371);
+            this.AddMarkPanel.Size = new System.Drawing.Size(228, 302);
             this.AddMarkPanel.TabIndex = 16;
             this.AddMarkPanel.Visible = false;
             // 
@@ -380,8 +386,8 @@
             this.materialButton27.Depth = 0;
             this.materialButton27.HighEmphasis = true;
             this.materialButton27.Icon = null;
-            this.materialButton27.Location = new System.Drawing.Point(176, 200);
-            this.materialButton27.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton27.Location = new System.Drawing.Point(132, 162);
+            this.materialButton27.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton27.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton27.Name = "materialButton27";
             this.materialButton27.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -402,12 +408,12 @@
             this.materialButton11.HighEmphasis = true;
             this.materialButton11.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton11.Icon")));
             this.materialButton11.ImageIndex = 24;
-            this.materialButton11.Location = new System.Drawing.Point(255, 6);
-            this.materialButton11.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton11.Location = new System.Drawing.Point(191, 5);
+            this.materialButton11.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton11.Name = "materialButton11";
             this.materialButton11.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton11.Size = new System.Drawing.Size(39, 32);
+            this.materialButton11.Size = new System.Drawing.Size(29, 26);
             this.materialButton11.TabIndex = 68;
             this.materialButton11.Text = "CloseChangeMCPanelBtn";
             this.materialButton11.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
@@ -420,7 +426,8 @@
             this.materialLabel3.AutoSize = true;
             this.materialLabel3.Depth = 0;
             this.materialLabel3.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel3.Location = new System.Drawing.Point(15, 22);
+            this.materialLabel3.Location = new System.Drawing.Point(11, 18);
+            this.materialLabel3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel3.Name = "materialLabel3";
             this.materialLabel3.Size = new System.Drawing.Size(126, 19);
@@ -435,12 +442,13 @@
             this.nameMarkTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.nameMarkTB.Hint = "Наименование";
             this.nameMarkTB.LeadingIcon = null;
-            this.nameMarkTB.Location = new System.Drawing.Point(48, 82);
+            this.nameMarkTB.Location = new System.Drawing.Point(36, 67);
+            this.nameMarkTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nameMarkTB.MaxLength = 50;
             this.nameMarkTB.MouseState = MaterialSkin.MouseState.OUT;
             this.nameMarkTB.Multiline = false;
             this.nameMarkTB.Name = "nameMarkTB";
-            this.nameMarkTB.Size = new System.Drawing.Size(198, 50);
+            this.nameMarkTB.Size = new System.Drawing.Size(148, 50);
             this.nameMarkTB.TabIndex = 12;
             this.nameMarkTB.Text = "";
             this.nameMarkTB.TrailingIcon = null;
@@ -452,8 +460,8 @@
             this.addMarkBtn.Depth = 0;
             this.addMarkBtn.HighEmphasis = true;
             this.addMarkBtn.Icon = null;
-            this.addMarkBtn.Location = new System.Drawing.Point(29, 200);
-            this.addMarkBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.addMarkBtn.Location = new System.Drawing.Point(22, 162);
+            this.addMarkBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.addMarkBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.addMarkBtn.Name = "addMarkBtn";
             this.addMarkBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -472,8 +480,8 @@
             this.UpdateMarksBtn.Depth = 0;
             this.UpdateMarksBtn.HighEmphasis = true;
             this.UpdateMarksBtn.Icon = ((System.Drawing.Image)(resources.GetObject("UpdateMarksBtn.Icon")));
-            this.UpdateMarksBtn.Location = new System.Drawing.Point(54, 352);
-            this.UpdateMarksBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.UpdateMarksBtn.Location = new System.Drawing.Point(40, 286);
+            this.UpdateMarksBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.UpdateMarksBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.UpdateMarksBtn.Name = "UpdateMarksBtn";
             this.UpdateMarksBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -492,8 +500,8 @@
             this.deleteMarkBtn.DrawShadows = false;
             this.deleteMarkBtn.HighEmphasis = false;
             this.deleteMarkBtn.Icon = ((System.Drawing.Image)(resources.GetObject("deleteMarkBtn.Icon")));
-            this.deleteMarkBtn.Location = new System.Drawing.Point(303, 352);
-            this.deleteMarkBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.deleteMarkBtn.Location = new System.Drawing.Point(227, 286);
+            this.deleteMarkBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.deleteMarkBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.deleteMarkBtn.Name = "deleteMarkBtn";
             this.deleteMarkBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -516,7 +524,8 @@
             this.searchMatksTB.HideSelection = true;
             this.searchMatksTB.Hint = "Найти";
             this.searchMatksTB.LeadingIcon = null;
-            this.searchMatksTB.Location = new System.Drawing.Point(53, 31);
+            this.searchMatksTB.Location = new System.Drawing.Point(40, 25);
+            this.searchMatksTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchMatksTB.MaxLength = 32767;
             this.searchMatksTB.MouseState = MaterialSkin.MouseState.OUT;
             this.searchMatksTB.Name = "searchMatksTB";
@@ -528,7 +537,7 @@
             this.searchMatksTB.SelectionLength = 0;
             this.searchMatksTB.SelectionStart = 0;
             this.searchMatksTB.ShortcutsEnabled = true;
-            this.searchMatksTB.Size = new System.Drawing.Size(303, 48);
+            this.searchMatksTB.Size = new System.Drawing.Size(227, 48);
             this.searchMatksTB.TabIndex = 7;
             this.searchMatksTB.TabStop = false;
             this.searchMatksTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -541,11 +550,12 @@
             this.MarksDVG.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.MarksDVG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.MarksDVG.GridColor = System.Drawing.SystemColors.Highlight;
-            this.MarksDVG.Location = new System.Drawing.Point(53, 91);
+            this.MarksDVG.Location = new System.Drawing.Point(40, 74);
+            this.MarksDVG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MarksDVG.Name = "MarksDVG";
             this.MarksDVG.RowHeadersWidth = 51;
             this.MarksDVG.RowTemplate.Height = 24;
-            this.MarksDVG.Size = new System.Drawing.Size(303, 248);
+            this.MarksDVG.Size = new System.Drawing.Size(227, 202);
             this.MarksDVG.TabIndex = 6;
             this.MarksDVG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MarksDVG_CellClick);
             // 
@@ -556,8 +566,8 @@
             this.ShowChangeMarkPanelBtn.Depth = 0;
             this.ShowChangeMarkPanelBtn.HighEmphasis = true;
             this.ShowChangeMarkPanelBtn.Icon = null;
-            this.ShowChangeMarkPanelBtn.Location = new System.Drawing.Point(433, 158);
-            this.ShowChangeMarkPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowChangeMarkPanelBtn.Location = new System.Drawing.Point(325, 128);
+            this.ShowChangeMarkPanelBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.ShowChangeMarkPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.ShowChangeMarkPanelBtn.Name = "ShowChangeMarkPanelBtn";
             this.ShowChangeMarkPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -576,8 +586,8 @@
             this.ShowAddMarkPanelBtn.Depth = 0;
             this.ShowAddMarkPanelBtn.HighEmphasis = true;
             this.ShowAddMarkPanelBtn.Icon = null;
-            this.ShowAddMarkPanelBtn.Location = new System.Drawing.Point(433, 91);
-            this.ShowAddMarkPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowAddMarkPanelBtn.Location = new System.Drawing.Point(325, 74);
+            this.ShowAddMarkPanelBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.ShowAddMarkPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.ShowAddMarkPanelBtn.Name = "ShowAddMarkPanelBtn";
             this.ShowAddMarkPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -601,8 +611,9 @@
             this.tabPage5.Controls.Add(this.ShowChangeDriverPanelBtn);
             this.tabPage5.ImageKey = "icons8-driver-48.png";
             this.tabPage5.Location = new System.Drawing.Point(4, 31);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Size = new System.Drawing.Size(1205, 659);
+            this.tabPage5.Size = new System.Drawing.Size(1373, 773);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "Водители";
             this.tabPage5.UseVisualStyleBackColor = true;
@@ -617,9 +628,10 @@
             this.AddDriverPanel.Controls.Add(this.nameDriverTB);
             this.AddDriverPanel.Controls.Add(this.addDriverBtn);
             this.AddDriverPanel.Controls.Add(this.surnameDriverTB);
-            this.AddDriverPanel.Location = new System.Drawing.Point(153, 89);
+            this.AddDriverPanel.Location = new System.Drawing.Point(115, 72);
+            this.AddDriverPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AddDriverPanel.Name = "AddDriverPanel";
-            this.AddDriverPanel.Size = new System.Drawing.Size(352, 374);
+            this.AddDriverPanel.Size = new System.Drawing.Size(265, 305);
             this.AddDriverPanel.TabIndex = 23;
             this.AddDriverPanel.Visible = false;
             // 
@@ -630,8 +642,8 @@
             this.materialButton24.Depth = 0;
             this.materialButton24.HighEmphasis = true;
             this.materialButton24.Icon = null;
-            this.materialButton24.Location = new System.Drawing.Point(192, 297);
-            this.materialButton24.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton24.Location = new System.Drawing.Point(144, 241);
+            this.materialButton24.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton24.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton24.Name = "materialButton24";
             this.materialButton24.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -651,12 +663,12 @@
             this.materialButton10.HighEmphasis = true;
             this.materialButton10.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton10.Icon")));
             this.materialButton10.ImageIndex = 24;
-            this.materialButton10.Location = new System.Drawing.Point(305, 6);
-            this.materialButton10.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton10.Location = new System.Drawing.Point(229, 5);
+            this.materialButton10.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton10.Name = "materialButton10";
             this.materialButton10.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton10.Size = new System.Drawing.Size(39, 32);
+            this.materialButton10.Size = new System.Drawing.Size(29, 26);
             this.materialButton10.TabIndex = 68;
             this.materialButton10.Text = "CloseChangeMCPanelBtn";
             this.materialButton10.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
@@ -669,7 +681,8 @@
             this.materialLabel5.AutoSize = true;
             this.materialLabel5.Depth = 0;
             this.materialLabel5.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel5.Location = new System.Drawing.Point(16, 15);
+            this.materialLabel5.Location = new System.Drawing.Point(12, 12);
+            this.materialLabel5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel5.Name = "materialLabel5";
             this.materialLabel5.Size = new System.Drawing.Size(150, 19);
@@ -684,12 +697,13 @@
             this.lastnameDriverTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.lastnameDriverTB.Hint = "Отчество";
             this.lastnameDriverTB.LeadingIcon = null;
-            this.lastnameDriverTB.Location = new System.Drawing.Point(44, 207);
+            this.lastnameDriverTB.Location = new System.Drawing.Point(33, 168);
+            this.lastnameDriverTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lastnameDriverTB.MaxLength = 50;
             this.lastnameDriverTB.MouseState = MaterialSkin.MouseState.OUT;
             this.lastnameDriverTB.Multiline = false;
             this.lastnameDriverTB.Name = "lastnameDriverTB";
-            this.lastnameDriverTB.Size = new System.Drawing.Size(233, 50);
+            this.lastnameDriverTB.Size = new System.Drawing.Size(175, 50);
             this.lastnameDriverTB.TabIndex = 18;
             this.lastnameDriverTB.Text = "";
             this.lastnameDriverTB.TrailingIcon = null;
@@ -702,12 +716,13 @@
             this.nameDriverTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.nameDriverTB.Hint = "Имя";
             this.nameDriverTB.LeadingIcon = null;
-            this.nameDriverTB.Location = new System.Drawing.Point(44, 132);
+            this.nameDriverTB.Location = new System.Drawing.Point(33, 107);
+            this.nameDriverTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nameDriverTB.MaxLength = 50;
             this.nameDriverTB.MouseState = MaterialSkin.MouseState.OUT;
             this.nameDriverTB.Multiline = false;
             this.nameDriverTB.Name = "nameDriverTB";
-            this.nameDriverTB.Size = new System.Drawing.Size(233, 50);
+            this.nameDriverTB.Size = new System.Drawing.Size(175, 50);
             this.nameDriverTB.TabIndex = 17;
             this.nameDriverTB.Text = "";
             this.nameDriverTB.TrailingIcon = null;
@@ -719,8 +734,8 @@
             this.addDriverBtn.Depth = 0;
             this.addDriverBtn.HighEmphasis = true;
             this.addDriverBtn.Icon = null;
-            this.addDriverBtn.Location = new System.Drawing.Point(44, 297);
-            this.addDriverBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.addDriverBtn.Location = new System.Drawing.Point(33, 241);
+            this.addDriverBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.addDriverBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.addDriverBtn.Name = "addDriverBtn";
             this.addDriverBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -740,12 +755,13 @@
             this.surnameDriverTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.surnameDriverTB.Hint = "Фамилия";
             this.surnameDriverTB.LeadingIcon = null;
-            this.surnameDriverTB.Location = new System.Drawing.Point(44, 57);
+            this.surnameDriverTB.Location = new System.Drawing.Point(33, 46);
+            this.surnameDriverTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.surnameDriverTB.MaxLength = 50;
             this.surnameDriverTB.MouseState = MaterialSkin.MouseState.OUT;
             this.surnameDriverTB.Multiline = false;
             this.surnameDriverTB.Name = "surnameDriverTB";
-            this.surnameDriverTB.Size = new System.Drawing.Size(233, 50);
+            this.surnameDriverTB.Size = new System.Drawing.Size(175, 50);
             this.surnameDriverTB.TabIndex = 15;
             this.surnameDriverTB.Text = "";
             this.surnameDriverTB.TrailingIcon = null;
@@ -760,9 +776,10 @@
             this.ChangeDriverPanel.Controls.Add(this.changeNameDriverTB);
             this.ChangeDriverPanel.Controls.Add(this.changeDriverBtn);
             this.ChangeDriverPanel.Controls.Add(this.changeLastnameDriverTB);
-            this.ChangeDriverPanel.Location = new System.Drawing.Point(512, 89);
+            this.ChangeDriverPanel.Location = new System.Drawing.Point(384, 72);
+            this.ChangeDriverPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ChangeDriverPanel.Name = "ChangeDriverPanel";
-            this.ChangeDriverPanel.Size = new System.Drawing.Size(352, 374);
+            this.ChangeDriverPanel.Size = new System.Drawing.Size(265, 305);
             this.ChangeDriverPanel.TabIndex = 24;
             this.ChangeDriverPanel.Visible = false;
             // 
@@ -773,8 +790,8 @@
             this.materialButton25.Depth = 0;
             this.materialButton25.HighEmphasis = true;
             this.materialButton25.Icon = null;
-            this.materialButton25.Location = new System.Drawing.Point(203, 316);
-            this.materialButton25.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton25.Location = new System.Drawing.Point(152, 257);
+            this.materialButton25.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton25.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton25.Name = "materialButton25";
             this.materialButton25.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -794,12 +811,12 @@
             this.materialButton9.HighEmphasis = true;
             this.materialButton9.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton9.Icon")));
             this.materialButton9.ImageIndex = 24;
-            this.materialButton9.Location = new System.Drawing.Point(294, 7);
-            this.materialButton9.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton9.Location = new System.Drawing.Point(220, 6);
+            this.materialButton9.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton9.Name = "materialButton9";
             this.materialButton9.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton9.Size = new System.Drawing.Size(39, 32);
+            this.materialButton9.Size = new System.Drawing.Size(29, 26);
             this.materialButton9.TabIndex = 67;
             this.materialButton9.Text = "CloseChangeMCPanelBtn";
             this.materialButton9.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
@@ -812,7 +829,8 @@
             this.materialLabel6.AutoSize = true;
             this.materialLabel6.Depth = 0;
             this.materialLabel6.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel6.Location = new System.Drawing.Point(16, 15);
+            this.materialLabel6.Location = new System.Drawing.Point(12, 12);
+            this.materialLabel6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel6.Name = "materialLabel6";
             this.materialLabel6.Size = new System.Drawing.Size(150, 19);
@@ -826,12 +844,13 @@
             this.changeSurnameDriverTB.Depth = 0;
             this.changeSurnameDriverTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.changeSurnameDriverTB.LeadingIcon = null;
-            this.changeSurnameDriverTB.Location = new System.Drawing.Point(83, 54);
+            this.changeSurnameDriverTB.Location = new System.Drawing.Point(62, 44);
+            this.changeSurnameDriverTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.changeSurnameDriverTB.MaxLength = 50;
             this.changeSurnameDriverTB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeSurnameDriverTB.Multiline = false;
             this.changeSurnameDriverTB.Name = "changeSurnameDriverTB";
-            this.changeSurnameDriverTB.Size = new System.Drawing.Size(198, 50);
+            this.changeSurnameDriverTB.Size = new System.Drawing.Size(148, 50);
             this.changeSurnameDriverTB.TabIndex = 19;
             this.changeSurnameDriverTB.Text = "";
             this.changeSurnameDriverTB.TrailingIcon = null;
@@ -843,12 +862,13 @@
             this.changeNameDriverTB.Depth = 0;
             this.changeNameDriverTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.changeNameDriverTB.LeadingIcon = null;
-            this.changeNameDriverTB.Location = new System.Drawing.Point(83, 147);
+            this.changeNameDriverTB.Location = new System.Drawing.Point(62, 119);
+            this.changeNameDriverTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.changeNameDriverTB.MaxLength = 50;
             this.changeNameDriverTB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeNameDriverTB.Multiline = false;
             this.changeNameDriverTB.Name = "changeNameDriverTB";
-            this.changeNameDriverTB.Size = new System.Drawing.Size(198, 50);
+            this.changeNameDriverTB.Size = new System.Drawing.Size(148, 50);
             this.changeNameDriverTB.TabIndex = 21;
             this.changeNameDriverTB.Text = "";
             this.changeNameDriverTB.TrailingIcon = null;
@@ -860,8 +880,8 @@
             this.changeDriverBtn.Depth = 0;
             this.changeDriverBtn.HighEmphasis = true;
             this.changeDriverBtn.Icon = null;
-            this.changeDriverBtn.Location = new System.Drawing.Point(41, 316);
-            this.changeDriverBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.changeDriverBtn.Location = new System.Drawing.Point(31, 257);
+            this.changeDriverBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.changeDriverBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.changeDriverBtn.Name = "changeDriverBtn";
             this.changeDriverBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -880,12 +900,13 @@
             this.changeLastnameDriverTB.Depth = 0;
             this.changeLastnameDriverTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.changeLastnameDriverTB.LeadingIcon = null;
-            this.changeLastnameDriverTB.Location = new System.Drawing.Point(83, 233);
+            this.changeLastnameDriverTB.Location = new System.Drawing.Point(62, 189);
+            this.changeLastnameDriverTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.changeLastnameDriverTB.MaxLength = 50;
             this.changeLastnameDriverTB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeLastnameDriverTB.Multiline = false;
             this.changeLastnameDriverTB.Name = "changeLastnameDriverTB";
-            this.changeLastnameDriverTB.Size = new System.Drawing.Size(198, 50);
+            this.changeLastnameDriverTB.Size = new System.Drawing.Size(148, 50);
             this.changeLastnameDriverTB.TabIndex = 22;
             this.changeLastnameDriverTB.Text = "";
             this.changeLastnameDriverTB.TrailingIcon = null;
@@ -897,8 +918,8 @@
             this.ShowAddDriverPanelBtn.Depth = 0;
             this.ShowAddDriverPanelBtn.HighEmphasis = true;
             this.ShowAddDriverPanelBtn.Icon = null;
-            this.ShowAddDriverPanelBtn.Location = new System.Drawing.Point(594, 71);
-            this.ShowAddDriverPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowAddDriverPanelBtn.Location = new System.Drawing.Point(446, 58);
+            this.ShowAddDriverPanelBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.ShowAddDriverPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.ShowAddDriverPanelBtn.Name = "ShowAddDriverPanelBtn";
             this.ShowAddDriverPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -917,8 +938,8 @@
             this.updateDriversBtn.Depth = 0;
             this.updateDriversBtn.HighEmphasis = true;
             this.updateDriversBtn.Icon = ((System.Drawing.Image)(resources.GetObject("updateDriversBtn.Icon")));
-            this.updateDriversBtn.Location = new System.Drawing.Point(34, 376);
-            this.updateDriversBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.updateDriversBtn.Location = new System.Drawing.Point(26, 306);
+            this.updateDriversBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.updateDriversBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.updateDriversBtn.Name = "updateDriversBtn";
             this.updateDriversBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -937,8 +958,8 @@
             this.deleteDriverBtn.DrawShadows = false;
             this.deleteDriverBtn.HighEmphasis = false;
             this.deleteDriverBtn.Icon = ((System.Drawing.Image)(resources.GetObject("deleteDriverBtn.Icon")));
-            this.deleteDriverBtn.Location = new System.Drawing.Point(512, 376);
-            this.deleteDriverBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.deleteDriverBtn.Location = new System.Drawing.Point(384, 306);
+            this.deleteDriverBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.deleteDriverBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.deleteDriverBtn.Name = "deleteDriverBtn";
             this.deleteDriverBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -961,7 +982,8 @@
             this.searchDriverTB.HideSelection = true;
             this.searchDriverTB.Hint = "Найти";
             this.searchDriverTB.LeadingIcon = null;
-            this.searchDriverTB.Location = new System.Drawing.Point(34, 12);
+            this.searchDriverTB.Location = new System.Drawing.Point(26, 10);
+            this.searchDriverTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchDriverTB.MaxLength = 32767;
             this.searchDriverTB.MouseState = MaterialSkin.MouseState.OUT;
             this.searchDriverTB.Name = "searchDriverTB";
@@ -973,7 +995,7 @@
             this.searchDriverTB.SelectionLength = 0;
             this.searchDriverTB.SelectionStart = 0;
             this.searchDriverTB.ShortcutsEnabled = true;
-            this.searchDriverTB.Size = new System.Drawing.Size(529, 48);
+            this.searchDriverTB.Size = new System.Drawing.Size(397, 48);
             this.searchDriverTB.TabIndex = 8;
             this.searchDriverTB.TabStop = false;
             this.searchDriverTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -987,10 +1009,11 @@
             this.DriversDVG.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.DriversDVG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DriversDVG.GridColor = System.Drawing.SystemColors.Highlight;
-            this.DriversDVG.Location = new System.Drawing.Point(34, 71);
+            this.DriversDVG.Location = new System.Drawing.Point(26, 58);
+            this.DriversDVG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.DriversDVG.Name = "DriversDVG";
             this.DriversDVG.RowHeadersWidth = 51;
-            this.DriversDVG.Size = new System.Drawing.Size(529, 296);
+            this.DriversDVG.Size = new System.Drawing.Size(397, 240);
             this.DriversDVG.TabIndex = 0;
             this.DriversDVG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DriversDVG_CellClick);
             // 
@@ -1001,8 +1024,8 @@
             this.ShowChangeDriverPanelBtn.Depth = 0;
             this.ShowChangeDriverPanelBtn.HighEmphasis = true;
             this.ShowChangeDriverPanelBtn.Icon = null;
-            this.ShowChangeDriverPanelBtn.Location = new System.Drawing.Point(594, 143);
-            this.ShowChangeDriverPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowChangeDriverPanelBtn.Location = new System.Drawing.Point(446, 116);
+            this.ShowChangeDriverPanelBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.ShowChangeDriverPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.ShowChangeDriverPanelBtn.Name = "ShowChangeDriverPanelBtn";
             this.ShowChangeDriverPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -1026,9 +1049,10 @@
             this.tabPage2.Controls.Add(this.deleteBusBtn);
             this.tabPage2.ImageKey = "icons8-bus-48.png";
             this.tabPage2.Location = new System.Drawing.Point(4, 31);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1205, 659);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Size = new System.Drawing.Size(1373, 773);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "Автобусы";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -1044,9 +1068,10 @@
             this.AddBusPanel.Controls.Add(this.addBusBtn);
             this.AddBusPanel.Controls.Add(this.markBusCB);
             this.AddBusPanel.Controls.Add(this.driverBusCM);
-            this.AddBusPanel.Location = new System.Drawing.Point(96, 82);
+            this.AddBusPanel.Location = new System.Drawing.Point(72, 67);
+            this.AddBusPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AddBusPanel.Name = "AddBusPanel";
-            this.AddBusPanel.Size = new System.Drawing.Size(364, 396);
+            this.AddBusPanel.Size = new System.Drawing.Size(274, 322);
             this.AddBusPanel.TabIndex = 41;
             this.AddBusPanel.Visible = false;
             // 
@@ -1057,8 +1082,8 @@
             this.materialButton22.Depth = 0;
             this.materialButton22.HighEmphasis = true;
             this.materialButton22.Icon = null;
-            this.materialButton22.Location = new System.Drawing.Point(198, 331);
-            this.materialButton22.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton22.Location = new System.Drawing.Point(148, 269);
+            this.materialButton22.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton22.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton22.Name = "materialButton22";
             this.materialButton22.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -1078,12 +1103,12 @@
             this.materialButton8.HighEmphasis = true;
             this.materialButton8.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton8.Icon")));
             this.materialButton8.ImageIndex = 24;
-            this.materialButton8.Location = new System.Drawing.Point(317, 12);
-            this.materialButton8.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton8.Location = new System.Drawing.Point(238, 10);
+            this.materialButton8.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton8.Name = "materialButton8";
             this.materialButton8.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton8.Size = new System.Drawing.Size(39, 32);
+            this.materialButton8.Size = new System.Drawing.Size(29, 26);
             this.materialButton8.TabIndex = 67;
             this.materialButton8.Text = "CloseChangeMCPanelBtn";
             this.materialButton8.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
@@ -1096,7 +1121,8 @@
             this.materialLabel9.AutoSize = true;
             this.materialLabel9.Depth = 0;
             this.materialLabel9.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel9.Location = new System.Drawing.Point(13, 12);
+            this.materialLabel9.Location = new System.Drawing.Point(10, 10);
+            this.materialLabel9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel9.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel9.Name = "materialLabel9";
             this.materialLabel9.Size = new System.Drawing.Size(139, 19);
@@ -1111,12 +1137,13 @@
             this.gosnumBusTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.gosnumBusTB.Hint = "Гос.Номер(АА 0000-0)";
             this.gosnumBusTB.LeadingIcon = null;
-            this.gosnumBusTB.Location = new System.Drawing.Point(42, 116);
+            this.gosnumBusTB.Location = new System.Drawing.Point(32, 94);
+            this.gosnumBusTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.gosnumBusTB.MaxLength = 50;
             this.gosnumBusTB.MouseState = MaterialSkin.MouseState.OUT;
             this.gosnumBusTB.Multiline = false;
             this.gosnumBusTB.Name = "gosnumBusTB";
-            this.gosnumBusTB.Size = new System.Drawing.Size(255, 50);
+            this.gosnumBusTB.Size = new System.Drawing.Size(191, 50);
             this.gosnumBusTB.TabIndex = 34;
             this.gosnumBusTB.Text = "";
             this.gosnumBusTB.TrailingIcon = null;
@@ -1129,12 +1156,13 @@
             this.garnumBusTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.garnumBusTB.Hint = "Гаражный номер";
             this.garnumBusTB.LeadingIcon = null;
-            this.garnumBusTB.Location = new System.Drawing.Point(42, 47);
+            this.garnumBusTB.Location = new System.Drawing.Point(32, 38);
+            this.garnumBusTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.garnumBusTB.MaxLength = 50;
             this.garnumBusTB.MouseState = MaterialSkin.MouseState.OUT;
             this.garnumBusTB.Multiline = false;
             this.garnumBusTB.Name = "garnumBusTB";
-            this.garnumBusTB.Size = new System.Drawing.Size(255, 50);
+            this.garnumBusTB.Size = new System.Drawing.Size(191, 50);
             this.garnumBusTB.TabIndex = 33;
             this.garnumBusTB.Text = "";
             this.garnumBusTB.TrailingIcon = null;
@@ -1146,8 +1174,8 @@
             this.addBusBtn.Depth = 0;
             this.addBusBtn.HighEmphasis = true;
             this.addBusBtn.Icon = null;
-            this.addBusBtn.Location = new System.Drawing.Point(42, 331);
-            this.addBusBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.addBusBtn.Location = new System.Drawing.Point(32, 269);
+            this.addBusBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.addBusBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.addBusBtn.Name = "addBusBtn";
             this.addBusBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -1175,11 +1203,12 @@
             this.markBusCB.Hint = "Марка";
             this.markBusCB.IntegralHeight = false;
             this.markBusCB.ItemHeight = 43;
-            this.markBusCB.Location = new System.Drawing.Point(42, 257);
+            this.markBusCB.Location = new System.Drawing.Point(32, 209);
+            this.markBusCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.markBusCB.MaxDropDownItems = 4;
             this.markBusCB.MouseState = MaterialSkin.MouseState.OUT;
             this.markBusCB.Name = "markBusCB";
-            this.markBusCB.Size = new System.Drawing.Size(255, 49);
+            this.markBusCB.Size = new System.Drawing.Size(192, 49);
             this.markBusCB.StartIndex = 0;
             this.markBusCB.TabIndex = 36;
             this.markBusCB.ValueMember = "Id_mark";
@@ -1199,11 +1228,12 @@
             this.driverBusCM.Hint = "Водитель";
             this.driverBusCM.IntegralHeight = false;
             this.driverBusCM.ItemHeight = 43;
-            this.driverBusCM.Location = new System.Drawing.Point(42, 185);
+            this.driverBusCM.Location = new System.Drawing.Point(32, 150);
+            this.driverBusCM.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.driverBusCM.MaxDropDownItems = 4;
             this.driverBusCM.MouseState = MaterialSkin.MouseState.OUT;
             this.driverBusCM.Name = "driverBusCM";
-            this.driverBusCM.Size = new System.Drawing.Size(255, 49);
+            this.driverBusCM.Size = new System.Drawing.Size(192, 49);
             this.driverBusCM.StartIndex = 0;
             this.driverBusCM.TabIndex = 35;
             // 
@@ -1218,9 +1248,10 @@
             this.ChangeBusPanel.Controls.Add(this.changeBusBtn);
             this.ChangeBusPanel.Controls.Add(this.changeMarkBusCB);
             this.ChangeBusPanel.Controls.Add(this.changeDriverBusCB);
-            this.ChangeBusPanel.Location = new System.Drawing.Point(460, 82);
+            this.ChangeBusPanel.Location = new System.Drawing.Point(345, 67);
+            this.ChangeBusPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ChangeBusPanel.Name = "ChangeBusPanel";
-            this.ChangeBusPanel.Size = new System.Drawing.Size(364, 396);
+            this.ChangeBusPanel.Size = new System.Drawing.Size(274, 322);
             this.ChangeBusPanel.TabIndex = 42;
             this.ChangeBusPanel.Visible = false;
             // 
@@ -1231,8 +1262,8 @@
             this.materialButton23.Depth = 0;
             this.materialButton23.HighEmphasis = true;
             this.materialButton23.Icon = null;
-            this.materialButton23.Location = new System.Drawing.Point(225, 331);
-            this.materialButton23.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton23.Location = new System.Drawing.Point(169, 269);
+            this.materialButton23.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton23.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton23.Name = "materialButton23";
             this.materialButton23.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -1252,12 +1283,12 @@
             this.materialButton7.HighEmphasis = true;
             this.materialButton7.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton7.Icon")));
             this.materialButton7.ImageIndex = 24;
-            this.materialButton7.Location = new System.Drawing.Point(312, 9);
-            this.materialButton7.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton7.Location = new System.Drawing.Point(234, 7);
+            this.materialButton7.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton7.Name = "materialButton7";
             this.materialButton7.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton7.Size = new System.Drawing.Size(39, 32);
+            this.materialButton7.Size = new System.Drawing.Size(29, 26);
             this.materialButton7.TabIndex = 66;
             this.materialButton7.Text = "CloseChangeMCPanelBtn";
             this.materialButton7.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
@@ -1270,7 +1301,8 @@
             this.materialLabel10.AutoSize = true;
             this.materialLabel10.Depth = 0;
             this.materialLabel10.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel10.Location = new System.Drawing.Point(14, 9);
+            this.materialLabel10.Location = new System.Drawing.Point(10, 7);
+            this.materialLabel10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel10.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel10.Name = "materialLabel10";
             this.materialLabel10.Size = new System.Drawing.Size(139, 19);
@@ -1284,12 +1316,13 @@
             this.changeGarnumBusTB.Depth = 0;
             this.changeGarnumBusTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.changeGarnumBusTB.LeadingIcon = null;
-            this.changeGarnumBusTB.Location = new System.Drawing.Point(84, 47);
+            this.changeGarnumBusTB.Location = new System.Drawing.Point(63, 38);
+            this.changeGarnumBusTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.changeGarnumBusTB.MaxLength = 50;
             this.changeGarnumBusTB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeGarnumBusTB.Multiline = false;
             this.changeGarnumBusTB.Name = "changeGarnumBusTB";
-            this.changeGarnumBusTB.Size = new System.Drawing.Size(200, 50);
+            this.changeGarnumBusTB.Size = new System.Drawing.Size(150, 50);
             this.changeGarnumBusTB.TabIndex = 37;
             this.changeGarnumBusTB.Text = "";
             this.changeGarnumBusTB.TrailingIcon = null;
@@ -1301,12 +1334,13 @@
             this.changeGosnumBusTB.Depth = 0;
             this.changeGosnumBusTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.changeGosnumBusTB.LeadingIcon = null;
-            this.changeGosnumBusTB.Location = new System.Drawing.Point(84, 116);
+            this.changeGosnumBusTB.Location = new System.Drawing.Point(63, 94);
+            this.changeGosnumBusTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.changeGosnumBusTB.MaxLength = 50;
             this.changeGosnumBusTB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeGosnumBusTB.Multiline = false;
             this.changeGosnumBusTB.Name = "changeGosnumBusTB";
-            this.changeGosnumBusTB.Size = new System.Drawing.Size(200, 50);
+            this.changeGosnumBusTB.Size = new System.Drawing.Size(150, 50);
             this.changeGosnumBusTB.TabIndex = 38;
             this.changeGosnumBusTB.Text = "";
             this.changeGosnumBusTB.TrailingIcon = null;
@@ -1318,8 +1352,8 @@
             this.changeBusBtn.Depth = 0;
             this.changeBusBtn.HighEmphasis = true;
             this.changeBusBtn.Icon = null;
-            this.changeBusBtn.Location = new System.Drawing.Point(58, 331);
-            this.changeBusBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.changeBusBtn.Location = new System.Drawing.Point(44, 269);
+            this.changeBusBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.changeBusBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.changeBusBtn.Name = "changeBusBtn";
             this.changeBusBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -1346,11 +1380,12 @@
             this.changeMarkBusCB.FormattingEnabled = true;
             this.changeMarkBusCB.IntegralHeight = false;
             this.changeMarkBusCB.ItemHeight = 43;
-            this.changeMarkBusCB.Location = new System.Drawing.Point(84, 257);
+            this.changeMarkBusCB.Location = new System.Drawing.Point(63, 209);
+            this.changeMarkBusCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.changeMarkBusCB.MaxDropDownItems = 4;
             this.changeMarkBusCB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeMarkBusCB.Name = "changeMarkBusCB";
-            this.changeMarkBusCB.Size = new System.Drawing.Size(200, 49);
+            this.changeMarkBusCB.Size = new System.Drawing.Size(151, 49);
             this.changeMarkBusCB.StartIndex = 0;
             this.changeMarkBusCB.TabIndex = 40;
             this.changeMarkBusCB.ValueMember = "Id_mark";
@@ -1370,11 +1405,12 @@
             this.changeDriverBusCB.FormattingEnabled = true;
             this.changeDriverBusCB.IntegralHeight = false;
             this.changeDriverBusCB.ItemHeight = 43;
-            this.changeDriverBusCB.Location = new System.Drawing.Point(84, 185);
+            this.changeDriverBusCB.Location = new System.Drawing.Point(63, 150);
+            this.changeDriverBusCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.changeDriverBusCB.MaxDropDownItems = 4;
             this.changeDriverBusCB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeDriverBusCB.Name = "changeDriverBusCB";
-            this.changeDriverBusCB.Size = new System.Drawing.Size(200, 49);
+            this.changeDriverBusCB.Size = new System.Drawing.Size(151, 49);
             this.changeDriverBusCB.StartIndex = 0;
             this.changeDriverBusCB.TabIndex = 39;
             this.changeDriverBusCB.ValueMember = "Id_dr";
@@ -1386,8 +1422,8 @@
             this.ShowAddBusPanel.Depth = 0;
             this.ShowAddBusPanel.HighEmphasis = true;
             this.ShowAddBusPanel.Icon = null;
-            this.ShowAddBusPanel.Location = new System.Drawing.Point(601, 75);
-            this.ShowAddBusPanel.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowAddBusPanel.Location = new System.Drawing.Point(451, 61);
+            this.ShowAddBusPanel.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.ShowAddBusPanel.MouseState = MaterialSkin.MouseState.HOVER;
             this.ShowAddBusPanel.Name = "ShowAddBusPanel";
             this.ShowAddBusPanel.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -1406,8 +1442,8 @@
             this.materialButton15.Depth = 0;
             this.materialButton15.HighEmphasis = true;
             this.materialButton15.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton15.Icon")));
-            this.materialButton15.Location = new System.Drawing.Point(25, 380);
-            this.materialButton15.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton15.Location = new System.Drawing.Point(19, 309);
+            this.materialButton15.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton15.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton15.Name = "materialButton15";
             this.materialButton15.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -1428,7 +1464,8 @@
             this.searchBusTB.HideSelection = true;
             this.searchBusTB.Hint = "Найти";
             this.searchBusTB.LeadingIcon = null;
-            this.searchBusTB.Location = new System.Drawing.Point(27, 16);
+            this.searchBusTB.Location = new System.Drawing.Point(20, 13);
+            this.searchBusTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchBusTB.MaxLength = 32767;
             this.searchBusTB.MouseState = MaterialSkin.MouseState.OUT;
             this.searchBusTB.Name = "searchBusTB";
@@ -1440,7 +1477,7 @@
             this.searchBusTB.SelectionLength = 0;
             this.searchBusTB.SelectionStart = 0;
             this.searchBusTB.ShortcutsEnabled = true;
-            this.searchBusTB.Size = new System.Drawing.Size(529, 48);
+            this.searchBusTB.Size = new System.Drawing.Size(397, 48);
             this.searchBusTB.TabIndex = 24;
             this.searchBusTB.TabStop = false;
             this.searchBusTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -1453,10 +1490,11 @@
             this.BusDVG.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.BusDVG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.BusDVG.GridColor = System.Drawing.SystemColors.Highlight;
-            this.BusDVG.Location = new System.Drawing.Point(27, 75);
+            this.BusDVG.Location = new System.Drawing.Point(20, 61);
+            this.BusDVG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BusDVG.Name = "BusDVG";
             this.BusDVG.RowHeadersWidth = 51;
-            this.BusDVG.Size = new System.Drawing.Size(529, 296);
+            this.BusDVG.Size = new System.Drawing.Size(397, 240);
             this.BusDVG.TabIndex = 23;
             this.BusDVG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.BusDVG_CellClick);
             // 
@@ -1467,8 +1505,8 @@
             this.ShowChangeBusPanelBtn.Depth = 0;
             this.ShowChangeBusPanelBtn.HighEmphasis = true;
             this.ShowChangeBusPanelBtn.Icon = null;
-            this.ShowChangeBusPanelBtn.Location = new System.Drawing.Point(601, 142);
-            this.ShowChangeBusPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowChangeBusPanelBtn.Location = new System.Drawing.Point(451, 115);
+            this.ShowChangeBusPanelBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.ShowChangeBusPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.ShowChangeBusPanelBtn.Name = "ShowChangeBusPanelBtn";
             this.ShowChangeBusPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -1488,8 +1526,8 @@
             this.deleteBusBtn.DrawShadows = false;
             this.deleteBusBtn.HighEmphasis = false;
             this.deleteBusBtn.Icon = ((System.Drawing.Image)(resources.GetObject("deleteBusBtn.Icon")));
-            this.deleteBusBtn.Location = new System.Drawing.Point(492, 379);
-            this.deleteBusBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.deleteBusBtn.Location = new System.Drawing.Point(369, 308);
+            this.deleteBusBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.deleteBusBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.deleteBusBtn.Name = "deleteBusBtn";
             this.deleteBusBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -1521,9 +1559,10 @@
             this.tabPage1.Controls.Add(this.ChangeDVG);
             this.tabPage1.ImageKey = "icons8-home-48.png";
             this.tabPage1.Location = new System.Drawing.Point(4, 31);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1205, 659);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Size = new System.Drawing.Size(1373, 773);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "Главная";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -1539,9 +1578,10 @@
             this.addChangePanel.Controls.Add(this.ReasonChangeCB);
             this.addChangePanel.Controls.Add(this.addChangeBtn);
             this.addChangePanel.Controls.Add(this.MCChangeCB);
-            this.addChangePanel.Location = new System.Drawing.Point(1099, 40);
+            this.addChangePanel.Location = new System.Drawing.Point(824, 32);
+            this.addChangePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.addChangePanel.Name = "addChangePanel";
-            this.addChangePanel.Size = new System.Drawing.Size(377, 476);
+            this.addChangePanel.Size = new System.Drawing.Size(284, 388);
             this.addChangePanel.TabIndex = 46;
             this.addChangePanel.Visible = false;
             // 
@@ -1552,8 +1592,8 @@
             this.materialButton19.Depth = 0;
             this.materialButton19.HighEmphasis = true;
             this.materialButton19.Icon = null;
-            this.materialButton19.Location = new System.Drawing.Point(235, 402);
-            this.materialButton19.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton19.Location = new System.Drawing.Point(176, 327);
+            this.materialButton19.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton19.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton19.Name = "materialButton19";
             this.materialButton19.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -1569,7 +1609,8 @@
             this.materialLabel12.AutoSize = true;
             this.materialLabel12.Depth = 0;
             this.materialLabel12.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel12.Location = new System.Drawing.Point(123, 338);
+            this.materialLabel12.Location = new System.Drawing.Point(92, 275);
+            this.materialLabel12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel12.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel12.Name = "materialLabel12";
             this.materialLabel12.Size = new System.Drawing.Size(101, 19);
@@ -1585,12 +1626,12 @@
             this.materialButton13.HighEmphasis = true;
             this.materialButton13.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton13.Icon")));
             this.materialButton13.ImageIndex = 24;
-            this.materialButton13.Location = new System.Drawing.Point(330, 6);
-            this.materialButton13.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton13.Location = new System.Drawing.Point(248, 5);
+            this.materialButton13.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton13.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton13.Name = "materialButton13";
             this.materialButton13.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton13.Size = new System.Drawing.Size(39, 32);
+            this.materialButton13.Size = new System.Drawing.Size(29, 26);
             this.materialButton13.TabIndex = 68;
             this.materialButton13.Text = "CloseChangeMCPanelBtn";
             this.materialButton13.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
@@ -1603,7 +1644,8 @@
             this.materialLabel1.AutoSize = true;
             this.materialLabel1.Depth = 0;
             this.materialLabel1.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel1.Location = new System.Drawing.Point(18, 21);
+            this.materialLabel1.Location = new System.Drawing.Point(14, 17);
+            this.materialLabel1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel1.Name = "materialLabel1";
             this.materialLabel1.Size = new System.Drawing.Size(133, 19);
@@ -1625,11 +1667,12 @@
             this.BusChangeCB.Hint = "Автобус";
             this.BusChangeCB.IntegralHeight = false;
             this.BusChangeCB.ItemHeight = 43;
-            this.BusChangeCB.Location = new System.Drawing.Point(74, 78);
+            this.BusChangeCB.Location = new System.Drawing.Point(56, 63);
+            this.BusChangeCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BusChangeCB.MaxDropDownItems = 4;
             this.BusChangeCB.MouseState = MaterialSkin.MouseState.OUT;
             this.BusChangeCB.Name = "BusChangeCB";
-            this.BusChangeCB.Size = new System.Drawing.Size(221, 49);
+            this.BusChangeCB.Size = new System.Drawing.Size(167, 49);
             this.BusChangeCB.StartIndex = 0;
             this.BusChangeCB.TabIndex = 1;
             // 
@@ -1651,11 +1694,12 @@
             this.ReasonChangeCB.Items.AddRange(new object[] {
             "ТО",
             "Поломка"});
-            this.ReasonChangeCB.Location = new System.Drawing.Point(74, 260);
+            this.ReasonChangeCB.Location = new System.Drawing.Point(56, 211);
+            this.ReasonChangeCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ReasonChangeCB.MaxDropDownItems = 4;
             this.ReasonChangeCB.MouseState = MaterialSkin.MouseState.OUT;
             this.ReasonChangeCB.Name = "ReasonChangeCB";
-            this.ReasonChangeCB.Size = new System.Drawing.Size(221, 49);
+            this.ReasonChangeCB.Size = new System.Drawing.Size(167, 49);
             this.ReasonChangeCB.StartIndex = 0;
             this.ReasonChangeCB.TabIndex = 3;
             // 
@@ -1666,8 +1710,8 @@
             this.addChangeBtn.Depth = 0;
             this.addChangeBtn.HighEmphasis = true;
             this.addChangeBtn.Icon = null;
-            this.addChangeBtn.Location = new System.Drawing.Point(51, 399);
-            this.addChangeBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.addChangeBtn.Location = new System.Drawing.Point(38, 324);
+            this.addChangeBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.addChangeBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.addChangeBtn.Name = "addChangeBtn";
             this.addChangeBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -1694,11 +1738,12 @@
             this.MCChangeCB.Hint = "Предмет замены";
             this.MCChangeCB.IntegralHeight = false;
             this.MCChangeCB.ItemHeight = 43;
-            this.MCChangeCB.Location = new System.Drawing.Point(74, 165);
+            this.MCChangeCB.Location = new System.Drawing.Point(56, 134);
+            this.MCChangeCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MCChangeCB.MaxDropDownItems = 4;
             this.MCChangeCB.MouseState = MaterialSkin.MouseState.OUT;
             this.MCChangeCB.Name = "MCChangeCB";
-            this.MCChangeCB.Size = new System.Drawing.Size(221, 49);
+            this.MCChangeCB.Size = new System.Drawing.Size(167, 49);
             this.MCChangeCB.StartIndex = 0;
             this.MCChangeCB.TabIndex = 2;
             // 
@@ -1714,9 +1759,10 @@
             this.ChangeChangePanel.Controls.Add(this.changeBusChangeCB);
             this.ChangeChangePanel.Controls.Add(this.ChangeReasonChangeCB);
             this.ChangeChangePanel.Controls.Add(this.ChangeMCChangeCB);
-            this.ChangeChangePanel.Location = new System.Drawing.Point(1122, 561);
+            this.ChangeChangePanel.Location = new System.Drawing.Point(842, 456);
+            this.ChangeChangePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ChangeChangePanel.Name = "ChangeChangePanel";
-            this.ChangeChangePanel.Size = new System.Drawing.Size(377, 476);
+            this.ChangeChangePanel.Size = new System.Drawing.Size(284, 388);
             this.ChangeChangePanel.TabIndex = 47;
             this.ChangeChangePanel.Visible = false;
             // 
@@ -1727,8 +1773,8 @@
             this.materialButton2.Depth = 0;
             this.materialButton2.HighEmphasis = true;
             this.materialButton2.Icon = null;
-            this.materialButton2.Location = new System.Drawing.Point(226, 402);
-            this.materialButton2.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton2.Location = new System.Drawing.Point(170, 327);
+            this.materialButton2.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton2.Name = "materialButton2";
             this.materialButton2.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -1746,8 +1792,8 @@
             this.ChangeChangeBtn.Depth = 0;
             this.ChangeChangeBtn.HighEmphasis = true;
             this.ChangeChangeBtn.Icon = null;
-            this.ChangeChangeBtn.Location = new System.Drawing.Point(21, 398);
-            this.ChangeChangeBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ChangeChangeBtn.Location = new System.Drawing.Point(16, 323);
+            this.ChangeChangeBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.ChangeChangeBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.ChangeChangeBtn.Name = "ChangeChangeBtn";
             this.ChangeChangeBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -1764,7 +1810,8 @@
             this.materialLabel11.AutoSize = true;
             this.materialLabel11.Depth = 0;
             this.materialLabel11.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel11.Location = new System.Drawing.Point(74, 322);
+            this.materialLabel11.Location = new System.Drawing.Point(56, 262);
+            this.materialLabel11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel11.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel11.Name = "materialLabel11";
             this.materialLabel11.Size = new System.Drawing.Size(101, 19);
@@ -1773,9 +1820,10 @@
             // 
             // ChangeChangeDateDtp
             // 
-            this.ChangeChangeDateDtp.Location = new System.Drawing.Point(74, 347);
+            this.ChangeChangeDateDtp.Location = new System.Drawing.Point(56, 282);
+            this.ChangeChangeDateDtp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ChangeChangeDateDtp.Name = "ChangeChangeDateDtp";
-            this.ChangeChangeDateDtp.Size = new System.Drawing.Size(221, 22);
+            this.ChangeChangeDateDtp.Size = new System.Drawing.Size(167, 20);
             this.ChangeChangeDateDtp.TabIndex = 70;
             // 
             // materialButton14
@@ -1787,12 +1835,12 @@
             this.materialButton14.HighEmphasis = true;
             this.materialButton14.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton14.Icon")));
             this.materialButton14.ImageIndex = 24;
-            this.materialButton14.Location = new System.Drawing.Point(330, 6);
-            this.materialButton14.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton14.Location = new System.Drawing.Point(248, 5);
+            this.materialButton14.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton14.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton14.Name = "materialButton14";
             this.materialButton14.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton14.Size = new System.Drawing.Size(39, 32);
+            this.materialButton14.Size = new System.Drawing.Size(29, 26);
             this.materialButton14.TabIndex = 69;
             this.materialButton14.Text = "CloseChangeMCPanelBtn";
             this.materialButton14.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
@@ -1805,7 +1853,8 @@
             this.materialLabel2.AutoSize = true;
             this.materialLabel2.Depth = 0;
             this.materialLabel2.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel2.Location = new System.Drawing.Point(18, 21);
+            this.materialLabel2.Location = new System.Drawing.Point(14, 17);
+            this.materialLabel2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel2.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel2.Name = "materialLabel2";
             this.materialLabel2.Size = new System.Drawing.Size(133, 19);
@@ -1826,11 +1875,12 @@
             this.changeBusChangeCB.FormattingEnabled = true;
             this.changeBusChangeCB.IntegralHeight = false;
             this.changeBusChangeCB.ItemHeight = 43;
-            this.changeBusChangeCB.Location = new System.Drawing.Point(74, 78);
+            this.changeBusChangeCB.Location = new System.Drawing.Point(56, 63);
+            this.changeBusChangeCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.changeBusChangeCB.MaxDropDownItems = 4;
             this.changeBusChangeCB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeBusChangeCB.Name = "changeBusChangeCB";
-            this.changeBusChangeCB.Size = new System.Drawing.Size(221, 49);
+            this.changeBusChangeCB.Size = new System.Drawing.Size(167, 49);
             this.changeBusChangeCB.StartIndex = 0;
             this.changeBusChangeCB.TabIndex = 1;
             // 
@@ -1854,11 +1904,12 @@
             this.ChangeReasonChangeCB.Items.AddRange(new object[] {
             "ТО",
             "Поломка"});
-            this.ChangeReasonChangeCB.Location = new System.Drawing.Point(74, 249);
+            this.ChangeReasonChangeCB.Location = new System.Drawing.Point(56, 202);
+            this.ChangeReasonChangeCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ChangeReasonChangeCB.MaxDropDownItems = 4;
             this.ChangeReasonChangeCB.MouseState = MaterialSkin.MouseState.OUT;
             this.ChangeReasonChangeCB.Name = "ChangeReasonChangeCB";
-            this.ChangeReasonChangeCB.Size = new System.Drawing.Size(221, 49);
+            this.ChangeReasonChangeCB.Size = new System.Drawing.Size(167, 49);
             this.ChangeReasonChangeCB.StartIndex = 0;
             this.ChangeReasonChangeCB.TabIndex = 3;
             // 
@@ -1876,11 +1927,12 @@
             this.ChangeMCChangeCB.FormattingEnabled = true;
             this.ChangeMCChangeCB.IntegralHeight = false;
             this.ChangeMCChangeCB.ItemHeight = 43;
-            this.ChangeMCChangeCB.Location = new System.Drawing.Point(74, 165);
+            this.ChangeMCChangeCB.Location = new System.Drawing.Point(56, 134);
+            this.ChangeMCChangeCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ChangeMCChangeCB.MaxDropDownItems = 4;
             this.ChangeMCChangeCB.MouseState = MaterialSkin.MouseState.OUT;
             this.ChangeMCChangeCB.Name = "ChangeMCChangeCB";
-            this.ChangeMCChangeCB.Size = new System.Drawing.Size(221, 49);
+            this.ChangeMCChangeCB.Size = new System.Drawing.Size(167, 49);
             this.ChangeMCChangeCB.StartIndex = 0;
             this.ChangeMCChangeCB.TabIndex = 2;
             // 
@@ -1889,9 +1941,10 @@
             this.filterReasonPanel.Controls.Add(this.filterReasonCB);
             this.filterReasonPanel.Controls.Add(this.filterReasonBtn);
             this.filterReasonPanel.Controls.Add(this.materialButton35);
-            this.filterReasonPanel.Location = new System.Drawing.Point(49, 143);
+            this.filterReasonPanel.Location = new System.Drawing.Point(37, 116);
+            this.filterReasonPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.filterReasonPanel.Name = "filterReasonPanel";
-            this.filterReasonPanel.Size = new System.Drawing.Size(317, 256);
+            this.filterReasonPanel.Size = new System.Drawing.Size(238, 208);
             this.filterReasonPanel.TabIndex = 69;
             this.filterReasonPanel.Visible = false;
             // 
@@ -1912,11 +1965,12 @@
             this.filterReasonCB.Items.AddRange(new object[] {
             "ТО",
             "Поломка"});
-            this.filterReasonCB.Location = new System.Drawing.Point(69, 68);
+            this.filterReasonCB.Location = new System.Drawing.Point(52, 55);
+            this.filterReasonCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.filterReasonCB.MaxDropDownItems = 4;
             this.filterReasonCB.MouseState = MaterialSkin.MouseState.OUT;
             this.filterReasonCB.Name = "filterReasonCB";
-            this.filterReasonCB.Size = new System.Drawing.Size(173, 49);
+            this.filterReasonCB.Size = new System.Drawing.Size(131, 49);
             this.filterReasonCB.StartIndex = 0;
             this.filterReasonCB.TabIndex = 67;
             // 
@@ -1927,8 +1981,8 @@
             this.filterReasonBtn.Depth = 0;
             this.filterReasonBtn.HighEmphasis = true;
             this.filterReasonBtn.Icon = null;
-            this.filterReasonBtn.Location = new System.Drawing.Point(91, 188);
-            this.filterReasonBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.filterReasonBtn.Location = new System.Drawing.Point(68, 153);
+            this.filterReasonBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.filterReasonBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.filterReasonBtn.Name = "filterReasonBtn";
             this.filterReasonBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -1949,12 +2003,12 @@
             this.materialButton35.HighEmphasis = true;
             this.materialButton35.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton35.Icon")));
             this.materialButton35.ImageIndex = 24;
-            this.materialButton35.Location = new System.Drawing.Point(265, 10);
-            this.materialButton35.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton35.Location = new System.Drawing.Point(199, 8);
+            this.materialButton35.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton35.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton35.Name = "materialButton35";
             this.materialButton35.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton35.Size = new System.Drawing.Size(39, 32);
+            this.materialButton35.Size = new System.Drawing.Size(29, 26);
             this.materialButton35.TabIndex = 65;
             this.materialButton35.Text = "CloseMCPanelBtn";
             this.materialButton35.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
@@ -1970,9 +2024,10 @@
             this.filterDatePanel.Controls.Add(this.filterDateEndDtp);
             this.filterDatePanel.Controls.Add(this.filterDateSDtp);
             this.filterDatePanel.Controls.Add(this.materialButton32);
-            this.filterDatePanel.Location = new System.Drawing.Point(467, 430);
+            this.filterDatePanel.Location = new System.Drawing.Point(350, 349);
+            this.filterDatePanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.filterDatePanel.Name = "filterDatePanel";
-            this.filterDatePanel.Size = new System.Drawing.Size(317, 256);
+            this.filterDatePanel.Size = new System.Drawing.Size(238, 208);
             this.filterDatePanel.TabIndex = 66;
             this.filterDatePanel.Visible = false;
             // 
@@ -1981,7 +2036,8 @@
             this.materialLabel17.AutoSize = true;
             this.materialLabel17.Depth = 0;
             this.materialLabel17.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel17.Location = new System.Drawing.Point(48, 98);
+            this.materialLabel17.Location = new System.Drawing.Point(36, 80);
+            this.materialLabel17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel17.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel17.Name = "materialLabel17";
             this.materialLabel17.Size = new System.Drawing.Size(21, 19);
@@ -1993,7 +2049,8 @@
             this.materialLabel14.AutoSize = true;
             this.materialLabel14.Depth = 0;
             this.materialLabel14.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel14.Location = new System.Drawing.Point(48, 36);
+            this.materialLabel14.Location = new System.Drawing.Point(36, 29);
+            this.materialLabel14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel14.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel14.Name = "materialLabel14";
             this.materialLabel14.Size = new System.Drawing.Size(11, 19);
@@ -2007,8 +2064,8 @@
             this.filterDateBtn.Depth = 0;
             this.filterDateBtn.HighEmphasis = true;
             this.filterDateBtn.Icon = null;
-            this.filterDateBtn.Location = new System.Drawing.Point(91, 188);
-            this.filterDateBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.filterDateBtn.Location = new System.Drawing.Point(68, 153);
+            this.filterDateBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.filterDateBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.filterDateBtn.Name = "filterDateBtn";
             this.filterDateBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2022,16 +2079,18 @@
             // 
             // filterDateEndDtp
             // 
-            this.filterDateEndDtp.Location = new System.Drawing.Point(51, 120);
+            this.filterDateEndDtp.Location = new System.Drawing.Point(38, 98);
+            this.filterDateEndDtp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.filterDateEndDtp.Name = "filterDateEndDtp";
-            this.filterDateEndDtp.Size = new System.Drawing.Size(200, 22);
+            this.filterDateEndDtp.Size = new System.Drawing.Size(151, 20);
             this.filterDateEndDtp.TabIndex = 67;
             // 
             // filterDateSDtp
             // 
-            this.filterDateSDtp.Location = new System.Drawing.Point(51, 59);
+            this.filterDateSDtp.Location = new System.Drawing.Point(38, 48);
+            this.filterDateSDtp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.filterDateSDtp.Name = "filterDateSDtp";
-            this.filterDateSDtp.Size = new System.Drawing.Size(200, 22);
+            this.filterDateSDtp.Size = new System.Drawing.Size(151, 20);
             this.filterDateSDtp.TabIndex = 66;
             // 
             // materialButton32
@@ -2043,12 +2102,12 @@
             this.materialButton32.HighEmphasis = true;
             this.materialButton32.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton32.Icon")));
             this.materialButton32.ImageIndex = 24;
-            this.materialButton32.Location = new System.Drawing.Point(265, 10);
-            this.materialButton32.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton32.Location = new System.Drawing.Point(199, 8);
+            this.materialButton32.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton32.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton32.Name = "materialButton32";
             this.materialButton32.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton32.Size = new System.Drawing.Size(39, 32);
+            this.materialButton32.Size = new System.Drawing.Size(29, 26);
             this.materialButton32.TabIndex = 65;
             this.materialButton32.Text = "CloseMCPanelBtn";
             this.materialButton32.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
@@ -2061,9 +2120,10 @@
             this.filterCatPanel.Controls.Add(this.filterCatCB);
             this.filterCatPanel.Controls.Add(this.filterCatBtn);
             this.filterCatPanel.Controls.Add(this.materialButton37);
-            this.filterCatPanel.Location = new System.Drawing.Point(404, 138);
+            this.filterCatPanel.Location = new System.Drawing.Point(303, 112);
+            this.filterCatPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.filterCatPanel.Name = "filterCatPanel";
-            this.filterCatPanel.Size = new System.Drawing.Size(317, 256);
+            this.filterCatPanel.Size = new System.Drawing.Size(238, 208);
             this.filterCatPanel.TabIndex = 69;
             this.filterCatPanel.Visible = false;
             // 
@@ -2084,11 +2144,12 @@
             this.filterCatCB.Items.AddRange(new object[] {
             "ТЖ",
             "Агрегат"});
-            this.filterCatCB.Location = new System.Drawing.Point(63, 77);
+            this.filterCatCB.Location = new System.Drawing.Point(47, 63);
+            this.filterCatCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.filterCatCB.MaxDropDownItems = 4;
             this.filterCatCB.MouseState = MaterialSkin.MouseState.OUT;
             this.filterCatCB.Name = "filterCatCB";
-            this.filterCatCB.Size = new System.Drawing.Size(173, 49);
+            this.filterCatCB.Size = new System.Drawing.Size(131, 49);
             this.filterCatCB.StartIndex = 0;
             this.filterCatCB.TabIndex = 68;
             // 
@@ -2099,8 +2160,8 @@
             this.filterCatBtn.Depth = 0;
             this.filterCatBtn.HighEmphasis = true;
             this.filterCatBtn.Icon = null;
-            this.filterCatBtn.Location = new System.Drawing.Point(91, 188);
-            this.filterCatBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.filterCatBtn.Location = new System.Drawing.Point(68, 153);
+            this.filterCatBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.filterCatBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.filterCatBtn.Name = "filterCatBtn";
             this.filterCatBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2121,12 +2182,12 @@
             this.materialButton37.HighEmphasis = true;
             this.materialButton37.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton37.Icon")));
             this.materialButton37.ImageIndex = 24;
-            this.materialButton37.Location = new System.Drawing.Point(265, 10);
-            this.materialButton37.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton37.Location = new System.Drawing.Point(199, 8);
+            this.materialButton37.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton37.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton37.Name = "materialButton37";
             this.materialButton37.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton37.Size = new System.Drawing.Size(39, 32);
+            this.materialButton37.Size = new System.Drawing.Size(29, 26);
             this.materialButton37.TabIndex = 65;
             this.materialButton37.Text = "CloseMCPanelBtn";
             this.materialButton37.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
@@ -2141,9 +2202,10 @@
             this.filterPanel.Controls.Add(this.showFilterReasonPanelBtn);
             this.filterPanel.Controls.Add(this.showFilterDatePanelBtn);
             this.filterPanel.Controls.Add(this.materialLabel13);
-            this.filterPanel.Location = new System.Drawing.Point(738, 124);
+            this.filterPanel.Location = new System.Drawing.Point(554, 101);
+            this.filterPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.filterPanel.Name = "filterPanel";
-            this.filterPanel.Size = new System.Drawing.Size(317, 256);
+            this.filterPanel.Size = new System.Drawing.Size(238, 208);
             this.filterPanel.TabIndex = 53;
             this.filterPanel.Visible = false;
             // 
@@ -2156,12 +2218,12 @@
             this.materialButton31.HighEmphasis = true;
             this.materialButton31.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton31.Icon")));
             this.materialButton31.ImageIndex = 24;
-            this.materialButton31.Location = new System.Drawing.Point(265, 10);
-            this.materialButton31.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton31.Location = new System.Drawing.Point(199, 8);
+            this.materialButton31.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton31.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton31.Name = "materialButton31";
             this.materialButton31.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton31.Size = new System.Drawing.Size(39, 32);
+            this.materialButton31.Size = new System.Drawing.Size(29, 26);
             this.materialButton31.TabIndex = 65;
             this.materialButton31.Text = "CloseMCPanelBtn";
             this.materialButton31.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
@@ -2176,8 +2238,8 @@
             this.showFilterCatPanelBtn.Depth = 0;
             this.showFilterCatPanelBtn.HighEmphasis = true;
             this.showFilterCatPanelBtn.Icon = null;
-            this.showFilterCatPanelBtn.Location = new System.Drawing.Point(108, 169);
-            this.showFilterCatPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.showFilterCatPanelBtn.Location = new System.Drawing.Point(81, 137);
+            this.showFilterCatPanelBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.showFilterCatPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.showFilterCatPanelBtn.Name = "showFilterCatPanelBtn";
             this.showFilterCatPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2196,8 +2258,8 @@
             this.showFilterReasonPanelBtn.Depth = 0;
             this.showFilterReasonPanelBtn.HighEmphasis = true;
             this.showFilterReasonPanelBtn.Icon = null;
-            this.showFilterReasonPanelBtn.Location = new System.Drawing.Point(113, 111);
-            this.showFilterReasonPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.showFilterReasonPanelBtn.Location = new System.Drawing.Point(85, 90);
+            this.showFilterReasonPanelBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.showFilterReasonPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.showFilterReasonPanelBtn.Name = "showFilterReasonPanelBtn";
             this.showFilterReasonPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2216,8 +2278,8 @@
             this.showFilterDatePanelBtn.Depth = 0;
             this.showFilterDatePanelBtn.HighEmphasis = true;
             this.showFilterDatePanelBtn.Icon = null;
-            this.showFilterDatePanelBtn.Location = new System.Drawing.Point(91, 50);
-            this.showFilterDatePanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.showFilterDatePanelBtn.Location = new System.Drawing.Point(68, 41);
+            this.showFilterDatePanelBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.showFilterDatePanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.showFilterDatePanelBtn.Name = "showFilterDatePanelBtn";
             this.showFilterDatePanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2234,7 +2296,8 @@
             this.materialLabel13.AutoSize = true;
             this.materialLabel13.Depth = 0;
             this.materialLabel13.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel13.Location = new System.Drawing.Point(4, 4);
+            this.materialLabel13.Location = new System.Drawing.Point(3, 3);
+            this.materialLabel13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel13.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel13.Name = "materialLabel13";
             this.materialLabel13.Size = new System.Drawing.Size(93, 19);
@@ -2248,8 +2311,8 @@
             this.materialButton18.Depth = 0;
             this.materialButton18.HighEmphasis = true;
             this.materialButton18.Icon = null;
-            this.materialButton18.Location = new System.Drawing.Point(890, 493);
-            this.materialButton18.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton18.Location = new System.Drawing.Point(668, 401);
+            this.materialButton18.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton18.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton18.Name = "materialButton18";
             this.materialButton18.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2268,8 +2331,8 @@
             this.materialButton17.Depth = 0;
             this.materialButton17.HighEmphasis = true;
             this.materialButton17.Icon = null;
-            this.materialButton17.Location = new System.Drawing.Point(660, 493);
-            this.materialButton17.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton17.Location = new System.Drawing.Point(495, 401);
+            this.materialButton17.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton17.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton17.Name = "materialButton17";
             this.materialButton17.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2288,8 +2351,8 @@
             this.ShowFilterChangeBtn.Depth = 0;
             this.ShowFilterChangeBtn.HighEmphasis = true;
             this.ShowFilterChangeBtn.Icon = null;
-            this.ShowFilterChangeBtn.Location = new System.Drawing.Point(486, 493);
-            this.ShowFilterChangeBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowFilterChangeBtn.Location = new System.Drawing.Point(364, 401);
+            this.ShowFilterChangeBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.ShowFilterChangeBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.ShowFilterChangeBtn.Name = "ShowFilterChangeBtn";
             this.ShowFilterChangeBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2308,8 +2371,8 @@
             this.materialButton16.Depth = 0;
             this.materialButton16.HighEmphasis = true;
             this.materialButton16.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton16.Icon")));
-            this.materialButton16.Location = new System.Drawing.Point(89, 438);
-            this.materialButton16.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton16.Location = new System.Drawing.Point(67, 356);
+            this.materialButton16.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton16.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton16.Name = "materialButton16";
             this.materialButton16.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2327,8 +2390,8 @@
             this.DeleteChangeBtn.DrawShadows = false;
             this.DeleteChangeBtn.HighEmphasis = false;
             this.DeleteChangeBtn.Icon = ((System.Drawing.Image)(resources.GetObject("DeleteChangeBtn.Icon")));
-            this.DeleteChangeBtn.Location = new System.Drawing.Point(991, 433);
-            this.DeleteChangeBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.DeleteChangeBtn.Location = new System.Drawing.Point(743, 352);
+            this.DeleteChangeBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.DeleteChangeBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.DeleteChangeBtn.Name = "DeleteChangeBtn";
             this.DeleteChangeBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2348,8 +2411,8 @@
             this.materialButton4.Depth = 0;
             this.materialButton4.HighEmphasis = true;
             this.materialButton4.Icon = null;
-            this.materialButton4.Location = new System.Drawing.Point(335, 493);
-            this.materialButton4.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton4.Location = new System.Drawing.Point(251, 401);
+            this.materialButton4.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton4.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton4.Name = "materialButton4";
             this.materialButton4.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2371,7 +2434,8 @@
             this.ChangeSearchTB.HideSelection = true;
             this.ChangeSearchTB.Hint = "Найти";
             this.ChangeSearchTB.LeadingIcon = null;
-            this.ChangeSearchTB.Location = new System.Drawing.Point(89, 26);
+            this.ChangeSearchTB.Location = new System.Drawing.Point(67, 21);
+            this.ChangeSearchTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ChangeSearchTB.MaxLength = 32767;
             this.ChangeSearchTB.MouseState = MaterialSkin.MouseState.OUT;
             this.ChangeSearchTB.Name = "ChangeSearchTB";
@@ -2383,7 +2447,7 @@
             this.ChangeSearchTB.SelectionLength = 0;
             this.ChangeSearchTB.SelectionStart = 0;
             this.ChangeSearchTB.ShortcutsEnabled = true;
-            this.ChangeSearchTB.Size = new System.Drawing.Size(966, 48);
+            this.ChangeSearchTB.Size = new System.Drawing.Size(724, 48);
             this.ChangeSearchTB.TabIndex = 43;
             this.ChangeSearchTB.TabStop = false;
             this.ChangeSearchTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -2398,8 +2462,8 @@
             this.openAddChangePanelBtn.Depth = 0;
             this.openAddChangePanelBtn.HighEmphasis = true;
             this.openAddChangePanelBtn.Icon = null;
-            this.openAddChangePanelBtn.Location = new System.Drawing.Point(183, 493);
-            this.openAddChangePanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.openAddChangePanelBtn.Location = new System.Drawing.Point(137, 401);
+            this.openAddChangePanelBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.openAddChangePanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.openAddChangePanelBtn.Name = "openAddChangePanelBtn";
             this.openAddChangePanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2418,11 +2482,12 @@
             this.ChangeDVG.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.ChangeDVG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.ChangeDVG.GridColor = System.Drawing.SystemColors.Highlight;
-            this.ChangeDVG.Location = new System.Drawing.Point(89, 80);
+            this.ChangeDVG.Location = new System.Drawing.Point(67, 65);
+            this.ChangeDVG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ChangeDVG.Name = "ChangeDVG";
             this.ChangeDVG.ReadOnly = true;
             this.ChangeDVG.RowHeadersWidth = 51;
-            this.ChangeDVG.Size = new System.Drawing.Size(966, 344);
+            this.ChangeDVG.Size = new System.Drawing.Size(724, 280);
             this.ChangeDVG.TabIndex = 42;
             this.ChangeDVG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.ChangeDVG_CellClick);
             // 
@@ -2438,12 +2503,13 @@
             this.materialTabControl1.Depth = 0;
             this.materialTabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.materialTabControl1.ImageList = this.imageList1;
-            this.materialTabControl1.Location = new System.Drawing.Point(3, 64);
+            this.materialTabControl1.Location = new System.Drawing.Point(2, 52);
+            this.materialTabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.materialTabControl1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialTabControl1.Multiline = true;
             this.materialTabControl1.Name = "materialTabControl1";
             this.materialTabControl1.SelectedIndex = 0;
-            this.materialTabControl1.Size = new System.Drawing.Size(1213, 694);
+            this.materialTabControl1.Size = new System.Drawing.Size(1381, 808);
             this.materialTabControl1.TabIndex = 1;
             this.materialTabControl1.SelectedIndexChanged += new System.EventHandler(this.materialTabControl1_SelectedIndexChanged);
             // 
@@ -2459,8 +2525,9 @@
             this.tabPage3.Controls.Add(this.ShowChangeMCPanelBtn);
             this.tabPage3.ImageKey = "icons8-services-242.png";
             this.tabPage3.Location = new System.Drawing.Point(4, 31);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(1205, 659);
+            this.tabPage3.Size = new System.Drawing.Size(1373, 773);
             this.tabPage3.TabIndex = 9;
             this.tabPage3.Text = "Материальные ценности";
             this.tabPage3.UseVisualStyleBackColor = true;
@@ -2477,9 +2544,10 @@
             this.AddMCPanel.Controls.Add(this.nameMCTB);
             this.AddMCPanel.Controls.Add(this.addMCBtn);
             this.AddMCPanel.Controls.Add(this.typeMCCB);
-            this.AddMCPanel.Location = new System.Drawing.Point(150, 92);
+            this.AddMCPanel.Location = new System.Drawing.Point(112, 75);
+            this.AddMCPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.AddMCPanel.Name = "AddMCPanel";
-            this.AddMCPanel.Size = new System.Drawing.Size(336, 381);
+            this.AddMCPanel.Size = new System.Drawing.Size(253, 310);
             this.AddMCPanel.TabIndex = 62;
             this.AddMCPanel.Visible = false;
             // 
@@ -2490,8 +2558,8 @@
             this.materialButton20.Depth = 0;
             this.materialButton20.HighEmphasis = true;
             this.materialButton20.Icon = null;
-            this.materialButton20.Location = new System.Drawing.Point(209, 315);
-            this.materialButton20.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton20.Location = new System.Drawing.Point(157, 256);
+            this.materialButton20.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton20.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton20.Name = "materialButton20";
             this.materialButton20.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2511,12 +2579,12 @@
             this.materialButton5.HighEmphasis = true;
             this.materialButton5.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton5.Icon")));
             this.materialButton5.ImageIndex = 24;
-            this.materialButton5.Location = new System.Drawing.Point(289, 2);
-            this.materialButton5.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton5.Location = new System.Drawing.Point(217, 2);
+            this.materialButton5.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton5.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton5.Name = "materialButton5";
             this.materialButton5.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton5.Size = new System.Drawing.Size(39, 32);
+            this.materialButton5.Size = new System.Drawing.Size(29, 26);
             this.materialButton5.TabIndex = 64;
             this.materialButton5.Text = "CloseMCPanelBtn";
             this.materialButton5.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
@@ -2529,7 +2597,8 @@
             this.materialLabel7.AutoSize = true;
             this.materialLabel7.Depth = 0;
             this.materialLabel7.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel7.Location = new System.Drawing.Point(13, 10);
+            this.materialLabel7.Location = new System.Drawing.Point(10, 8);
+            this.materialLabel7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel7.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel7.Name = "materialLabel7";
             this.materialLabel7.Size = new System.Drawing.Size(266, 19);
@@ -2540,7 +2609,7 @@
             // 
             this.anotherSwitch.AutoSize = true;
             this.anotherSwitch.Depth = 0;
-            this.anotherSwitch.Location = new System.Drawing.Point(106, 262);
+            this.anotherSwitch.Location = new System.Drawing.Point(80, 213);
             this.anotherSwitch.Margin = new System.Windows.Forms.Padding(0);
             this.anotherSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
             this.anotherSwitch.MouseState = MaterialSkin.MouseState.HOVER;
@@ -2560,12 +2629,13 @@
             this.anotherTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.anotherTB.Hint = "Другое";
             this.anotherTB.LeadingIcon = null;
-            this.anotherTB.Location = new System.Drawing.Point(35, 194);
+            this.anotherTB.Location = new System.Drawing.Point(26, 158);
+            this.anotherTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.anotherTB.MaxLength = 50;
             this.anotherTB.MouseState = MaterialSkin.MouseState.OUT;
             this.anotherTB.Multiline = false;
             this.anotherTB.Name = "anotherTB";
-            this.anotherTB.Size = new System.Drawing.Size(256, 50);
+            this.anotherTB.Size = new System.Drawing.Size(192, 50);
             this.anotherTB.TabIndex = 57;
             this.anotherTB.Text = "";
             this.anotherTB.TrailingIcon = null;
@@ -2588,11 +2658,12 @@
             this.CatMCCB.Items.AddRange(new object[] {
             "ТЖ",
             "Агрегат"});
-            this.CatMCCB.Location = new System.Drawing.Point(35, 123);
+            this.CatMCCB.Location = new System.Drawing.Point(26, 100);
+            this.CatMCCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CatMCCB.MaxDropDownItems = 4;
             this.CatMCCB.MouseState = MaterialSkin.MouseState.OUT;
             this.CatMCCB.Name = "CatMCCB";
-            this.CatMCCB.Size = new System.Drawing.Size(255, 49);
+            this.CatMCCB.Size = new System.Drawing.Size(192, 49);
             this.CatMCCB.StartIndex = 0;
             this.CatMCCB.TabIndex = 55;
             this.CatMCCB.TextChanged += new System.EventHandler(this.CatMCCB_TextChanged);
@@ -2605,12 +2676,13 @@
             this.nameMCTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.nameMCTB.Hint = "Наименование";
             this.nameMCTB.LeadingIcon = null;
-            this.nameMCTB.Location = new System.Drawing.Point(35, 47);
+            this.nameMCTB.Location = new System.Drawing.Point(26, 38);
+            this.nameMCTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nameMCTB.MaxLength = 50;
             this.nameMCTB.MouseState = MaterialSkin.MouseState.OUT;
             this.nameMCTB.Multiline = false;
             this.nameMCTB.Name = "nameMCTB";
-            this.nameMCTB.Size = new System.Drawing.Size(255, 50);
+            this.nameMCTB.Size = new System.Drawing.Size(191, 50);
             this.nameMCTB.TabIndex = 47;
             this.nameMCTB.Text = "";
             this.nameMCTB.TrailingIcon = null;
@@ -2622,8 +2694,8 @@
             this.addMCBtn.Depth = 0;
             this.addMCBtn.HighEmphasis = true;
             this.addMCBtn.Icon = null;
-            this.addMCBtn.Location = new System.Drawing.Point(35, 315);
-            this.addMCBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.addMCBtn.Location = new System.Drawing.Point(26, 256);
+            this.addMCBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.addMCBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.addMCBtn.Name = "addMCBtn";
             this.addMCBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2650,11 +2722,12 @@
             this.typeMCCB.Hint = "Тип";
             this.typeMCCB.IntegralHeight = false;
             this.typeMCCB.ItemHeight = 43;
-            this.typeMCCB.Location = new System.Drawing.Point(35, 195);
+            this.typeMCCB.Location = new System.Drawing.Point(26, 158);
+            this.typeMCCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.typeMCCB.MaxDropDownItems = 4;
             this.typeMCCB.MouseState = MaterialSkin.MouseState.OUT;
             this.typeMCCB.Name = "typeMCCB";
-            this.typeMCCB.Size = new System.Drawing.Size(255, 49);
+            this.typeMCCB.Size = new System.Drawing.Size(192, 49);
             this.typeMCCB.StartIndex = 0;
             this.typeMCCB.TabIndex = 49;
             // 
@@ -2668,9 +2741,10 @@
             this.ChangeMCPanel.Controls.Add(this.changeCatMCCB);
             this.ChangeMCPanel.Controls.Add(this.ChangeTypeMCTB);
             this.ChangeMCPanel.Controls.Add(this.changeMCBtn);
-            this.ChangeMCPanel.Location = new System.Drawing.Point(492, 92);
+            this.ChangeMCPanel.Location = new System.Drawing.Point(369, 75);
+            this.ChangeMCPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ChangeMCPanel.Name = "ChangeMCPanel";
-            this.ChangeMCPanel.Size = new System.Drawing.Size(336, 381);
+            this.ChangeMCPanel.Size = new System.Drawing.Size(253, 310);
             this.ChangeMCPanel.TabIndex = 63;
             this.ChangeMCPanel.Visible = false;
             // 
@@ -2681,8 +2755,8 @@
             this.materialButton21.Depth = 0;
             this.materialButton21.HighEmphasis = true;
             this.materialButton21.Icon = null;
-            this.materialButton21.Location = new System.Drawing.Point(211, 306);
-            this.materialButton21.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton21.Location = new System.Drawing.Point(158, 249);
+            this.materialButton21.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton21.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton21.Name = "materialButton21";
             this.materialButton21.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2702,12 +2776,12 @@
             this.materialButton6.HighEmphasis = true;
             this.materialButton6.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton6.Icon")));
             this.materialButton6.ImageIndex = 24;
-            this.materialButton6.Location = new System.Drawing.Point(289, 6);
-            this.materialButton6.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton6.Location = new System.Drawing.Point(217, 5);
+            this.materialButton6.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton6.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton6.Name = "materialButton6";
             this.materialButton6.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton6.Size = new System.Drawing.Size(39, 32);
+            this.materialButton6.Size = new System.Drawing.Size(29, 26);
             this.materialButton6.TabIndex = 65;
             this.materialButton6.Text = "CloseChangeMCPanelBtn";
             this.materialButton6.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
@@ -2720,7 +2794,8 @@
             this.materialLabel8.AutoSize = true;
             this.materialLabel8.Depth = 0;
             this.materialLabel8.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel8.Location = new System.Drawing.Point(13, 10);
+            this.materialLabel8.Location = new System.Drawing.Point(10, 8);
+            this.materialLabel8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.materialLabel8.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialLabel8.Name = "materialLabel8";
             this.materialLabel8.Size = new System.Drawing.Size(266, 19);
@@ -2734,12 +2809,13 @@
             this.changeNameMCTB.Depth = 0;
             this.changeNameMCTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.changeNameMCTB.LeadingIcon = null;
-            this.changeNameMCTB.Location = new System.Drawing.Point(69, 59);
+            this.changeNameMCTB.Location = new System.Drawing.Point(52, 48);
+            this.changeNameMCTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.changeNameMCTB.MaxLength = 50;
             this.changeNameMCTB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeNameMCTB.Multiline = false;
             this.changeNameMCTB.Name = "changeNameMCTB";
-            this.changeNameMCTB.Size = new System.Drawing.Size(200, 50);
+            this.changeNameMCTB.Size = new System.Drawing.Size(150, 50);
             this.changeNameMCTB.TabIndex = 51;
             this.changeNameMCTB.Text = "";
             this.changeNameMCTB.TrailingIcon = null;
@@ -2761,11 +2837,12 @@
             this.changeCatMCCB.Items.AddRange(new object[] {
             "ТЖ",
             "Агрегат"});
-            this.changeCatMCCB.Location = new System.Drawing.Point(69, 142);
+            this.changeCatMCCB.Location = new System.Drawing.Point(52, 115);
+            this.changeCatMCCB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.changeCatMCCB.MaxDropDownItems = 4;
             this.changeCatMCCB.MouseState = MaterialSkin.MouseState.OUT;
             this.changeCatMCCB.Name = "changeCatMCCB";
-            this.changeCatMCCB.Size = new System.Drawing.Size(200, 49);
+            this.changeCatMCCB.Size = new System.Drawing.Size(151, 49);
             this.changeCatMCCB.StartIndex = 0;
             this.changeCatMCCB.TabIndex = 61;
             // 
@@ -2776,12 +2853,13 @@
             this.ChangeTypeMCTB.Depth = 0;
             this.ChangeTypeMCTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.ChangeTypeMCTB.LeadingIcon = null;
-            this.ChangeTypeMCTB.Location = new System.Drawing.Point(69, 220);
+            this.ChangeTypeMCTB.Location = new System.Drawing.Point(52, 179);
+            this.ChangeTypeMCTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ChangeTypeMCTB.MaxLength = 50;
             this.ChangeTypeMCTB.MouseState = MaterialSkin.MouseState.OUT;
             this.ChangeTypeMCTB.Multiline = false;
             this.ChangeTypeMCTB.Name = "ChangeTypeMCTB";
-            this.ChangeTypeMCTB.Size = new System.Drawing.Size(200, 50);
+            this.ChangeTypeMCTB.Size = new System.Drawing.Size(150, 50);
             this.ChangeTypeMCTB.TabIndex = 60;
             this.ChangeTypeMCTB.Text = "";
             this.ChangeTypeMCTB.TrailingIcon = null;
@@ -2793,8 +2871,8 @@
             this.changeMCBtn.Depth = 0;
             this.changeMCBtn.HighEmphasis = true;
             this.changeMCBtn.Icon = null;
-            this.changeMCBtn.Location = new System.Drawing.Point(58, 306);
-            this.changeMCBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.changeMCBtn.Location = new System.Drawing.Point(44, 249);
+            this.changeMCBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.changeMCBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.changeMCBtn.Name = "changeMCBtn";
             this.changeMCBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2813,8 +2891,8 @@
             this.ShowAddMCPAnelBtn.Depth = 0;
             this.ShowAddMCPAnelBtn.HighEmphasis = true;
             this.ShowAddMCPAnelBtn.Icon = null;
-            this.ShowAddMCPAnelBtn.Location = new System.Drawing.Point(636, 104);
-            this.ShowAddMCPAnelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowAddMCPAnelBtn.Location = new System.Drawing.Point(477, 84);
+            this.ShowAddMCPAnelBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.ShowAddMCPAnelBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.ShowAddMCPAnelBtn.Name = "ShowAddMCPAnelBtn";
             this.ShowAddMCPAnelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2834,8 +2912,8 @@
             this.materialButton1.DrawShadows = false;
             this.materialButton1.HighEmphasis = false;
             this.materialButton1.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton1.Icon")));
-            this.materialButton1.Location = new System.Drawing.Point(552, 409);
-            this.materialButton1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton1.Location = new System.Drawing.Point(414, 332);
+            this.materialButton1.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton1.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton1.Name = "materialButton1";
             this.materialButton1.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2854,8 +2932,8 @@
             this.materialButton3.Depth = 0;
             this.materialButton3.HighEmphasis = true;
             this.materialButton3.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton3.Icon")));
-            this.materialButton3.Location = new System.Drawing.Point(70, 409);
-            this.materialButton3.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.materialButton3.Location = new System.Drawing.Point(52, 332);
+            this.materialButton3.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.materialButton3.MouseState = MaterialSkin.MouseState.HOVER;
             this.materialButton3.Name = "materialButton3";
             this.materialButton3.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2875,7 +2953,8 @@
             this.searchMCTB.HideSelection = true;
             this.searchMCTB.Hint = "Найти";
             this.searchMCTB.LeadingIcon = null;
-            this.searchMCTB.Location = new System.Drawing.Point(72, 45);
+            this.searchMCTB.Location = new System.Drawing.Point(54, 37);
+            this.searchMCTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchMCTB.MaxLength = 32767;
             this.searchMCTB.MouseState = MaterialSkin.MouseState.OUT;
             this.searchMCTB.Name = "searchMCTB";
@@ -2887,7 +2966,7 @@
             this.searchMCTB.SelectionLength = 0;
             this.searchMCTB.SelectionStart = 0;
             this.searchMCTB.ShortcutsEnabled = true;
-            this.searchMCTB.Size = new System.Drawing.Size(529, 48);
+            this.searchMCTB.Size = new System.Drawing.Size(397, 48);
             this.searchMCTB.TabIndex = 42;
             this.searchMCTB.TabStop = false;
             this.searchMCTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -2900,10 +2979,11 @@
             this.MCDVG.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.MCDVG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.MCDVG.GridColor = System.Drawing.SystemColors.Highlight;
-            this.MCDVG.Location = new System.Drawing.Point(72, 104);
+            this.MCDVG.Location = new System.Drawing.Point(54, 84);
+            this.MCDVG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MCDVG.Name = "MCDVG";
             this.MCDVG.RowHeadersWidth = 51;
-            this.MCDVG.Size = new System.Drawing.Size(529, 296);
+            this.MCDVG.Size = new System.Drawing.Size(397, 240);
             this.MCDVG.TabIndex = 41;
             this.MCDVG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.MCDVG_CellClick);
             // 
@@ -2914,8 +2994,8 @@
             this.ShowChangeMCPanelBtn.Depth = 0;
             this.ShowChangeMCPanelBtn.HighEmphasis = true;
             this.ShowChangeMCPanelBtn.Icon = null;
-            this.ShowChangeMCPanelBtn.Location = new System.Drawing.Point(636, 170);
-            this.ShowChangeMCPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.ShowChangeMCPanelBtn.Location = new System.Drawing.Point(477, 138);
+            this.ShowChangeMCPanelBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
             this.ShowChangeMCPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
             this.ShowChangeMCPanelBtn.Name = "ShowChangeMCPanelBtn";
             this.ShowChangeMCPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
@@ -2926,6 +3006,394 @@
             this.ShowChangeMCPanelBtn.UseAccentColor = false;
             this.ShowChangeMCPanelBtn.UseVisualStyleBackColor = true;
             this.ShowChangeMCPanelBtn.Click += new System.EventHandler(this.materialButton5_Click);
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.addUserPanel);
+            this.tabPage4.Controls.Add(this.showChangeUserPanelBtn);
+            this.tabPage4.Controls.Add(this.ShowAddUserPanelBtn);
+            this.tabPage4.Controls.Add(this.ChangeUserPanel);
+            this.tabPage4.Controls.Add(this.reloadUsersBtn);
+            this.tabPage4.Controls.Add(this.deleteUserBtn);
+            this.tabPage4.Controls.Add(this.searchUsersTB);
+            this.tabPage4.Controls.Add(this.UsersDVG);
+            this.tabPage4.ImageIndex = 19;
+            this.tabPage4.Location = new System.Drawing.Point(4, 31);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(1373, 773);
+            this.tabPage4.TabIndex = 10;
+            this.tabPage4.Text = "Пользователи";
+            this.tabPage4.UseVisualStyleBackColor = true;
+            // 
+            // addUserPanel
+            // 
+            this.addUserPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.addUserPanel.Controls.Add(this.materialLabel15);
+            this.addUserPanel.Controls.Add(this.materialButton34);
+            this.addUserPanel.Controls.Add(this.addUserRoleSwitch);
+            this.addUserPanel.Controls.Add(this.addUserPasswordTB);
+            this.addUserPanel.Controls.Add(this.addUserBtn);
+            this.addUserPanel.Controls.Add(this.addUserLoginTB);
+            this.addUserPanel.Location = new System.Drawing.Point(409, 63);
+            this.addUserPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addUserPanel.Name = "addUserPanel";
+            this.addUserPanel.Size = new System.Drawing.Size(227, 309);
+            this.addUserPanel.TabIndex = 26;
+            // 
+            // materialLabel15
+            // 
+            this.materialLabel15.AutoSize = true;
+            this.materialLabel15.Depth = 0;
+            this.materialLabel15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel15.Location = new System.Drawing.Point(7, 8);
+            this.materialLabel15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel15.Name = "materialLabel15";
+            this.materialLabel15.Size = new System.Drawing.Size(184, 19);
+            this.materialLabel15.TabIndex = 70;
+            this.materialLabel15.Text = "Добавить пользователя";
+            // 
+            // materialButton34
+            // 
+            this.materialButton34.AutoSize = false;
+            this.materialButton34.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton34.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
+            this.materialButton34.Depth = 0;
+            this.materialButton34.HighEmphasis = true;
+            this.materialButton34.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton34.Icon")));
+            this.materialButton34.ImageIndex = 24;
+            this.materialButton34.Location = new System.Drawing.Point(182, 5);
+            this.materialButton34.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.materialButton34.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton34.Name = "materialButton34";
+            this.materialButton34.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton34.Size = new System.Drawing.Size(29, 26);
+            this.materialButton34.TabIndex = 69;
+            this.materialButton34.Text = "CloseChangeMCPanelBtn";
+            this.materialButton34.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.materialButton34.UseAccentColor = false;
+            this.materialButton34.UseVisualStyleBackColor = true;
+            this.materialButton34.Click += new System.EventHandler(this.materialButton34_Click);
+            // 
+            // addUserRoleSwitch
+            // 
+            this.addUserRoleSwitch.AutoSize = true;
+            this.addUserRoleSwitch.Depth = 0;
+            this.addUserRoleSwitch.Location = new System.Drawing.Point(20, 193);
+            this.addUserRoleSwitch.Margin = new System.Windows.Forms.Padding(0);
+            this.addUserRoleSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.addUserRoleSwitch.MouseState = MaterialSkin.MouseState.HOVER;
+            this.addUserRoleSwitch.Name = "addUserRoleSwitch";
+            this.addUserRoleSwitch.Ripple = true;
+            this.addUserRoleSwitch.Size = new System.Drawing.Size(108, 37);
+            this.addUserRoleSwitch.TabIndex = 24;
+            this.addUserRoleSwitch.Text = "Админ";
+            this.addUserRoleSwitch.UseVisualStyleBackColor = true;
+            // 
+            // addUserPasswordTB
+            // 
+            this.addUserPasswordTB.AnimateReadOnly = false;
+            this.addUserPasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.addUserPasswordTB.Depth = 0;
+            this.addUserPasswordTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.addUserPasswordTB.Hint = "Параль";
+            this.addUserPasswordTB.LeadingIcon = null;
+            this.addUserPasswordTB.Location = new System.Drawing.Point(20, 128);
+            this.addUserPasswordTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addUserPasswordTB.MaxLength = 50;
+            this.addUserPasswordTB.MouseState = MaterialSkin.MouseState.OUT;
+            this.addUserPasswordTB.Multiline = false;
+            this.addUserPasswordTB.Name = "addUserPasswordTB";
+            this.addUserPasswordTB.Size = new System.Drawing.Size(148, 50);
+            this.addUserPasswordTB.TabIndex = 20;
+            this.addUserPasswordTB.Text = "";
+            this.addUserPasswordTB.TrailingIcon = null;
+            // 
+            // addUserBtn
+            // 
+            this.addUserBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.addUserBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.addUserBtn.Depth = 0;
+            this.addUserBtn.HighEmphasis = true;
+            this.addUserBtn.Icon = null;
+            this.addUserBtn.Location = new System.Drawing.Point(20, 237);
+            this.addUserBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.addUserBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.addUserBtn.Name = "addUserBtn";
+            this.addUserBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.addUserBtn.Size = new System.Drawing.Size(100, 36);
+            this.addUserBtn.TabIndex = 19;
+            this.addUserBtn.Text = "Добавить";
+            this.addUserBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.addUserBtn.UseAccentColor = false;
+            this.addUserBtn.UseVisualStyleBackColor = true;
+            this.addUserBtn.Click += new System.EventHandler(this.addUserBtn_Click);
+            // 
+            // addUserLoginTB
+            // 
+            this.addUserLoginTB.AnimateReadOnly = false;
+            this.addUserLoginTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.addUserLoginTB.Depth = 0;
+            this.addUserLoginTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.addUserLoginTB.Hint = "Логин";
+            this.addUserLoginTB.LeadingIcon = null;
+            this.addUserLoginTB.Location = new System.Drawing.Point(20, 60);
+            this.addUserLoginTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.addUserLoginTB.MaxLength = 50;
+            this.addUserLoginTB.MouseState = MaterialSkin.MouseState.OUT;
+            this.addUserLoginTB.Multiline = false;
+            this.addUserLoginTB.Name = "addUserLoginTB";
+            this.addUserLoginTB.Size = new System.Drawing.Size(148, 50);
+            this.addUserLoginTB.TabIndex = 18;
+            this.addUserLoginTB.Text = "";
+            this.addUserLoginTB.TrailingIcon = null;
+            // 
+            // showChangeUserPanelBtn
+            // 
+            this.showChangeUserPanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.showChangeUserPanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.showChangeUserPanelBtn.Depth = 0;
+            this.showChangeUserPanelBtn.HighEmphasis = true;
+            this.showChangeUserPanelBtn.Icon = null;
+            this.showChangeUserPanelBtn.Location = new System.Drawing.Point(426, 172);
+            this.showChangeUserPanelBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.showChangeUserPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.showChangeUserPanelBtn.Name = "showChangeUserPanelBtn";
+            this.showChangeUserPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.showChangeUserPanelBtn.Size = new System.Drawing.Size(101, 36);
+            this.showChangeUserPanelBtn.TabIndex = 29;
+            this.showChangeUserPanelBtn.Text = "Изменить";
+            this.showChangeUserPanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.showChangeUserPanelBtn.UseAccentColor = false;
+            this.showChangeUserPanelBtn.UseVisualStyleBackColor = true;
+            this.showChangeUserPanelBtn.Click += new System.EventHandler(this.showChangeUserPanelBtn_Click);
+            // 
+            // ShowAddUserPanelBtn
+            // 
+            this.ShowAddUserPanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.ShowAddUserPanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.ShowAddUserPanelBtn.Depth = 0;
+            this.ShowAddUserPanelBtn.HighEmphasis = true;
+            this.ShowAddUserPanelBtn.Icon = null;
+            this.ShowAddUserPanelBtn.Location = new System.Drawing.Point(426, 120);
+            this.ShowAddUserPanelBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.ShowAddUserPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.ShowAddUserPanelBtn.Name = "ShowAddUserPanelBtn";
+            this.ShowAddUserPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.ShowAddUserPanelBtn.Size = new System.Drawing.Size(100, 36);
+            this.ShowAddUserPanelBtn.TabIndex = 28;
+            this.ShowAddUserPanelBtn.Text = "Добавить";
+            this.ShowAddUserPanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.ShowAddUserPanelBtn.UseAccentColor = false;
+            this.ShowAddUserPanelBtn.UseVisualStyleBackColor = true;
+            this.ShowAddUserPanelBtn.Click += new System.EventHandler(this.ShowAddUserPanelBtn_Click);
+            // 
+            // ChangeUserPanel
+            // 
+            this.ChangeUserPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.ChangeUserPanel.Controls.Add(this.materialLabel16);
+            this.ChangeUserPanel.Controls.Add(this.materialButton36);
+            this.ChangeUserPanel.Controls.Add(this.changeUserRoleSwitch);
+            this.ChangeUserPanel.Controls.Add(this.changeUserLoginTB);
+            this.ChangeUserPanel.Controls.Add(this.changeUserBtn);
+            this.ChangeUserPanel.Controls.Add(this.changeUserPasswordTB);
+            this.ChangeUserPanel.Location = new System.Drawing.Point(639, 63);
+            this.ChangeUserPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ChangeUserPanel.Name = "ChangeUserPanel";
+            this.ChangeUserPanel.Size = new System.Drawing.Size(227, 309);
+            this.ChangeUserPanel.TabIndex = 27;
+            // 
+            // materialLabel16
+            // 
+            this.materialLabel16.AutoSize = true;
+            this.materialLabel16.Depth = 0;
+            this.materialLabel16.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.materialLabel16.Location = new System.Drawing.Point(14, 8);
+            this.materialLabel16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialLabel16.Name = "materialLabel16";
+            this.materialLabel16.Size = new System.Drawing.Size(184, 19);
+            this.materialLabel16.TabIndex = 71;
+            this.materialLabel16.Text = "Изменить пользователя";
+            // 
+            // materialButton36
+            // 
+            this.materialButton36.AutoSize = false;
+            this.materialButton36.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.materialButton36.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
+            this.materialButton36.Depth = 0;
+            this.materialButton36.HighEmphasis = true;
+            this.materialButton36.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton36.Icon")));
+            this.materialButton36.ImageIndex = 24;
+            this.materialButton36.Location = new System.Drawing.Point(187, 5);
+            this.materialButton36.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.materialButton36.MouseState = MaterialSkin.MouseState.HOVER;
+            this.materialButton36.Name = "materialButton36";
+            this.materialButton36.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.materialButton36.Size = new System.Drawing.Size(29, 26);
+            this.materialButton36.TabIndex = 69;
+            this.materialButton36.Text = "CloseChangeMCPanelBtn";
+            this.materialButton36.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.materialButton36.UseAccentColor = false;
+            this.materialButton36.UseVisualStyleBackColor = true;
+            this.materialButton36.Click += new System.EventHandler(this.materialButton36_Click);
+            // 
+            // changeUserRoleSwitch
+            // 
+            this.changeUserRoleSwitch.AutoSize = true;
+            this.changeUserRoleSwitch.Depth = 0;
+            this.changeUserRoleSwitch.Location = new System.Drawing.Point(28, 193);
+            this.changeUserRoleSwitch.Margin = new System.Windows.Forms.Padding(0);
+            this.changeUserRoleSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
+            this.changeUserRoleSwitch.MouseState = MaterialSkin.MouseState.HOVER;
+            this.changeUserRoleSwitch.Name = "changeUserRoleSwitch";
+            this.changeUserRoleSwitch.Ripple = true;
+            this.changeUserRoleSwitch.Size = new System.Drawing.Size(108, 37);
+            this.changeUserRoleSwitch.TabIndex = 25;
+            this.changeUserRoleSwitch.Text = "Админ";
+            this.changeUserRoleSwitch.UseVisualStyleBackColor = true;
+            // 
+            // changeUserLoginTB
+            // 
+            this.changeUserLoginTB.AnimateReadOnly = false;
+            this.changeUserLoginTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.changeUserLoginTB.Depth = 0;
+            this.changeUserLoginTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.changeUserLoginTB.LeadingIcon = null;
+            this.changeUserLoginTB.Location = new System.Drawing.Point(28, 60);
+            this.changeUserLoginTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.changeUserLoginTB.MaxLength = 50;
+            this.changeUserLoginTB.MouseState = MaterialSkin.MouseState.OUT;
+            this.changeUserLoginTB.Multiline = false;
+            this.changeUserLoginTB.Name = "changeUserLoginTB";
+            this.changeUserLoginTB.Size = new System.Drawing.Size(148, 50);
+            this.changeUserLoginTB.TabIndex = 23;
+            this.changeUserLoginTB.Text = "";
+            this.changeUserLoginTB.TrailingIcon = null;
+            // 
+            // changeUserBtn
+            // 
+            this.changeUserBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.changeUserBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.changeUserBtn.Depth = 0;
+            this.changeUserBtn.HighEmphasis = true;
+            this.changeUserBtn.Icon = null;
+            this.changeUserBtn.Location = new System.Drawing.Point(28, 236);
+            this.changeUserBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.changeUserBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.changeUserBtn.Name = "changeUserBtn";
+            this.changeUserBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.changeUserBtn.Size = new System.Drawing.Size(110, 36);
+            this.changeUserBtn.TabIndex = 22;
+            this.changeUserBtn.Text = "Изментить";
+            this.changeUserBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
+            this.changeUserBtn.UseAccentColor = false;
+            this.changeUserBtn.UseVisualStyleBackColor = true;
+            this.changeUserBtn.Click += new System.EventHandler(this.changeUserBtn_Click);
+            // 
+            // changeUserPasswordTB
+            // 
+            this.changeUserPasswordTB.AnimateReadOnly = false;
+            this.changeUserPasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.changeUserPasswordTB.Depth = 0;
+            this.changeUserPasswordTB.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.changeUserPasswordTB.LeadingIcon = null;
+            this.changeUserPasswordTB.Location = new System.Drawing.Point(28, 128);
+            this.changeUserPasswordTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.changeUserPasswordTB.MaxLength = 50;
+            this.changeUserPasswordTB.MouseState = MaterialSkin.MouseState.OUT;
+            this.changeUserPasswordTB.Multiline = false;
+            this.changeUserPasswordTB.Name = "changeUserPasswordTB";
+            this.changeUserPasswordTB.Size = new System.Drawing.Size(148, 50);
+            this.changeUserPasswordTB.TabIndex = 21;
+            this.changeUserPasswordTB.Text = "";
+            this.changeUserPasswordTB.TrailingIcon = null;
+            // 
+            // reloadUsersBtn
+            // 
+            this.reloadUsersBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.reloadUsersBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.reloadUsersBtn.Depth = 0;
+            this.reloadUsersBtn.HighEmphasis = true;
+            this.reloadUsersBtn.Icon = ((System.Drawing.Image)(resources.GetObject("reloadUsersBtn.Icon")));
+            this.reloadUsersBtn.Location = new System.Drawing.Point(82, 332);
+            this.reloadUsersBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.reloadUsersBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.reloadUsersBtn.Name = "reloadUsersBtn";
+            this.reloadUsersBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.reloadUsersBtn.Size = new System.Drawing.Size(64, 36);
+            this.reloadUsersBtn.TabIndex = 17;
+            this.reloadUsersBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.reloadUsersBtn.UseAccentColor = false;
+            this.reloadUsersBtn.UseVisualStyleBackColor = true;
+            this.reloadUsersBtn.Click += new System.EventHandler(this.reloadUsersBtn_Click);
+            // 
+            // deleteUserBtn
+            // 
+            this.deleteUserBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.deleteUserBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
+            this.deleteUserBtn.Depth = 0;
+            this.deleteUserBtn.DrawShadows = false;
+            this.deleteUserBtn.HighEmphasis = false;
+            this.deleteUserBtn.Icon = ((System.Drawing.Image)(resources.GetObject("deleteUserBtn.Icon")));
+            this.deleteUserBtn.Location = new System.Drawing.Point(366, 332);
+            this.deleteUserBtn.Margin = new System.Windows.Forms.Padding(3, 5, 3, 5);
+            this.deleteUserBtn.MouseState = MaterialSkin.MouseState.HOVER;
+            this.deleteUserBtn.Name = "deleteUserBtn";
+            this.deleteUserBtn.NoAccentTextColor = System.Drawing.Color.Empty;
+            this.deleteUserBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.deleteUserBtn.Size = new System.Drawing.Size(64, 36);
+            this.deleteUserBtn.TabIndex = 16;
+            this.deleteUserBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
+            this.deleteUserBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
+            this.deleteUserBtn.UseAccentColor = false;
+            this.deleteUserBtn.UseVisualStyleBackColor = true;
+            this.deleteUserBtn.Click += new System.EventHandler(this.deleteUserBtn_Click);
+            // 
+            // searchUsersTB
+            // 
+            this.searchUsersTB.AnimateReadOnly = false;
+            this.searchUsersTB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.searchUsersTB.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+            this.searchUsersTB.Depth = 0;
+            this.searchUsersTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.searchUsersTB.HideSelection = true;
+            this.searchUsersTB.Hint = "Найти";
+            this.searchUsersTB.LeadingIcon = null;
+            this.searchUsersTB.Location = new System.Drawing.Point(82, 72);
+            this.searchUsersTB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.searchUsersTB.MaxLength = 32767;
+            this.searchUsersTB.MouseState = MaterialSkin.MouseState.OUT;
+            this.searchUsersTB.Name = "searchUsersTB";
+            this.searchUsersTB.PasswordChar = '\0';
+            this.searchUsersTB.PrefixSuffixText = null;
+            this.searchUsersTB.ReadOnly = false;
+            this.searchUsersTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.searchUsersTB.SelectedText = "";
+            this.searchUsersTB.SelectionLength = 0;
+            this.searchUsersTB.SelectionStart = 0;
+            this.searchUsersTB.ShortcutsEnabled = true;
+            this.searchUsersTB.Size = new System.Drawing.Size(322, 48);
+            this.searchUsersTB.TabIndex = 15;
+            this.searchUsersTB.TabStop = false;
+            this.searchUsersTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.searchUsersTB.TrailingIcon = null;
+            this.searchUsersTB.UseSystemPasswordChar = false;
+            // 
+            // UsersDVG
+            // 
+            this.UsersDVG.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.UsersDVG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.UsersDVG.GridColor = System.Drawing.SystemColors.Highlight;
+            this.UsersDVG.Location = new System.Drawing.Point(82, 120);
+            this.UsersDVG.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.UsersDVG.Name = "UsersDVG";
+            this.UsersDVG.RowHeadersWidth = 51;
+            this.UsersDVG.RowTemplate.Height = 24;
+            this.UsersDVG.Size = new System.Drawing.Size(322, 206);
+            this.UsersDVG.TabIndex = 14;
+            this.UsersDVG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.UsersDVG_CellClick);
             // 
             // imageList1
             // 
@@ -2957,392 +3425,17 @@
             this.imageList1.Images.SetKeyName(23, "unnamed (1) — копия.png");
             this.imageList1.Images.SetKeyName(24, "free-icon-close-cross-64498 (2).png");
             // 
-            // tabPage4
-            // 
-            this.tabPage4.Controls.Add(this.addUserPanel);
-            this.tabPage4.Controls.Add(this.showChangeUserPanelBtn);
-            this.tabPage4.Controls.Add(this.ShowAddUserPanelBtn);
-            this.tabPage4.Controls.Add(this.ChangeUserPanel);
-            this.tabPage4.Controls.Add(this.reloadUsersBtn);
-            this.tabPage4.Controls.Add(this.deleteUserBtn);
-            this.tabPage4.Controls.Add(this.searchUsersTB);
-            this.tabPage4.Controls.Add(this.UsersDVG);
-            this.tabPage4.ImageIndex = 19;
-            this.tabPage4.Location = new System.Drawing.Point(4, 31);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Size = new System.Drawing.Size(1205, 659);
-            this.tabPage4.TabIndex = 10;
-            this.tabPage4.Text = "Пользователи";
-            this.tabPage4.UseVisualStyleBackColor = true;
-            // 
-            // changeUserRoleSwitch
-            // 
-            this.changeUserRoleSwitch.AutoSize = true;
-            this.changeUserRoleSwitch.Depth = 0;
-            this.changeUserRoleSwitch.Location = new System.Drawing.Point(37, 237);
-            this.changeUserRoleSwitch.Margin = new System.Windows.Forms.Padding(0);
-            this.changeUserRoleSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.changeUserRoleSwitch.MouseState = MaterialSkin.MouseState.HOVER;
-            this.changeUserRoleSwitch.Name = "changeUserRoleSwitch";
-            this.changeUserRoleSwitch.Ripple = true;
-            this.changeUserRoleSwitch.Size = new System.Drawing.Size(108, 37);
-            this.changeUserRoleSwitch.TabIndex = 25;
-            this.changeUserRoleSwitch.Text = "Админ";
-            this.changeUserRoleSwitch.UseVisualStyleBackColor = true;
-            // 
-            // addUserRoleSwitch
-            // 
-            this.addUserRoleSwitch.AutoSize = true;
-            this.addUserRoleSwitch.Depth = 0;
-            this.addUserRoleSwitch.Location = new System.Drawing.Point(27, 238);
-            this.addUserRoleSwitch.Margin = new System.Windows.Forms.Padding(0);
-            this.addUserRoleSwitch.MouseLocation = new System.Drawing.Point(-1, -1);
-            this.addUserRoleSwitch.MouseState = MaterialSkin.MouseState.HOVER;
-            this.addUserRoleSwitch.Name = "addUserRoleSwitch";
-            this.addUserRoleSwitch.Ripple = true;
-            this.addUserRoleSwitch.Size = new System.Drawing.Size(108, 37);
-            this.addUserRoleSwitch.TabIndex = 24;
-            this.addUserRoleSwitch.Text = "Админ";
-            this.addUserRoleSwitch.UseVisualStyleBackColor = true;
-            // 
-            // changeUserLoginTB
-            // 
-            this.changeUserLoginTB.AnimateReadOnly = false;
-            this.changeUserLoginTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.changeUserLoginTB.Depth = 0;
-            this.changeUserLoginTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.changeUserLoginTB.LeadingIcon = null;
-            this.changeUserLoginTB.Location = new System.Drawing.Point(37, 74);
-            this.changeUserLoginTB.MaxLength = 50;
-            this.changeUserLoginTB.MouseState = MaterialSkin.MouseState.OUT;
-            this.changeUserLoginTB.Multiline = false;
-            this.changeUserLoginTB.Name = "changeUserLoginTB";
-            this.changeUserLoginTB.Size = new System.Drawing.Size(198, 50);
-            this.changeUserLoginTB.TabIndex = 23;
-            this.changeUserLoginTB.Text = "";
-            this.changeUserLoginTB.TrailingIcon = null;
-            // 
-            // changeUserBtn
-            // 
-            this.changeUserBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.changeUserBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.changeUserBtn.Depth = 0;
-            this.changeUserBtn.HighEmphasis = true;
-            this.changeUserBtn.Icon = null;
-            this.changeUserBtn.Location = new System.Drawing.Point(37, 291);
-            this.changeUserBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.changeUserBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.changeUserBtn.Name = "changeUserBtn";
-            this.changeUserBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.changeUserBtn.Size = new System.Drawing.Size(110, 36);
-            this.changeUserBtn.TabIndex = 22;
-            this.changeUserBtn.Text = "Изментить";
-            this.changeUserBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.changeUserBtn.UseAccentColor = false;
-            this.changeUserBtn.UseVisualStyleBackColor = true;
-            this.changeUserBtn.Click += new System.EventHandler(this.changeUserBtn_Click);
-            // 
-            // changeUserPasswordTB
-            // 
-            this.changeUserPasswordTB.AnimateReadOnly = false;
-            this.changeUserPasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.changeUserPasswordTB.Depth = 0;
-            this.changeUserPasswordTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.changeUserPasswordTB.LeadingIcon = null;
-            this.changeUserPasswordTB.Location = new System.Drawing.Point(37, 158);
-            this.changeUserPasswordTB.MaxLength = 50;
-            this.changeUserPasswordTB.MouseState = MaterialSkin.MouseState.OUT;
-            this.changeUserPasswordTB.Multiline = false;
-            this.changeUserPasswordTB.Name = "changeUserPasswordTB";
-            this.changeUserPasswordTB.Size = new System.Drawing.Size(198, 50);
-            this.changeUserPasswordTB.TabIndex = 21;
-            this.changeUserPasswordTB.Text = "";
-            this.changeUserPasswordTB.TrailingIcon = null;
-            // 
-            // addUserPasswordTB
-            // 
-            this.addUserPasswordTB.AnimateReadOnly = false;
-            this.addUserPasswordTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.addUserPasswordTB.Depth = 0;
-            this.addUserPasswordTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.addUserPasswordTB.Hint = "Параль";
-            this.addUserPasswordTB.LeadingIcon = null;
-            this.addUserPasswordTB.Location = new System.Drawing.Point(27, 158);
-            this.addUserPasswordTB.MaxLength = 50;
-            this.addUserPasswordTB.MouseState = MaterialSkin.MouseState.OUT;
-            this.addUserPasswordTB.Multiline = false;
-            this.addUserPasswordTB.Name = "addUserPasswordTB";
-            this.addUserPasswordTB.Size = new System.Drawing.Size(198, 50);
-            this.addUserPasswordTB.TabIndex = 20;
-            this.addUserPasswordTB.Text = "";
-            this.addUserPasswordTB.TrailingIcon = null;
-            // 
-            // addUserBtn
-            // 
-            this.addUserBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.addUserBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.addUserBtn.Depth = 0;
-            this.addUserBtn.HighEmphasis = true;
-            this.addUserBtn.Icon = null;
-            this.addUserBtn.Location = new System.Drawing.Point(27, 292);
-            this.addUserBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.addUserBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.addUserBtn.Name = "addUserBtn";
-            this.addUserBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.addUserBtn.Size = new System.Drawing.Size(100, 36);
-            this.addUserBtn.TabIndex = 19;
-            this.addUserBtn.Text = "Добавить";
-            this.addUserBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.addUserBtn.UseAccentColor = false;
-            this.addUserBtn.UseVisualStyleBackColor = true;
-            this.addUserBtn.Click += new System.EventHandler(this.addUserBtn_Click);
-            // 
-            // addUserLoginTB
-            // 
-            this.addUserLoginTB.AnimateReadOnly = false;
-            this.addUserLoginTB.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.addUserLoginTB.Depth = 0;
-            this.addUserLoginTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.addUserLoginTB.Hint = "Логин";
-            this.addUserLoginTB.LeadingIcon = null;
-            this.addUserLoginTB.Location = new System.Drawing.Point(27, 74);
-            this.addUserLoginTB.MaxLength = 50;
-            this.addUserLoginTB.MouseState = MaterialSkin.MouseState.OUT;
-            this.addUserLoginTB.Multiline = false;
-            this.addUserLoginTB.Name = "addUserLoginTB";
-            this.addUserLoginTB.Size = new System.Drawing.Size(198, 50);
-            this.addUserLoginTB.TabIndex = 18;
-            this.addUserLoginTB.Text = "";
-            this.addUserLoginTB.TrailingIcon = null;
-            // 
-            // reloadUsersBtn
-            // 
-            this.reloadUsersBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.reloadUsersBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.reloadUsersBtn.Depth = 0;
-            this.reloadUsersBtn.HighEmphasis = true;
-            this.reloadUsersBtn.Icon = ((System.Drawing.Image)(resources.GetObject("reloadUsersBtn.Icon")));
-            this.reloadUsersBtn.Location = new System.Drawing.Point(110, 409);
-            this.reloadUsersBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.reloadUsersBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.reloadUsersBtn.Name = "reloadUsersBtn";
-            this.reloadUsersBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.reloadUsersBtn.Size = new System.Drawing.Size(64, 36);
-            this.reloadUsersBtn.TabIndex = 17;
-            this.reloadUsersBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.reloadUsersBtn.UseAccentColor = false;
-            this.reloadUsersBtn.UseVisualStyleBackColor = true;
-            this.reloadUsersBtn.Click += new System.EventHandler(this.reloadUsersBtn_Click);
-            // 
-            // deleteUserBtn
-            // 
-            this.deleteUserBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.deleteUserBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.deleteUserBtn.Depth = 0;
-            this.deleteUserBtn.DrawShadows = false;
-            this.deleteUserBtn.HighEmphasis = false;
-            this.deleteUserBtn.Icon = ((System.Drawing.Image)(resources.GetObject("deleteUserBtn.Icon")));
-            this.deleteUserBtn.Location = new System.Drawing.Point(488, 409);
-            this.deleteUserBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.deleteUserBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.deleteUserBtn.Name = "deleteUserBtn";
-            this.deleteUserBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.deleteUserBtn.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.deleteUserBtn.Size = new System.Drawing.Size(64, 36);
-            this.deleteUserBtn.TabIndex = 16;
-            this.deleteUserBtn.TextImageRelation = System.Windows.Forms.TextImageRelation.TextAboveImage;
-            this.deleteUserBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.deleteUserBtn.UseAccentColor = false;
-            this.deleteUserBtn.UseVisualStyleBackColor = true;
-            this.deleteUserBtn.Click += new System.EventHandler(this.deleteUserBtn_Click);
-            // 
-            // searchUsersTB
-            // 
-            this.searchUsersTB.AnimateReadOnly = false;
-            this.searchUsersTB.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.searchUsersTB.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
-            this.searchUsersTB.Depth = 0;
-            this.searchUsersTB.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.searchUsersTB.HideSelection = true;
-            this.searchUsersTB.Hint = "Найти";
-            this.searchUsersTB.LeadingIcon = null;
-            this.searchUsersTB.Location = new System.Drawing.Point(109, 88);
-            this.searchUsersTB.MaxLength = 32767;
-            this.searchUsersTB.MouseState = MaterialSkin.MouseState.OUT;
-            this.searchUsersTB.Name = "searchUsersTB";
-            this.searchUsersTB.PasswordChar = '\0';
-            this.searchUsersTB.PrefixSuffixText = null;
-            this.searchUsersTB.ReadOnly = false;
-            this.searchUsersTB.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.searchUsersTB.SelectedText = "";
-            this.searchUsersTB.SelectionLength = 0;
-            this.searchUsersTB.SelectionStart = 0;
-            this.searchUsersTB.ShortcutsEnabled = true;
-            this.searchUsersTB.Size = new System.Drawing.Size(429, 48);
-            this.searchUsersTB.TabIndex = 15;
-            this.searchUsersTB.TabStop = false;
-            this.searchUsersTB.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.searchUsersTB.TrailingIcon = null;
-            this.searchUsersTB.UseSystemPasswordChar = false;
-            // 
-            // UsersDVG
-            // 
-            this.UsersDVG.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.UsersDVG.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.UsersDVG.GridColor = System.Drawing.SystemColors.Highlight;
-            this.UsersDVG.Location = new System.Drawing.Point(109, 148);
-            this.UsersDVG.Name = "UsersDVG";
-            this.UsersDVG.RowHeadersWidth = 51;
-            this.UsersDVG.RowTemplate.Height = 24;
-            this.UsersDVG.Size = new System.Drawing.Size(429, 254);
-            this.UsersDVG.TabIndex = 14;
-            this.UsersDVG.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.UsersDVG_CellClick);
-            // 
-            // addUserPanel
-            // 
-            this.addUserPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.addUserPanel.Controls.Add(this.materialLabel15);
-            this.addUserPanel.Controls.Add(this.materialButton34);
-            this.addUserPanel.Controls.Add(this.addUserRoleSwitch);
-            this.addUserPanel.Controls.Add(this.addUserPasswordTB);
-            this.addUserPanel.Controls.Add(this.addUserBtn);
-            this.addUserPanel.Controls.Add(this.addUserLoginTB);
-            this.addUserPanel.Location = new System.Drawing.Point(545, 78);
-            this.addUserPanel.Name = "addUserPanel";
-            this.addUserPanel.Size = new System.Drawing.Size(301, 379);
-            this.addUserPanel.TabIndex = 26;
-            // 
-            // ChangeUserPanel
-            // 
-            this.ChangeUserPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.ChangeUserPanel.Controls.Add(this.materialLabel16);
-            this.ChangeUserPanel.Controls.Add(this.materialButton36);
-            this.ChangeUserPanel.Controls.Add(this.changeUserRoleSwitch);
-            this.ChangeUserPanel.Controls.Add(this.changeUserLoginTB);
-            this.ChangeUserPanel.Controls.Add(this.changeUserBtn);
-            this.ChangeUserPanel.Controls.Add(this.changeUserPasswordTB);
-            this.ChangeUserPanel.Location = new System.Drawing.Point(852, 78);
-            this.ChangeUserPanel.Name = "ChangeUserPanel";
-            this.ChangeUserPanel.Size = new System.Drawing.Size(301, 379);
-            this.ChangeUserPanel.TabIndex = 27;
-            // 
-            // materialButton34
-            // 
-            this.materialButton34.AutoSize = false;
-            this.materialButton34.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton34.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
-            this.materialButton34.Depth = 0;
-            this.materialButton34.HighEmphasis = true;
-            this.materialButton34.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton34.Icon")));
-            this.materialButton34.ImageIndex = 24;
-            this.materialButton34.Location = new System.Drawing.Point(242, 6);
-            this.materialButton34.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton34.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton34.Name = "materialButton34";
-            this.materialButton34.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton34.Size = new System.Drawing.Size(39, 32);
-            this.materialButton34.TabIndex = 69;
-            this.materialButton34.Text = "CloseChangeMCPanelBtn";
-            this.materialButton34.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton34.UseAccentColor = false;
-            this.materialButton34.UseVisualStyleBackColor = true;
-            this.materialButton34.Click += new System.EventHandler(this.materialButton34_Click);
-            // 
-            // materialButton36
-            // 
-            this.materialButton36.AutoSize = false;
-            this.materialButton36.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.materialButton36.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Dense;
-            this.materialButton36.Depth = 0;
-            this.materialButton36.HighEmphasis = true;
-            this.materialButton36.Icon = ((System.Drawing.Image)(resources.GetObject("materialButton36.Icon")));
-            this.materialButton36.ImageIndex = 24;
-            this.materialButton36.Location = new System.Drawing.Point(249, 6);
-            this.materialButton36.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.materialButton36.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialButton36.Name = "materialButton36";
-            this.materialButton36.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.materialButton36.Size = new System.Drawing.Size(39, 32);
-            this.materialButton36.TabIndex = 69;
-            this.materialButton36.Text = "CloseChangeMCPanelBtn";
-            this.materialButton36.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Text;
-            this.materialButton36.UseAccentColor = false;
-            this.materialButton36.UseVisualStyleBackColor = true;
-            this.materialButton36.Click += new System.EventHandler(this.materialButton36_Click);
-            // 
-            // materialLabel15
-            // 
-            this.materialLabel15.AutoSize = true;
-            this.materialLabel15.Depth = 0;
-            this.materialLabel15.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel15.Location = new System.Drawing.Point(9, 10);
-            this.materialLabel15.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel15.Name = "materialLabel15";
-            this.materialLabel15.Size = new System.Drawing.Size(184, 19);
-            this.materialLabel15.TabIndex = 70;
-            this.materialLabel15.Text = "Добавить пользователя";
-            // 
-            // materialLabel16
-            // 
-            this.materialLabel16.AutoSize = true;
-            this.materialLabel16.Depth = 0;
-            this.materialLabel16.Font = new System.Drawing.Font("Roboto", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            this.materialLabel16.Location = new System.Drawing.Point(19, 10);
-            this.materialLabel16.MouseState = MaterialSkin.MouseState.HOVER;
-            this.materialLabel16.Name = "materialLabel16";
-            this.materialLabel16.Size = new System.Drawing.Size(184, 19);
-            this.materialLabel16.TabIndex = 71;
-            this.materialLabel16.Text = "Изменить пользователя";
-            // 
-            // ShowAddUserPanelBtn
-            // 
-            this.ShowAddUserPanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ShowAddUserPanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.ShowAddUserPanelBtn.Depth = 0;
-            this.ShowAddUserPanelBtn.HighEmphasis = true;
-            this.ShowAddUserPanelBtn.Icon = null;
-            this.ShowAddUserPanelBtn.Location = new System.Drawing.Point(568, 148);
-            this.ShowAddUserPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.ShowAddUserPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.ShowAddUserPanelBtn.Name = "ShowAddUserPanelBtn";
-            this.ShowAddUserPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.ShowAddUserPanelBtn.Size = new System.Drawing.Size(100, 36);
-            this.ShowAddUserPanelBtn.TabIndex = 28;
-            this.ShowAddUserPanelBtn.Text = "Добавить";
-            this.ShowAddUserPanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.ShowAddUserPanelBtn.UseAccentColor = false;
-            this.ShowAddUserPanelBtn.UseVisualStyleBackColor = true;
-            this.ShowAddUserPanelBtn.Click += new System.EventHandler(this.ShowAddUserPanelBtn_Click);
-            // 
-            // showChangeUserPanelBtn
-            // 
-            this.showChangeUserPanelBtn.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.showChangeUserPanelBtn.Density = MaterialSkin.Controls.MaterialButton.MaterialButtonDensity.Default;
-            this.showChangeUserPanelBtn.Depth = 0;
-            this.showChangeUserPanelBtn.HighEmphasis = true;
-            this.showChangeUserPanelBtn.Icon = null;
-            this.showChangeUserPanelBtn.Location = new System.Drawing.Point(568, 212);
-            this.showChangeUserPanelBtn.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
-            this.showChangeUserPanelBtn.MouseState = MaterialSkin.MouseState.HOVER;
-            this.showChangeUserPanelBtn.Name = "showChangeUserPanelBtn";
-            this.showChangeUserPanelBtn.NoAccentTextColor = System.Drawing.Color.Empty;
-            this.showChangeUserPanelBtn.Size = new System.Drawing.Size(101, 36);
-            this.showChangeUserPanelBtn.TabIndex = 29;
-            this.showChangeUserPanelBtn.Text = "Изменить";
-            this.showChangeUserPanelBtn.Type = MaterialSkin.Controls.MaterialButton.MaterialButtonType.Contained;
-            this.showChangeUserPanelBtn.UseAccentColor = false;
-            this.showChangeUserPanelBtn.UseVisualStyleBackColor = true;
-            this.showChangeUserPanelBtn.Click += new System.EventHandler(this.showChangeUserPanelBtn_Click);
-            // 
             // AdminForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1219, 761);
+            this.ClientSize = new System.Drawing.Size(1385, 862);
             this.Controls.Add(this.materialTabControl1);
             this.DrawerShowIconsWhenHidden = true;
             this.DrawerTabControl = this.materialTabControl1;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "AdminForm";
+            this.Padding = new System.Windows.Forms.Padding(2, 52, 2, 2);
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.tabPage7.ResumeLayout(false);
@@ -3391,11 +3484,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.MCDVG)).EndInit();
             this.tabPage4.ResumeLayout(false);
             this.tabPage4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UsersDVG)).EndInit();
             this.addUserPanel.ResumeLayout(false);
             this.addUserPanel.PerformLayout();
             this.ChangeUserPanel.ResumeLayout(false);
             this.ChangeUserPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UsersDVG)).EndInit();
             this.ResumeLayout(false);
 
         }

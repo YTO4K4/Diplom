@@ -17,7 +17,7 @@ namespace diplom
     public partial class BreakeLiquidForm : MaterialForm
     {
         public SqlConnection sqlConnection = null;
-        string scon = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\YTO4KA\OneDrive\Рабочий стол\дилпом\diplom\diplom\DiplomDB.mdf"";Integrated Security=True";
+        string scon = @"";
         private DataSet dataSet = null;
         private SqlDataAdapter sqlDataAdapter = null;
         private SqlCommandBuilder sqlBuilder = null;
@@ -83,6 +83,9 @@ namespace diplom
             else { MaterialMessageBox.Show("Заполните все поля", "Ошибка"); }
         }
 
+
+
+        //ЧТО ЭТООООО???????
         private void makeDocBtn_Click(object sender, EventArgs e)
         {
             string s = "";
